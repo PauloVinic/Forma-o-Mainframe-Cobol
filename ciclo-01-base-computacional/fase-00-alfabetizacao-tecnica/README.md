@@ -28,7 +28,9 @@ A Aula 10 — Arquivos, pastas, formatos e extensões foi desenvolvida em `aulas
 
 A Aula 11 — Ambientes computacionais foi desenvolvida em `aulas/aula-11-ambientes-computacionais.md`. Ela explica ambiente como conjunto de condições, recursos, configurações, permissões, dados e infraestrutura que influencia execução, arquivos, versões, dependências, segurança, produção, operação e análise de problemas.
 
-A próxima etapa deve desenvolver somente a Aula 12 — O que é erro: sintaxe, lógica, execução e operação, mantendo a mesma linha editorial e explicando categorias iniciais de erro sem antecipar prática de programação ou ferramentas.
+A Aula 12 — O que é erro: sintaxe, lógica, execução e operação foi desenvolvida em `aulas/aula-12-o-que-e-erro-sintaxe-logica-execucao-e-operacao.md`. Ela diferencia erro de sintaxe, erro lógico, erro de execução, erro operacional, erro de ambiente, erro de dado e erro de regra de negócio, conectando análise de problemas com entrada, processamento, saída, arquivos, ambientes, logs, evidências e sistemas corporativos.
+
+O conjunto das 12 aulas planejadas da Fase 0 está desenvolvido. A próxima etapa não deve iniciar a Fase 1 ainda; deve consolidar a Fase 0 com revisão geral, estudo dirigido, exercícios teóricos, avaliação e checklist final.
 
 ## Visão Geral da Fase
 

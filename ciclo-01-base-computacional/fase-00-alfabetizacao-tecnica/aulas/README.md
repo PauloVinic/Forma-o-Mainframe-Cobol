@@ -17,9 +17,10 @@ Cada aula futura deverá seguir `templates/TEMPLATE_AULA.md` e respeitar `DIRETR
 - Aula 09 — Compilação, interpretação e execução: `aula-09-compilacao-interpretacao-e-execucao.md`.
 - Aula 10 — Arquivos, pastas, formatos e extensões: `aula-10-arquivos-pastas-formatos-e-extensoes.md`.
 - Aula 11 — Ambientes computacionais: `aula-11-ambientes-computacionais.md`.
+- Aula 12 — O que é erro: sintaxe, lógica, execução e operação: `aula-12-o-que-e-erro-sintaxe-logica-execucao-e-operacao.md`.
 
-## Próxima aula
+## Conjunto de aulas concluído
 
-A próxima etapa deve desenvolver somente a Aula 12 — O que é erro: sintaxe, lógica, execução e operação. Essa aula deverá explicar categorias iniciais de erro e sua relação com código, lógica, execução, ambiente, operação e análise de problemas, sem comandos, prática de ferramenta ou exemplos em COBOL.
+As 12 aulas planejadas da Fase 0 — Alfabetização Técnica foram desenvolvidas. A próxima etapa não deve iniciar a Fase 1 ainda; deve consolidar a Fase 0 com revisão geral, estudo dirigido, exercícios teóricos, avaliação e checklist final.
 
 Nenhuma aula desta fase deve introduzir código, COBOL, comandos de ferramenta ou ambiente de desenvolvimento prático antes do momento previsto na formação.

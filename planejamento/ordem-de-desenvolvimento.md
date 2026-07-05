@@ -84,4 +84,6 @@ A Aula 10 — Arquivos, pastas, formatos e extensões foi desenvolvida em `ciclo
 
 A Aula 11 — Ambientes computacionais foi desenvolvida em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/aulas/aula-11-ambientes-computacionais.md`.
 
-A próxima etapa de desenvolvimento deve ser somente a Aula 12 — O que é erro: sintaxe, lógica, execução e operação. Essa aula deve ser criada antes de qualquer aula posterior da Fase 0 e deve seguir `templates/TEMPLATE_AULA.md`, `DIRETRIZES_EDITORIAIS.md` e os documentos de planejamento da fase.
+A Aula 12 — O que é erro: sintaxe, lógica, execução e operação foi desenvolvida em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/aulas/aula-12-o-que-e-erro-sintaxe-logica-execucao-e-operacao.md`.
+
+As 12 aulas planejadas da Fase 0 — Alfabetização técnica foram desenvolvidas. A próxima etapa de desenvolvimento não deve ser a Fase 1 ainda. A próxima etapa deve ser a Consolidação da Fase 0 — revisão geral, estudo dirigido, exercícios teóricos, avaliação e checklist final.
