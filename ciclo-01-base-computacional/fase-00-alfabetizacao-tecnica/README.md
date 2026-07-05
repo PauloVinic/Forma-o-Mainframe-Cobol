@@ -30,7 +30,7 @@ A Aula 11 — Ambientes computacionais foi desenvolvida em `aulas/aula-11-ambien
 
 A Aula 12 — O que é erro: sintaxe, lógica, execução e operação foi desenvolvida em `aulas/aula-12-o-que-e-erro-sintaxe-logica-execucao-e-operacao.md`. Ela diferencia erro de sintaxe, erro lógico, erro de execução, erro operacional, erro de ambiente, erro de dado e erro de regra de negócio, conectando análise de problemas com entrada, processamento, saída, arquivos, ambientes, logs, evidências e sistemas corporativos.
 
-O conjunto das 12 aulas planejadas da Fase 0 está desenvolvido. A próxima etapa não deve iniciar a Fase 1 ainda; deve consolidar a Fase 0 com revisão geral, estudo dirigido, exercícios teóricos, avaliação e checklist final.
+O conjunto das 12 aulas planejadas da Fase 0 está desenvolvido, e a fase agora possui materiais de consolidação em `consolidacao/`. Esses materiais organizam revisão geral, estudo dirigido, exercícios teóricos, avaliações, rubrica, checklist final e plano de estudo. A próxima etapa não deve iniciar a Fase 1 automaticamente; deve ser a revisão do aluno e a identificação de ajustes necessários na própria Fase 0.
 
 ## Visão Geral da Fase
 

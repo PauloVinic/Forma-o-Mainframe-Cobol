@@ -86,4 +86,6 @@ A Aula 11 — Ambientes computacionais foi desenvolvida em `ciclo-01-base-comput
 
 A Aula 12 — O que é erro: sintaxe, lógica, execução e operação foi desenvolvida em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/aulas/aula-12-o-que-e-erro-sintaxe-logica-execucao-e-operacao.md`.
 
-As 12 aulas planejadas da Fase 0 — Alfabetização técnica foram desenvolvidas. A próxima etapa de desenvolvimento não deve ser a Fase 1 ainda. A próxima etapa deve ser a Consolidação da Fase 0 — revisão geral, estudo dirigido, exercícios teóricos, avaliação e checklist final.
+As 12 aulas planejadas da Fase 0 — Alfabetização técnica foram desenvolvidas, e a etapa de Consolidação da Fase 0 foi criada em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/consolidacao/`.
+
+A próxima etapa não deve ser iniciar automaticamente a Fase 1. Depois do estudo pelo aluno, o projeto deve decidir se a Fase 0 precisa de ajustes, reforços, correções ou complementos antes de avançar para a Fase 1 — Pensamento computacional.
