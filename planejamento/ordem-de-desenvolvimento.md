@@ -82,4 +82,6 @@ A Aula 09 — Compilação, interpretação e execução foi desenvolvida em `ci
 
 A Aula 10 — Arquivos, pastas, formatos e extensões foi desenvolvida em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/aulas/aula-10-arquivos-pastas-formatos-e-extensoes.md`.
 
-A próxima etapa de desenvolvimento deve ser somente a Aula 11 — Ambientes computacionais. Essa aula deve ser criada antes de qualquer aula posterior da Fase 0 e deve seguir `templates/TEMPLATE_AULA.md`, `DIRETRIZES_EDITORIAIS.md` e os documentos de planejamento da fase.
+A Aula 11 — Ambientes computacionais foi desenvolvida em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/aulas/aula-11-ambientes-computacionais.md`.
+
+A próxima etapa de desenvolvimento deve ser somente a Aula 12 — O que é erro: sintaxe, lógica, execução e operação. Essa aula deve ser criada antes de qualquer aula posterior da Fase 0 e deve seguir `templates/TEMPLATE_AULA.md`, `DIRETRIZES_EDITORIAIS.md` e os documentos de planejamento da fase.

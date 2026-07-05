@@ -26,7 +26,9 @@ A Aula 09 — Compilação, interpretação e execução foi desenvolvida em `au
 
 A Aula 10 — Arquivos, pastas, formatos e extensões foi desenvolvida em `aulas/aula-10-arquivos-pastas-formatos-e-extensoes.md`. Ela explica arquivo como unidade computacional de armazenamento e organização, diferenciando conteúdo, nome, extensão, formato, caminho, pastas, diretórios, tipos de arquivo, rastreabilidade e uso de arquivos em sistemas corporativos.
 
-A próxima etapa deve desenvolver somente a Aula 11 — Ambientes computacionais, mantendo a mesma linha editorial e explicando como ambientes como desenvolvimento, teste, homologação e produção influenciam arquivos, execução, riscos e responsabilidades.
+A Aula 11 — Ambientes computacionais foi desenvolvida em `aulas/aula-11-ambientes-computacionais.md`. Ela explica ambiente como conjunto de condições, recursos, configurações, permissões, dados e infraestrutura que influencia execução, arquivos, versões, dependências, segurança, produção, operação e análise de problemas.
+
+A próxima etapa deve desenvolver somente a Aula 12 — O que é erro: sintaxe, lógica, execução e operação, mantendo a mesma linha editorial e explicando categorias iniciais de erro sem antecipar prática de programação ou ferramentas.
 
 ## Visão Geral da Fase
 
