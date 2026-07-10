@@ -1,80 +1,50 @@
 # Diretrizes Editoriais
 
-Este documento define o padrão de escrita dos conteúdos futuros. Ele deve ser consultado antes de qualquer aula, estudo dirigido, exercício, avaliação, glossário ampliado ou estudo de caso.
+Este documento define regras de escrita e revisão para aulas, estudos dirigidos, exercícios, avaliações, glossários e estudos de caso.
 
-## Orientacao de fundo
+## Escrita desenvolvida
 
-O conteúdo da formação não deve ser escrito em formato de resumo, lista superficial, apostila enxuta ou tópicos curtos. A escrita deve permitir que o aluno acompanhe o raciocínio, entenda a origem dos conceitos, perceba as relações entre os assuntos e construa vocabulário técnico com segurança.
+O conteúdo deve permitir que o aluno acompanhe o raciocínio, entenda origem, relações e limites dos conceitos e construa vocabulário técnico. Texto corrido e tópicos têm funções complementares: tópicos organizam critérios, comparações e sínteses; não substituem explicação.
 
-As aulas devem ser escritas como capítulos completos de estudo, com explicações desenvolvidas, texto corrido, exemplos bem contextualizados, transições naturais e aprofundamento gradual. Tópicos podem ser usados quando ajudarem a organizar uma explicação, mas não devem substituir a explicação.
+A linguagem deve ser clara, sóbria e precisa. Evitar autopromoção, frases vagas e definições que apenas repetem o nome do conceito.
 
-Não se deve economizar palavras quando o assunto exigir desenvolvimento. O objetivo é ensinar de verdade, não apenas listar conceitos. Um conceito importante precisa ser apresentado, explicado, situado e retomado quando necessário.
+## Extensão sem redundância
 
-## Linguagem
+As aulas podem ter aproximadamente 4.000 a 6.000 palavras, ou mais quando necessário. Essa faixa não é meta de preenchimento nem limite rígido. Não encurtar uma aula apenas para reduzir volume.
 
-A linguagem deve ser clara, sóbria e precisa. Não deve ser enfeitada, promocional ou cheia de autoelogio. Não escrever frases como "esta apostila é didática", "este curso é profissional" ou "este material é completo". A qualidade deve aparecer na organização do raciocínio, na profundidade das explicações e na utilidade do texto para estudo.
+Combater repetição sem ganho conceitual: reexplicação integral de conteúdo já estabelecido, parágrafos que não acrescentam relação ou nuance, listas sem desenvolvimento, exemplos quase idênticos e conclusões equivalentes. O espaço recuperado deve ser usado para precisão, limites, exceções, modelos alternativos, controvérsias, consequências, exemplos progressivos e perguntas mais exigentes.
 
-O texto deve evitar frases vagas que parecem explicar, mas apenas repetem o nome do conceito. Também deve evitar definições mínimas quando o termo é estrutural para a formação.
+## Explicação em camadas e precisão
 
-Por exemplo, não basta escrever que "hardware é a parte física do computador". É necessário explicar o que significa parte física, por que ela importa, como participa do processamento e como se relaciona com software, dados, memória, armazenamento e entrada/saída.
+Quando adequado, apresentar intuição inicial, problema que o conceito resolve, definição operacional, definição técnica, relações e aplicação. Sempre identificar o estatuto da formulação: definição didática, definição técnica, modelo introdutório, convenção ou interpretação. Se uma simplificação for necessária, declarar o limite e indicar quando será refinada.
 
-## Explicacao em camadas
+Não apresentar como universal uma propriedade que depende de contexto, plataforma, disciplina ou terminologia escolhida. Quando houver alternativas terminológicas reconhecidas, escolher uma e registrar equivalências importantes.
 
-Cada conceito importante deve ser explicado em camadas:
+## Retomadas e progressão
 
-- primeiro, uma explicação intuitiva;
-- depois, uma explicação técnica;
-- depois, uma conexão com sistemas reais, dados, processamento, sistemas corporativos, Mainframe ou COBOL, quando fizer sentido.
+Uma retomada adequada relembra brevemente o conceito necessário, explica por que ele importa agora e conduz ao novo conteúdo. Não deve reconstruir vários parágrafos de aulas anteriores.
 
-A explicação intuitiva ajuda o aluno a formar uma primeira imagem mental. A explicação técnica corrige simplificações e introduz vocabulário adequado. A conexão com sistemas reais mostra por que o conceito importa fora do texto.
-
-## Conhecimento previo
-
-Não presumir conhecimento prévio do aluno. Quando um termo técnico aparecer pela primeira vez, ele deve ser explicado. Se o termo for usado novamente em outro contexto, pode ser retomado de forma mais breve, mas ainda com clareza suficiente para preservar continuidade.
-
-Isso não significa simplificar tudo ao ponto de perder precisão. Significa construir a precisão gradualmente, deixando claro quando uma primeira explicação é aproximada e quando uma explicação posterior será mais técnica.
-
-## Estrutura das aulas futuras
-
-Cada aula futura deve ter começo, desenvolvimento e fechamento. O começo deve apresentar o problema ou conceito que será estudado. O desenvolvimento deve explicar, relacionar, exemplificar e aprofundar. O fechamento deve sintetizar o que foi aprendido e indicar como aquele conhecimento será usado adiante.
-
-Cada aula futura deve responder, no mínimo:
-
-- O que é este conceito?
-- Por que ele existe?
-- Qual problema ele resolve?
-- Como ele funciona em termos simples?
-- Como ele funciona em termos técnicos?
-- Como ele aparece em sistemas reais?
-- Quais confusões iniciantes costumam fazer?
-- Como esse conceito será importante futuramente para Mainframe, COBOL ou sistemas corporativos?
-
-## Uso de topicos
-
-Tópicos são permitidos para organizar listas de critérios, etapas, perguntas, comparações e sínteses. Eles não devem ser usados como substitutos de desenvolvimento textual. Uma sequência de bullets sem explicação não deve ser considerada aula.
-
-Quando um tópico apresentar uma ideia importante, ele deve ser acompanhado de contexto suficiente para que o aluno entenda a relação entre aquela ideia e o restante da fase.
-
-## Padrao de extensao
-
-Aulas teóricas comuns devem ter desenvolvimento substancial. Aulas centrais devem ser longas quando necessário, especialmente quando apresentarem conceitos que sustentarão várias fases posteriores. Não criar aulas de poucos parágrafos quando o assunto exigir maturação.
-
-Não substituir explicação por bullet points. Não criar arquivos apenas para preencher estrutura. Se um arquivo não consegue explicar seu próprio propósito e sua relação com a formação, ele provavelmente não deveria existir ainda.
+Cada aula deve partir do nível já atingido pelo aluno e aumentar complexidade de forma perceptível. A sequência intuição, problema, definição, componentes, relações, distinções, limites, exceções, exemplos simples e complexos, aplicação, reflexão e domínio é uma referência, não uma fórmula obrigatória. A estrutura deve responder ao assunto.
 
 ## Exemplos
 
-Exemplos devem ser conceituais, contextualizados e relevantes para o ponto que está sendo explicado. Eles não precisam ser exemplos de código nas fases iniciais. Muitas vezes, um fluxo de dados, uma rotina administrativa, um arquivo de registros ou uma operação de processamento é mais adequado que um trecho de programa.
+Exemplos devem ser relevantes, contextualizados e progressivos. Evitar repetir banco, folha, estoque, cobrança, governo, relatório e cadastro da mesma maneira. Um caso pode ser retomado quando acrescentar dimensão nova, como qualidade de dados, regra, arquivo, ambiente ou erro. Variar domínios, escala, participantes e consequências quando isso melhorar a abstração.
 
-Quando o projeto chegar a COBOL, os exemplos de código deverão surgir depois da compreensão do problema. Código não deve ser usado como atalho para evitar explicação.
+Código só deve aparecer após compreensão do problema e quando a fase o justificar. Nas fases iniciais, fluxos, dados, registros e situações administrativas podem ser mais adequados.
 
-## Revisao editorial
+## Fontes e referências
 
-Todo conteúdo futuro deve ser revisado contra estas perguntas:
+Definições centrais, taxonomias e controvérsias devem ter fonte confiável ao final da aula ou em bibliografia canônica. Não é necessário citar cada parágrafo. Referências devem sustentar escolhas terminológicas, modelos, controvérsias e aprofundamento; documentação oficial deve ser priorizada para tecnologias específicas.
 
-- O texto explica ou apenas nomeia conceitos?
-- Há transições entre as ideias?
-- O aluno consegue entender por que o assunto aparece nesta fase?
-- Há conexão com sistemas reais quando isso é relevante?
-- A linguagem é sóbria e precisa?
-- O texto evita autopromoção?
-- O conteúdo prepara a próxima etapa sem antecipar assuntos fora de hora?
+## Revisão editorial
+
+Antes de considerar um conteúdo pronto, verificar:
+
+- O texto explica, relaciona e delimita, em vez de apenas nomear?
+- A extensão tem função pedagógica, sem preenchimento?
+- Retomadas são breves e funcionais?
+- Modelos e simplificações estão identificados?
+- Exemplos evoluem em vez de repetir o mesmo caso?
+- A estrutura foi escolhida pelo conteúdo, não pelo template?
+- Há fonte planejada ou registrada para definições centrais?
+- O conteúdo prepara a próxima etapa sem antecipá-la indevidamente?

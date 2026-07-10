@@ -1,39 +1,39 @@
 # Diretrizes do Projeto
 
-Este documento registra as regras centrais que devem orientar a construção da formação. Ele existe para impedir que o projeto se transforme em uma sequência apressada de tópicos, exemplos e comandos sem base conceitual suficiente.
+Este documento registra as decisões estruturais que orientam a construção da formação em fundamentos da computação, Ciência da Computação, sistemas corporativos, Mainframe e COBOL.
 
-## Principio central
+## Princípio central
 
-A formação começa pela base, não pela ferramenta. Ferramentas, linguagens e ambientes só devem entrar quando o aluno tiver condições de entender o problema que elas resolvem, o contexto em que são usadas e as consequências técnicas de suas decisões.
+A formação começa pelos fundamentos que tornam ferramentas, linguagens e ambientes compreensíveis. COBOL será estudado como instrumento para expressar regras corporativas, processar dados, lidar com arquivos, integrar rotinas batch e manter sistemas previsíveis. Mainframe será compreendido como consequência de fundamentos de sistemas, dados, processamento e operação.
 
-COBOL só entra depois que o aluno tiver base suficiente. A linguagem será estudada como instrumento para expressar regras corporativas, processar dados, lidar com arquivos, integrar rotinas batch e manter sistemas que precisam continuar funcionando com previsibilidade.
+## Construção e progressão
 
-Mainframe deve ser entendido como consequência de fundamentos de sistemas, dados, processamento e operação. O aluno precisa compreender por que ambientes desse tipo existem, que problemas atendem e por que ainda são relevantes em organizações que dependem de volume, estabilidade, histórico, controle e continuidade.
+- O projeto deve evoluir em etapas pequenas e verificáveis.
+- Cada fase deve ter objetivo, escopo, pré-requisitos, critérios de domínio e conexão explícita com fases anteriores e posteriores.
+- Não antecipar uma tecnologia apenas porque é popular; introduzi-la quando resolver um problema já compreendido pelo aluno.
+- Quando houver dúvida entre avançar ou consolidar uma base necessária, consolidar a base.
+- Templates orientam a consistência, mas não impõem uma fórmula única para todas as aulas.
 
-## Regras obrigatorias
+## Profundidade, extensão e eficiência
 
-- O projeto deve ser construído em etapas pequenas.
-- Nenhum prompt futuro deve tentar criar a formação inteira de uma vez.
-- Aulas não devem ser criadas antes de existir clareza sobre a fase correspondente.
-- Cada fase deve ter objetivo, escopo, critérios de domínio e conexão com as fases anteriores e posteriores.
-- O projeto deve evitar atalhos.
-- O projeto deve evitar conteúdo superficial.
-- O projeto deve evitar excesso de tópicos sem explicação.
-- O projeto deve evitar linguagem promocional.
-- O foco é aprendizado real, progressivo e sólido.
+Aulas extensas são uma escolha legítima do projeto. Em especial na Fase 0, podem ter aproximadamente 4.000 a 6.000 palavras ou mais quando a complexidade justificar. Extensão não é evidência suficiente de profundidade: o volume deve servir a definições precisas, relações, limites, exceções, modelos alternativos, exemplos progressivos e consequências.
 
-## Progressao antes de volume
+Não reduzir conteúdo apenas para diminuir volume. Ao eliminar repetição sem ganho conceitual, usar o espaço recuperado para aumentar qualidade e profundidade. Retomadas necessárias devem permanecer breves, declarar sua função e criar uma ponte para o conteúdo novo; não devem reescrever aulas anteriores.
 
-Criar muitos arquivos não significa criar uma boa formação. Cada novo documento deve cumprir um papel identificável: orientar, explicar, consolidar, revisar ou preparar uma etapa posterior. O projeto deve preferir poucos conteúdos bem desenvolvidos a uma grande quantidade de textos rasos.
+## Teoria e prática fundamentada
 
-Cada fase precisa deixar claro o que o aluno deve compreender antes de avançar. Quando houver dúvida entre avançar para um novo assunto ou reforçar uma base necessária, a prioridade deve ser reforçar a base.
+A teoria é base da formação, mas deve ser reforçada por aplicação. Matemática fundamenta raciocínio; código materializa abstrações; laboratórios permitem observação; projetos integram conceitos. Prática não substitui teoria e teoria não deve permanecer desconectada de evidência ou aplicação.
 
-## Coerencia entre fases
+Cada fase deve declarar quais formas de atividade são adequadas: explicação, exercício, experimento, código, laboratório ou projeto. A Fase 0 pode permanecer predominantemente conceitual. Não introduzir código artificialmente para aparentar prática.
 
-As fases não são blocos independentes. Pensamento computacional prepara lógica; lógica prepara algoritmos; representação de dados prepara arquivos e bancos; sistemas operacionais preparam batch, jobs e operação; engenharia de software prepara manutenção; sistemas corporativos preparam Mainframe; Mainframe prepara COBOL em contexto.
+## Precisão e fontes
 
-Todo conteúdo futuro deve explicitar essa continuidade. Um tema não deve aparecer apenas porque é comum em cursos de tecnologia, mas porque contribui para formar a compreensão necessária ao objetivo da formação.
+Definições centrais devem distinguir explicação didática, definição técnica, modelo introdutório, convenção e propriedade universal. Um modelo útil não pode ser apresentado como lei geral. Quando houver terminologias consolidadas diferentes, escolher uma para uso consistente, registrar a fonte e reconhecer alternativas relevantes.
 
-## Limites desta etapa inicial
+Conteúdos centrais devem usar fontes confiáveis: livros acadêmicos reconhecidos, normas técnicas, documentação oficial, currículos ACM/IEEE, publicações universitárias, fontes primárias e documentação IBM em assuntos de Mainframe. As fontes devem apoiar precisão e aprofundamento, não ornamentar o texto.
 
-Nesta etapa, o projeto cria apenas a fundação organizacional, pedagógica e editorial. Não devem ser criadas aulas completas, exercícios, código, exemplos COBOL, ambientes de desenvolvimento, Dockerfile, Makefile ou módulos inteiros. Esses elementos só devem surgir quando forem pedagogicamente necessários e estiverem alinhados à fase correspondente.
+## Exemplos e avaliação
+
+Exemplos podem voltar quando evoluírem: um mesmo caso pode revelar entrada, qualidade, validação, arquivo, ambiente e erro em momentos distintos. Repetir o cenário sem nova dimensão deve ser evitado.
+
+O conjunto avaliativo deve reunir, na proporção adequada à fase, recordação, compreensão, aplicação, análise, comparação, argumentação e criação. Critérios de domínio precisam produzir evidências observáveis, não apenas declarações de confiança.
