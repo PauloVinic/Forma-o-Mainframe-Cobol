@@ -127,3 +127,17 @@ Para dissertativas, definir conceitos esperados, pesos, erros graves, níveis de
 ## 12. Estado esperado depois da revisão
 
 Uma Fase 0 revista será uma base conceitual extensa, tecnicamente mais precisa e editorialmente mais eficiente. O aluno encontrará modelos identificados como modelos, conexões progressivas entre conceitos, exemplos que evoluem e atividades que revelam o que consegue explicar e analisar. A fase estará pronta para estudo com evidência de domínio e para servir de base à Fase 1, sem afirmar que substitui os fundamentos matemáticos, algorítmicos e práticos a serem construídos adiante.
+
+## Registro de execução
+
+### Etapa 1 — Revisão técnica das Aulas 04 e 07
+
+**Status:** concluída nesta etapa.
+
+**Conceitos corrigidos ou qualificados:** a Aula 04 passou a tratar dado como representação que pode ser observada, declarada, derivada, sintética ou hipotética; distinguiu dado, fato, registro, evidência e interpretação; apresentou DIKW como modelo influente e discutido; e tratou qualidade como adequação ao uso em dimensões não universais. A Aula 07 passou a separar necessidade, requisito, regra de negócio, especificação, algoritmo, implementação, programa, código-fonte, software, sistema e processo; também distinguiu comportamento esperado de comportamento observado.
+
+**Fontes registradas:** `referencias/fontes-da-fase-00.md` recebeu as fontes usadas para as Aulas 04 e 07.
+
+**Pendências observadas para etapas posteriores:** as Aulas 08 e 09 ainda usam formulações mais simplificadas sobre código-fonte, compilação, interpretação e runtime; a Aula 12 ainda precisa revisar sua taxonomia de erro, defeito e falha. As Aulas 03, 05, 06, 10 e 11 devem ser verificadas nas etapas previstas para compatibilizar glossários e exemplos. Nenhuma dessas aulas foi alterada agora.
+
+**Próxima etapa:** revisão técnica das Aulas 09 e 12.
