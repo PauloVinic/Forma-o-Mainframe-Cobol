@@ -22,7 +22,7 @@ Processamento é o movimento que faz um sistema deixar de apenas guardar ou most
 
 ## Processar em sentido amplo
 
-Processar, em sentido amplo, significa submeter algo a uma sequência de ações, regras ou transformações para produzir um resultado. O conceito é anterior ao computador. Pessoas e organizações já processavam informações, documentos, solicitações e cálculos muito antes da automação digital.
+Nesta formação, processamento é a aplicação organizada de operações, regras ou procedimentos sobre representações, eventos, solicitações ou estado, produzindo mudança de valor, estrutura, classificação, condição, decisão ou efeito. É uma definição operacional, não universal. O conceito é anterior ao computador: pessoas e organizações processavam documentos, solicitações e cálculos antes da automação digital.
 
 Uma folha de pagamento manual, por exemplo, exige reunir dados de funcionários, salários, faltas, horas extras, benefícios, descontos e regras. Alguém confere documentos, calcula valores, aplica critérios, registra resultados e prepara pagamentos. Isso é processamento, mesmo sem computador. O mesmo ocorre quando uma equipe analisa pedidos, organiza documentos, calcula uma nota escolar, confere uma prestação de contas ou classifica solicitações por prioridade.
 
@@ -30,7 +30,7 @@ A computação não inventou o processamento. Ela automatizou, acelerou, padroni
 
 ## Processamento em computação
 
-Processamento computacional é a execução de instruções sobre dados para produzir resultados. O computador não decide por intuição, experiência humana ou bom senso. Ele executa instruções definidas por software, usando dados representados de alguma forma e recursos de hardware disponíveis.
+Processamento computacional ocorre quando programas, executados em ambiente computacional, aplicam instruções e regras sobre dados, eventos ou estado. O computador não decide por intuição ou bom senso; executa mecanismos definidos, usando representações e recursos disponíveis. Processamento não é sinônimo de programa: programa é implementação que pode participar do processamento; execução é o momento em que operações ocorrem.
 
 Em nível inicial, a relação pode ser vista assim: dados são recebidos ou recuperados, instruções indicam o que fazer, regras determinam condições e limites, transformações modificam ou produzem valores, e saídas apresentam, gravam ou enviam resultados. Um sistema que calcula desconto precisa receber valor, regra de desconto e condição aplicável. Um sistema que valida cadastro precisa receber campos, regras de obrigatoriedade e critérios de aceitação. Um sistema que atualiza saldo precisa receber movimentação, saldo anterior e regras de atualização.
 
@@ -110,11 +110,21 @@ Um arquivo de cobrança pode conter muitos títulos, contratos ou parcelas a ser
 
 Também é comum consolidar benefícios de cidadãos, gerar relatórios contábeis ou combinar eventos de vários sistemas. Esta aula não ensina processamento batch tecnicamente, mas prepara a noção: em ambientes corporativos, muitas rotinas existem para tratar conjuntos de registros com regras controladas, repetição e rastreabilidade.
 
-## Processamento individual, em lote e contínuo
+## Dimensões do processamento
 
-Processamento individual ocorre quando uma operação é tratada isoladamente, como uma transferência, uma venda, uma consulta de cadastro ou uma solicitação registrada. O foco está em uma ocorrência específica, geralmente com resposta imediata ou próxima do momento da ação.
+Classificações pertencem a eixos diferentes e podem se combinar. Quanto à organização temporal, processamento pode ser periódico, sob demanda, em lote ou contínuo por fluxo. Quanto à interação, pode ser interativo, não interativo, automatizado ou assistido por pessoas. Quanto à unidade tratada, pode focalizar item, evento, transação, conjunto ou fluxo. Quanto à resposta esperada, pode ser imediata, diferida ou próxima de tempo real.
+
+Uma operação individual trata ocorrência específica, como transferência ou solicitação. Isso não é contrário a lote: transação pode ser interativa, e lote pode ser automatizado e periódico. Processamento contínuo descreve fluxo ou chegada frequente de dados; não significa que nada interrompe o sistema.
 
 Processamento em lote ocorre quando um conjunto de registros é tratado em uma rotina. Em vez de processar uma ocorrência por vez conforme o usuário interage, o sistema processa um grupo de dados, como folha de pagamento, cobranças de um dia, arquivo recebido ou fechamento contábil. A ideia principal é tratar volume de forma organizada e controlada.
+
+## Estado, efeitos e adequação do resultado
+
+Processamento pode consultar estado anterior, produzir novo estado ou rejeitar transição. Pedido pode passar de pendente para aprovado; conta, de ativa para bloqueada; arquivo, de recebido para processado. Também pode gerar efeitos além de informação: reservar estoque, autorizar pagamento, criar registro ou acionar etapa posterior.
+
+Armazenamento preserva representação; transmissão move ou comunica; consulta localiza e disponibiliza; apresentação organiza resultado para percepção. São funções distintas de transformação, mas podem ocorrer no mesmo fluxo. Consulta que filtra, ordena ou totaliza inclui processamento; gravar resultado preserva efeito, mas não o esgota.
+
+Mesmas entradas aparentes não garantem mesma saída se estado, tempo, configuração, dados externos ou permissões mudarem. Um processamento pode estar correto segundo suas regras e ainda produzir resultado inadequado por dados ruins, regra desatualizada ou contexto incorreto. A Aula 06 usará EPS para analisar essas relações sem reduzi-las a linha única.
 
 Processamento contínuo ocorre quando eventos são tratados ao longo do tempo conforme chegam ou são detectados. Pode envolver monitoramento, atualização de eventos, recepção de mensagens ou tratamento de solicitações sucessivas. A distinção entre individual, em lote e contínuo será importante futuramente porque diferentes sistemas têm diferentes exigências de tempo, volume, controle, rastreabilidade e operação.
 
@@ -248,6 +258,11 @@ Também vimos que sistemas corporativos exigem processamento correto, previsíve
 **Exceção**: situação que foge do fluxo comum e exige regra específica, análise ou tratamento diferenciado.
 
 **Erro de processamento**: resultado incorreto ou falha causada durante a transformação de dados por regra, software, operação, ambiente ou entrada inadequada.
+
+## Referências e leituras para aprofundamento
+
+- ACM, IEEE Computer Society e AAAI. *Computer Science Curricula 2023*.
+- IBM. *Mainframe workloads: Batch and online transaction processing*.
 
 ## Critérios de domínio
 

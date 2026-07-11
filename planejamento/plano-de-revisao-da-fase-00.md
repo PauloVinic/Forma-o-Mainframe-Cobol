@@ -161,3 +161,13 @@ Uma Fase 0 revista será uma base conceitual extensa, tecnicamente mais precisa 
 **Pendências:** Aulas 05 e 06 devem revisar processamento e EPS como modelo; Aula 08 ainda precisa alinhar fonte, configuração e artefatos. Nenhuma aula posterior foi alterada.
 
 **Próxima etapa:** revisão técnica e pedagógica das Aulas 05 e 06.
+
+### Etapa 4 — Revisão técnica das Aulas 05 e 06
+
+**Status:** concluída nesta etapa.
+
+**Conceitos qualificados:** processamento foi definido como transformação organizada sobre representações, eventos ou estado, distinguindo-se de armazenamento, transmissão, consulta e apresentação. Lote, interação, transação e fluxo foram reorganizados como dimensões combináveis. EPS passou a ser explicitamente modelo analítico dependente de fronteira, contexto e estado.
+
+**Pendências:** Aulas 08, 10 e 11 permanecem para revisão de fonte, arquivos, ambiente e configuração. Nenhuma outra aula foi alterada.
+
+**Próxima etapa:** revisão técnica e pedagógica das Aulas 08, 10 e 11.

@@ -26,7 +26,7 @@ O modelo não substitui uma análise detalhada, mas cria um primeiro mapa para i
 
 ## O modelo entrada, processamento e saída
 
-O modelo entrada, processamento e saída descreve uma operação como um fluxo organizado. A entrada é aquilo que chega ao sistema ou processo para ser usado. O processamento é o tratamento aplicado sobre essa entrada. A saída é o resultado produzido. A ideia pode parecer elementar, mas é uma das bases da computação porque permite separar origem, transformação e resultado.
+O modelo entrada–processamento–saída (EPS) é abstração útil para analisar origem, transformação e resultado. Entrada é aquilo que atravessa a fronteira escolhida e influencia o sistema; processamento aplica operações considerando regras, estado e contexto; saída é resultado, mudança ou efeito relevante. O modelo simplifica a realidade: pode ocultar estado persistente, feedback, concorrência, ambiente e interação. É ferramenta de análise, não descrição universal e completa.
 
 Quando uma pessoa calcula o valor total de uma compra, os itens, preços, quantidades e descontos funcionam como entradas. O processamento envolve somar valores, multiplicar quantidades, aplicar desconto e considerar impostos ou regras comerciais. A saída pode ser o total a pagar, um recibo, uma nota, uma autorização de pagamento ou uma atualização no estoque. Mesmo antes de falar em computador, o fluxo já existe.
 
@@ -36,7 +36,7 @@ O modelo também evita confusões. Se uma saída está errada, a causa pode esta
 
 ## O que é entrada
 
-Entrada é qualquer dado, sinal, documento, comando, solicitação, evento ou referência que chega a um processo para ser usado. A entrada não precisa ser digitada por uma pessoa. Ela pode ser preenchida em um formulário, recebida em um arquivo, enviada por outro sistema, extraída de um cadastro, lida de um registro armazenado, capturada por um dispositivo, recebida como mensagem ou definida como parâmetro de execução.
+Entrada é dado, sinal, documento, comando, solicitação, evento ou referência que atravessa a fronteira relevante e influencia o processamento. Não precisa ser digitada: pode vir de arquivo, outro sistema, dispositivo, mensagem ou parâmetro. Estado existente, configuração, versão, horário, identidade e recursos disponíveis nem sempre são entradas explícitas, mas são condições contextuais capazes de alterar resultado.
 
 Um pedido de compra possui entradas como identificação do cliente, produtos solicitados, quantidades, endereço, forma de pagamento e condições comerciais. Uma análise de benefício pode receber documentos, dados cadastrais, histórico, datas, comprovantes e regras de elegibilidade. Uma rotina de cobrança pode receber contratos em aberto, valores, vencimentos, juros, pagamentos já registrados e parâmetros sobre quando cobrar.
 
@@ -78,7 +78,7 @@ Em estoque, uma venda pode gerar dados intermediários como saldo reservado, sal
 
 ## O que é saída
 
-Saída é o resultado produzido por um processo. Ela pode ser algo mostrado a uma pessoa, gravado para uso posterior, enviado a outro sistema ou registrado como evidência. Assim como entrada não é apenas digitação, saída não é apenas tela.
+Saída é aquilo que atravessa a fronteira analisada ou representa resultado relevante. Pode ser dado, arquivo, mensagem, decisão, rejeição, registro, atualização de estado ou efeito operacional. Assim como entrada não é apenas digitação, saída não é apenas tela. A fronteira muda a classificação: arquivo é saída do cálculo, entrada do banco e parte de resultado para o processo organizacional.
 
 Uma saída pode ser informação exibida em consulta, arquivo gerado, relatório, mensagem, registro atualizado, mudança de status, comprovante, alerta, lançamento contábil, resposta enviada a outro sistema, notificação, histórico, protocolo, evidência de auditoria ou dado preparado para outro processamento. Em alguns casos, a saída principal é uma atualização silenciosa: o usuário não vê grande mudança na tela, mas o estado de um contrato, pedido, pagamento ou cadastro foi alterado.
 
@@ -139,6 +139,12 @@ Em vendas, pedidos aprovados podem se tornar entrada para faturamento. O faturam
 Dados recebidos de governo podem se tornar entrada para controle interno de uma empresa ou instituição. Lançamentos contábeis gerados por sistemas operacionais podem se tornar entrada para fechamento contábil. Um status atualizado em atendimento pode se tornar entrada para logística, cobrança ou relacionamento com o cliente.
 
 Essa cadeia de processamento exige cuidado. Quando uma saída vira entrada, ela precisa ser compreensível, consistente, completa e compatível com o próximo processo. Uma saída pobre pode apenas deslocar o problema para a etapa seguinte.
+
+## Estado, feedback, ciclos e processamento parcial
+
+EPS pode ocorrer em ciclos: entrada atualiza estado, produz saída, aguarda evento e volta a processar. Em sistemas interativos, resposta gera nova entrada; em sistemas orientados a eventos, pagamento recebido, arquivo disponibilizado ou prazo vencido pode iniciar novo tratamento; em fluxos contínuos, uma entrada e uma saída isoladas podem ser apenas recorte analítico. Diferentes atividades podem ocorrer simultaneamente ou intercaladas, o que pode afetar ordem e consistência; concorrência será aprofundada futuramente.
+
+Saída técnica não é necessariamente resultado útil. Um arquivo pode ser gerado corretamente e enviado ao destino errado; parte dos itens pode ser processada antes de falha; reexecução pode duplicar efeito se contexto não for controlado. Rejeitados, registros intermediários e evidências são saídas importantes porque permitem encadeamento, conferência e retomada. Feedback não é só opinião: é retorno que influencia processamento posterior, como limite atualizado após transação ou fila de reprocessamento.
 
 ## Entrada, processamento e saída em processos manuais
 
@@ -284,6 +290,12 @@ A aula prepara a compreensão futura de programas. Um programa será entendido c
 **Integração**: relação organizada entre sistemas ou processos que trocam entradas e saídas.
 
 **Análise de erro**: investigação que busca identificar onde o fluxo falhou, considerando entrada, processamento, saída, contexto e interpretação.
+
+## Referências e leituras para aprofundamento
+
+- IBM. *Transaction processing terms and concepts*.
+- IBM. *Mainframe workloads: Batch and online transaction processing*.
+- National Institute of Standards and Technology. *Computer Security Resource Center Glossary: Transaction*.
 
 ## Critérios de domínio
 

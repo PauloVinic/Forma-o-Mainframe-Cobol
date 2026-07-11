@@ -141,3 +141,13 @@ Este arquivo registra fontes efetivamente consultadas ou recomendadas para suste
 - **Conceito consultado:** distinções entre error/mistake, defect/fault e failure.
 - **Uso:** fundamentar a convenção operacional engano humano → defeito → falha, declarada como modelo útil e não universal.
 - **Link:** https://istqb.org/
+
+## Aula 05 — Processamento
+
+- **Instituição:** ACM, IEEE Computer Society e AAAI. **Título:** *Computer Science Curricula 2023*. **Ano:** 2024. **Tipo:** diretriz curricular. **Conceito:** fundamentos de sistemas, eventos e desenvolvimento. **Uso:** situar processamento, estado e reatividade no percurso de Ciência da Computação. **Link:** https://csed.acm.org/
+- **Instituição:** IBM. **Título:** *Mainframe workloads: Batch and online transaction processing*. **Ano:** não indicado na página consultada. **Tipo:** documentação institucional. **Conceito:** lote e transação online. **Uso:** distinguir dimensões de processamento sem antecipar prática Mainframe. **Link:** https://www.ibm.com/docs/en/zos-basic-skills?topic=today-mainframe-workloads-batch-online-transaction-processing
+
+## Aula 06 — Entrada, processamento e saída
+
+- **Instituição:** IBM. **Título:** *Transaction processing terms and concepts*. **Ano:** não indicado na página consultada. **Tipo:** documentação institucional. **Conceito:** transação, tarefa, unidade de trabalho e alterações relacionadas. **Uso:** qualificar entrada, estado, efeitos e processamento parcial. **Link:** https://www.ibm.com/docs/en/txseries/10.1.0?topic=processing-transaction-terms-concepts
+- **Instituição:** National Institute of Standards and Technology. **Título:** *Computer Security Resource Center Glossary: Transaction*. **Ano:** não indicado na página consultada. **Tipo:** vocabulário técnico institucional. **Conceito:** transação como evento digital discreto. **Uso:** evitar reduzir transação a pagamento ou velocidade. **Link:** https://csrc.nist.gov/glossary/term/transaction
