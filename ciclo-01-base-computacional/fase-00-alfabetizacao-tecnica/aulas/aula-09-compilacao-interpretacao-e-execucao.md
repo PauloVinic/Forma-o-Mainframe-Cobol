@@ -50,15 +50,15 @@ Essa visão também ajuda a separar responsabilidades. O código-fonte expressa 
 
 ## O que é compilação
 
-Compilação é um processo de tradução ou transformação de código-fonte escrito em uma linguagem para uma forma mais próxima da execução por uma máquina, sistema ou ambiente. Essa forma pode ser um executável, um módulo, um artefato intermediário ou outro resultado preparado, dependendo da tecnologia. O ponto introdutório é entender que a compilação cria uma etapa entre escrever fonte e executar comportamento.
+Compilação é, nesta aula, o processo de analisar e transformar uma representação de programa em outra representação. O resultado pode ser código de máquina, assembly, código objeto, bytecode, outra representação intermediária, outra linguagem ou artefato que ainda precisará ser combinado e carregado. Portanto, compilação não é sinônimo de gerar diretamente um arquivo executável nativo; é uma família de transformações usada em pipelines diferentes.
 
-Durante a compilação, uma ferramenta chamada compilador analisa o código-fonte. Ela pode verificar se a escrita respeita regras formais da linguagem, se certas estruturas estão completas e se o código pode ser transformado para a forma esperada. Quando encontra problemas formais, a compilação pode falhar antes que o programa execute.
+Durante a compilação, uma ferramenta chamada compilador pode realizar análise léxica, análise sintática, verificações semânticas, análise de tipos, transformações, otimizações e geração de outra representação. Nem todo compilador realiza as mesmas verificações e nem toda linguagem possui o mesmo sistema de tipos. Problemas de sintaxe, nomes não resolvidos, declarações ausentes, incompatibilidades de tipos, dependências ou ligação entre partes podem ser detectados em etapas diferentes, conforme linguagem e ferramenta. Compilação pode falhar; quando é bem-sucedida, demonstra somente que a ferramenta aceitou e transformou o artefato segundo as condições que verificou.
 
 Compilação bem-sucedida não garante que o programa esteja correto em termos de regra de negócio. Ela indica que o código atendeu a certas exigências formais e pôde ser preparado. Um cálculo de desconto com fórmula errada pode compilar. Uma validação cadastral que aceita dado indevido pode compilar. Um relatório que soma campo errado pode compilar. A ferramenta não sabe automaticamente qual era a intenção da organização.
 
 ## O que é interpretação
 
-Interpretação é uma forma de conduzir instruções em que um interpretador lê, analisa e executa ou orienta a execução do código de maneira mediada. Em vez de depender apenas de um executável previamente produzido por compilação tradicional, o programa é conduzido por um mecanismo capaz de compreender a linguagem ou uma forma intermediária adequada.
+Interpretação é execução mediada por programa ou ambiente que lê, analisa e realiza operações descritas por outra representação. Um interpretador pode trabalhar diretamente com código-fonte, com uma árvore ou estrutura interna, com bytecode ou com outra representação intermediária. A imagem de que ele executa “linha por linha” pode ajudar no início, mas é insuficiente: linhas são forma de apresentação para pessoas, e implementações reais podem analisar blocos, manter estruturas internas e compilar trechos durante a própria execução.
 
 Comparar interpretação com compilação exige cuidado. Para iniciantes, é útil imaginar compilação como uma preparação anterior e interpretação como uma condução mais próxima do momento da execução. Mas essa distinção não deve virar regra rígida. Tecnologias reais podem misturar etapas, preparar partes antecipadamente, traduzir trechos sob demanda ou usar formas intermediárias.
 
@@ -78,9 +78,33 @@ Executável é uma forma preparada de um programa que pode ser colocada em execu
 
 Script é um texto de instruções normalmente conduzido por um interpretador ou ambiente capaz de lê-lo e executá-lo de forma mediada. O termo aparece muito em automação, tarefas operacionais e linguagens em que o próprio arquivo textual pode ser usado diretamente por um mecanismo de execução. Isso não significa que script seja improviso ou menos importante. Um script pode sustentar tarefas críticas se estiver inserido em processo controlado.
 
-Bytecode é uma forma intermediária entre o código-fonte e a execução final em determinadas tecnologias. Ele não costuma ser escrito diretamente por pessoas iniciantes; normalmente é gerado por ferramentas e executado por uma máquina virtual ou ambiente próprio. Máquina virtual, nesse contexto, é um mecanismo que oferece uma camada de execução para esse formato intermediário. Runtime, ou ambiente de execução, é o conjunto de componentes necessários para que um programa execute: bibliotecas, serviços, regras, recursos e mecanismos que conduzem o comportamento.
+Bytecode é nome usado por algumas tecnologias para uma representação intermediária projetada para execução por máquina abstrata, interpretador ou runtime específico. Não existe um bytecode universal: formatos e objetivos variam. Bytecode não é sinônimo de toda representação intermediária e não é necessariamente código de máquina da CPU física; pode ser interpretado, verificado, transformado ou compilado novamente durante a execução.
+
+Máquina concreta é o hardware ou arquitetura física que executa instruções da CPU. Máquina abstrata é modelo de execução definido por regras e instruções próprias. Neste contexto, máquina virtual de linguagem implementa uma máquina abstrata sobre outra plataforma. Virtualização completa de sistema operacional é outro uso do termo “máquina virtual” e será estudada futuramente; não deve ser confundida com a máquina virtual de uma linguagem.
+
+Runtime é conjunto de mecanismos, bibliotecas, serviços e condições que apoiam uma tecnologia durante a execução. Conforme o ecossistema, pode incluir gerenciamento de memória, tratamento de exceções, carregamento de módulos, bibliotecas básicas, interface com sistema operacional, coleta de lixo, execução de bytecode ou compilação just-in-time. Nem todo runtime inclui todos esses elementos. Runtime não é sinônimo de sistema operacional, embora use seus serviços; também não é idêntico a máquina virtual ou ambiente de execução, embora possa fazer parte deles.
 
 Esses termos aparecem no estudo de programação porque mostram que não existe uma única maneira de sair do código-fonte até a execução. Alguns caminhos geram executáveis. Outros conduzem scripts. Outros usam bytecode e máquinas virtuais. Todos dependem de ambiente.
+
+## Representações intermediárias e pipelines possíveis
+
+Uma representação intermediária existe quando uma ferramenta separa a forma em que o programa foi escrito da forma em que será finalmente executado. Essa separação pode facilitar análise, otimização, portabilidade e geração para arquiteturas diferentes. Ela não é obrigatória em toda tecnologia. O LLVM, por exemplo, documenta uma representação intermediária usada em análise e transformações; outras tecnologias adotam formatos e objetivos distintos.
+
+Não há uma sequência universal de etapas. Um pipeline possível é: código-fonte → compilação → código objeto → ligação entre partes e bibliotecas → executável → carregamento → execução. Outro é: código-fonte → bytecode → runtime ou máquina virtual → execução, com possível compilação just-in-time de trechos durante o funcionamento. Alguns scripts são entregues diretamente a um interpretador. Os exemplos mostram modelos, não receitas que toda linguagem deve seguir.
+
+**Compilação antecipada** (ahead-of-time, ou AOT) é estratégia em que transformação relevante ocorre antes da execução principal. **Compilação just-in-time** (JIT) é estratégia em que determinados trechos podem ser transformados durante ou próximo da execução. Uma implementação pode combinar as duas. Nenhuma estratégia, isoladamente, prova qualidade, segurança, correção ou desempenho em todas as situações.
+
+## Carregamento, processo e execução
+
+Além de compilar ou interpretar, alguns caminhos incluem montagem, ligação, carregamento e inicialização. Montagem costuma transformar assembly em forma mais próxima de código de máquina; ligação combina componentes e resolve referências entre eles; carregamento disponibiliza artefatos e recursos para que possam começar a executar. Nem todos os ambientes expõem essas etapas com os mesmos nomes ou separações.
+
+A Aula 07 distinguiu programa armazenado de processo em execução. Um artefato armazenado pode ser fonte, script, bytecode, código objeto ou executável; nenhum deles está ativo apenas por existir. Quando um ambiente inicia uma execução, recursos e estado são associados a ela. Processo é a abstração de sistema operacional usada, em nível inicial, para representar essa execução ativa. O mesmo programa pode originar múltiplos processos ou execuções com entradas, versões e consequências diferentes.
+
+## O que uma etapa bem-sucedida demonstra
+
+Salvar um arquivo demonstra apenas que ele foi preservado. Análise sintática bem-sucedida não demonstra que a regra tem sentido. Compilação bem-sucedida não demonstra que a regra de negócio está correta. Ligação bem-sucedida não demonstra que o ambiente correto estará disponível. Iniciar execução não demonstra término correto; terminar sem falha aparente não demonstra resultado correto; resultado correto em um caso não prova correção geral.
+
+Essa sequência prepara a próxima aula. Ela permite separar artefato, transformação, execução e resultado antes de investigar por que algo deu errado. Em um processamento de folha, por exemplo, o código pode compilar e gerar artefato; o processo pode iniciar com arquivo disponível; ainda assim, uma tabela de desconto desatualizada pode produzir valores incorretos. A causa pode estar em dado, requisito, configuração ou implementação, e não na etapa que apenas mostrou sucesso técnico.
 
 ## Programa armazenado e programa em execução
 
@@ -278,3 +302,10 @@ Também é esperado que o aluno compreenda que compilar não significa estar cor
 O aluno deve diferenciar erro de sintaxe, erro de tradução, erro de execução e erro lógico em nível inicial. Deve explicar por que entrada, dados, regras, configuração, versão e ambiente influenciam o comportamento observado.
 
 Por fim, deve conectar o tema com programas, sistemas corporativos, COBOL e Mainframe futuramente. O domínio esperado é perceber que sistemas reais precisam controlar preparação, execução, versão, evidências, entradas e saídas antes de avançar para arquivos, ambientes computacionais e categorias de erro.
+
+## Referências e leituras para aprofundamento
+
+- Oracle. *The Java Virtual Machine Specification*.
+- Python Software Foundation. *Python Language Reference — Execution model*.
+- LLVM Project. *LLVM Language Reference Manual*.
+- ACM, IEEE Computer Society e AAAI. *Computer Science Curricula 2023*.

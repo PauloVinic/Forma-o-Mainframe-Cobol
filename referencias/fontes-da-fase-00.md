@@ -77,3 +77,52 @@ Este arquivo registra fontes efetivamente consultadas ou recomendadas para suste
 - **Conceito consultado:** relação entre fundamentos algorítmicos, fundamentos de linguagens de programação e desenvolvimento de software.
 - **Uso:** situar a distinção entre algoritmo, implementação e leitura/escrita de programas no percurso formativo futuro.
 - **Link:** https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm
+
+## Aula 09 — Compilação, interpretação e execução
+
+### Oracle
+
+- **Título:** *The Java Virtual Machine Specification*.
+- **Ano:** 2026, edição Java SE 26 indicada na especificação consultada.
+- **Tipo:** especificação oficial.
+- **Conceito consultado:** máquina virtual, formato de classe, áreas de dados em tempo de execução e bytecode.
+- **Uso:** diferenciar máquina abstrata, bytecode e componentes de execução sem generalizar a JVM para todas as tecnologias.
+- **Link:** https://docs.oracle.com/en/java/javase/26/docs/specs/jvms/index.html
+
+### Python Software Foundation
+
+- **Título:** *Python Language Reference — Execution model*.
+- **Ano:** 2026, versão da documentação consultada.
+- **Tipo:** documentação oficial de linguagem.
+- **Conceito consultado:** modelo de execução, processo, runtime e distinção entre interpretador e interpretador de bytecode.
+- **Uso:** mostrar que uma implementação pode combinar compilação e interpretação.
+- **Link:** https://docs.python.org/3/reference/executionmodel.html
+
+### LLVM Project
+
+- **Título:** *LLVM Language Reference Manual*.
+- **Ano:** não indicado como ano editorial fixo na página consultada.
+- **Tipo:** documentação técnica oficial.
+- **Conceito consultado:** representação intermediária e suas formas em memória, serializada e textual.
+- **Uso:** explicar que IR não é necessariamente bytecode e pode apoiar análise e transformação.
+- **Link:** https://llvm.org/docs/LangRef.html
+
+## Aula 12 — Erros, defeitos, falhas e incidentes
+
+### ISO/IEC/IEEE
+
+- **Título:** *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*.
+- **Ano:** 2017.
+- **Tipo:** norma internacional de vocabulário.
+- **Conceito consultado:** terminologia de engenharia de sistemas e software.
+- **Uso:** orientar a escolha cautelosa de termos, reconhecendo variações entre áreas.
+- **Link:** https://www.iso.org/standard/71952.html
+
+### International Software Testing Qualifications Board (ISTQB)
+
+- **Título:** *Standard Glossary of Terms Used in Software Testing*.
+- **Ano:** não confirmado de forma única para a versão oficial consultada.
+- **Tipo:** glossário técnico de teste de software.
+- **Conceito consultado:** distinções entre error/mistake, defect/fault e failure.
+- **Uso:** fundamentar a convenção operacional engano humano → defeito → falha, declarada como modelo útil e não universal.
+- **Link:** https://istqb.org/

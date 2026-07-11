@@ -141,3 +141,13 @@ Uma Fase 0 revista será uma base conceitual extensa, tecnicamente mais precisa 
 **Pendências observadas para etapas posteriores:** as Aulas 08 e 09 ainda usam formulações mais simplificadas sobre código-fonte, compilação, interpretação e runtime; a Aula 12 ainda precisa revisar sua taxonomia de erro, defeito e falha. As Aulas 03, 05, 06, 10 e 11 devem ser verificadas nas etapas previstas para compatibilizar glossários e exemplos. Nenhuma dessas aulas foi alterada agora.
 
 **Próxima etapa:** revisão técnica das Aulas 09 e 12.
+
+### Etapa 2 — Revisão técnica das Aulas 09 e 12
+
+**Status:** concluída nesta etapa.
+
+**Conceitos corrigidos ou qualificados:** a Aula 09 passou a distinguir transformação entre representações, compilação bem-sucedida, interpretação mediada, representação intermediária, bytecode, máquina abstrata, máquina virtual, runtime, AOT, JIT, carregamento e processo. A Aula 12 passou a declarar convenção operacional para engano humano, defeito, falha, incidente, sintoma e causa; substituiu classificações exclusivas por dimensões de origem, detecção, manifestação e impacto.
+
+**Pendências observadas para etapas posteriores:** a Aula 08 ainda deve ser refinada para alinhar código-fonte, configuração e artefatos; as Aulas 10 e 11 devem ser revisadas para aprofundar formato, ambiente e configuração sem contradição. Nenhuma delas foi alterada agora.
+
+**Próxima etapa:** revisão das Aulas 01, 02 e 03.
