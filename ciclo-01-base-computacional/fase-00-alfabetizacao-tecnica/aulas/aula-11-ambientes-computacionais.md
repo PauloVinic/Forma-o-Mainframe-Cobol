@@ -24,11 +24,11 @@ Agora o próximo passo é compreender o lugar lógico e operacional onde tudo is
 
 ## O que é um ambiente computacional
 
-Ambiente computacional é o conjunto de condições, recursos, configurações, programas, permissões, dados e infraestrutura que permitem que um sistema, programa ou processo seja usado ou executado. Ele inclui elementos físicos, lógicos, operacionais e organizacionais. O computador pode fazer parte do ambiente, mas o ambiente não se reduz ao computador.
+Ambiente computacional é o conjunto de condições sob as quais um sistema é construído, implantado, executado ou operado: recursos, serviços, versões, configurações, identidades, permissões, dados, rede e políticas. Ele inclui elementos físicos, lógicos, operacionais e organizacionais. O computador pode fazer parte do ambiente, mas ambiente não é sinônimo de máquina, sistema operacional ou nuvem.
 
-Um ambiente envolve a máquina disponível, o sistema operacional, os arquivos presentes, as pastas e caminhos esperados, os usuários cadastrados, as permissões concedidas, as configurações aplicadas, as bibliotecas instaladas, os serviços acessíveis, a rede, os bancos de dados, as versões em uso, os dados disponíveis, os recursos de armazenamento e processamento, as políticas de segurança e as integrações com outros sistemas. Cada elemento pode influenciar o comportamento de uma execução.
+Para não misturar categorias, convém perguntar dimensões diferentes: finalidade (desenvolvimento, teste ou produção), localização ou hospedagem (local, servidor, datacenter, nuvem ou mainframe), plataforma (sistema operacional, runtime e serviços) e governança (quem controla acesso, mudança, dados e evidências). Um ambiente pode ser ao mesmo tempo de teste, hospedado em nuvem e sujeito a controles corporativos.
 
-Por isso, ambiente é uma ideia de contexto. Quando se diz que um programa roda em determinado ambiente, está se dizendo que ele depende de um conjunto de condições para funcionar como esperado. Essas condições podem ser simples em um estudo inicial, mas tendem a ser numerosas em sistemas corporativos. Quanto maior a responsabilidade do sistema, mais importante se torna controlar o ambiente.
+Quando se diz que um programa roda em determinado ambiente, afirma-se que ele depende dessas condições para funcionar como esperado. Quanto maior a responsabilidade do sistema, mais importante se torna tornar as condições reproduzíveis, registradas e controladas.
 
 ## Ambiente não é apenas máquina
 
@@ -69,6 +69,12 @@ Configurações também podem alterar comportamento. Um ambiente pode apontar pa
 Permissões influenciam a execução. Um usuário pode executar uma rotina em ambiente local, mas não ter autorização para acessar uma pasta em servidor. Uma versão diferente de biblioteca pode alterar uma validação, um cálculo, uma regra de compatibilidade ou a forma de ler um arquivo. Dados de teste podem ser pequenos e previsíveis, enquanto dados reais podem conter exceções, históricos, cadastros incompletos e situações antigas.
 
 Caminhos de arquivo podem mudar entre ambientes. Horário, fuso, idioma e formato regional podem alterar datas, separadores, ordenações e apresentações. Uma integração externa pode estar disponível em um ambiente e indisponível em outro. Um ambiente pode ter versão antiga do programa, enquanto outro recebeu atualização. A frase “é o mesmo programa” precisa ser examinada com cuidado: o arquivo do programa pode ser o mesmo, mas o contexto de execução não.
+
+## Ciclo de vida, reprodução e desvio
+
+Ambiente participa de mais que a execução: construção prepara artefatos; implantação leva uma versão a um destino; inicialização cria processos e conexões; operação acompanha efeitos e incidentes. Configurações, segredos, identidades, dependências, horário, idioma, fuso, rede e recursos podem variar em cada etapa.
+
+Reprodutibilidade é a capacidade de recriar condições relevantes para obter resultado comparável. Paridade é a busca por ambientes suficientemente semelhantes para que uma validação seja útil; não exige que todos sejam idênticos. Quando mudanças não registradas afastam um ambiente de outro, ocorre desvio de configuração. Máquinas virtuais e contêineres podem ajudar a isolar ou repetir partes do ambiente, mas não eliminam dados, rede, permissões e governança.
 
 ## Ambiente local
 
@@ -243,7 +249,7 @@ Por fim, iniciantes podem não perceber que sistemas corporativos exigem control
 
 ## Síntese da aula
 
-Ambiente computacional é o conjunto de condições, recursos, configurações, programas, permissões, dados e infraestrutura que permite que sistemas, programas e processos sejam usados ou executados. Ele não é apenas a máquina. Inclui hardware, sistema operacional, arquivos, pastas, usuários, permissões, configurações, bibliotecas, ferramentas, rede, banco de dados, variáveis, versões, recursos, segurança e integrações.
+Ambiente computacional é o conjunto de condições sob as quais sistemas são construídos, implantados, executados e operados. Ele não é apenas a máquina: envolve recursos, serviços, versões, configurações, identidades, permissões, dados, rede e políticas. Finalidade, hospedagem, plataforma e governança são dimensões diferentes, que podem coexistir no mesmo ambiente.
 
 Execução depende de ambiente. Um programa pode falhar ou produzir comportamento diferente se o arquivo esperado não existe, se a permissão é insuficiente, se a configuração aponta para lugar errado, se a versão é diferente, se o banco está indisponível ou se a rede falha. Por isso, entender ambiente ajuda a investigar problemas sem concluir apressadamente que tudo é erro de código.
 

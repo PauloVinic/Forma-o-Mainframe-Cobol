@@ -22,11 +22,11 @@ Quando os conceitos de dados, informação e conhecimento foram introduzidos, fi
 
 O próximo passo é entender onde muitos desses elementos ficam registrados. Dados, código-fonte, configurações, resultados, relatórios e evidências de erro podem estar em arquivos. Arquivos de entrada podem alimentar um sistema, e arquivos de saída podem ser usados por outro sistema. Sem compreender arquivos, pastas, formatos, extensões e caminhos, o aluno vê apenas objetos soltos na tela, mas não enxerga a organização que sustenta boa parte do trabalho computacional.
 
-## Arquivos como forma de registrar e preservar
+## Arquivos como abstração persistente
 
-Um arquivo pode ser entendido como uma unidade organizada de informação armazenada sob algum nome em um sistema computacional. Ele tem existência identificável: pode ser localizado, copiado, movido, aberto por um programa, enviado para outro ambiente, preservado ou descartado. É uma unidade porque o sistema o trata como item reconhecível, mesmo que por dentro contenha muitos dados.
+Um arquivo é uma abstração oferecida por um sistema para nomear, organizar e acessar conteúdo persistente. Na prática, esse conteúdo é representado por bytes; seu significado surge quando uma pessoa ou programa o interpreta segundo codificação, formato, layout ou outra convenção. Ele pode ser localizado, copiado, movido, aberto, enviado, preservado ou descartado.
 
-Arquivos existem porque computadores precisam registrar coisas para uso posterior. Se tudo existisse apenas durante a execução de um programa, qualquer informação desapareceria quando o processamento terminasse. Um arquivo permite que algo permaneça armazenado: uma lista de clientes, um relatório de vendas, uma imagem, uma configuração, um conjunto de instruções, uma remessa bancária, uma evidência de erro ou um resultado de fechamento.
+Arquivos existem porque computadores precisam registrar coisas para uso posterior. Persistência não é garantia absoluta de durabilidade: falhas, exclusões, corrupção, retenção e cópias de segurança influenciam por quanto tempo e com que confiabilidade o conteúdo será preservado.
 
 Arquivos também permitem transporte. Um sistema pode gerar um arquivo para outro sistema consumir. Uma empresa pode enviar um arquivo de cobrança a um banco. Um órgão público pode receber arquivos de prestação de contas. Uma rotina interna pode produzir um relatório para uma equipe conferir. Um arquivo, portanto, não serve apenas para guardar conteúdo em um computador pessoal. Ele pode ser parte de uma cadeia de trabalho entre pessoas, sistemas, áreas, empresas e ambientes.
 
@@ -46,7 +46,7 @@ Para entender arquivos com precisão, é necessário separar elementos que costu
 
 Imagine um relatório mensal salvo com um nome que indica área, mês e finalidade. O arquivo é o item armazenado. O conteúdo pode ser uma tabela de valores, textos explicativos e totais. O nome ajuda pessoas e sistemas a reconhecerem aquele item. A extensão pode indicar que ele é um PDF, uma planilha, um texto simples ou outro tipo de arquivo. O formato real é a estrutura interna que permite que um programa adequado interprete o conteúdo corretamente. O caminho informa onde ele está, por exemplo, dentro de uma pasta de relatórios financeiros de determinado ano.
 
-Esses elementos se relacionam, mas não são equivalentes. Um arquivo pode ter nome claro e conteúdo incorreto. Pode ter extensão esperada e formato real diferente. Pode estar no formato certo, mas no caminho errado. Pode conter dados válidos, mas pertencer a uma versão antiga. Pode estar bem nomeado para uma pessoa, mas fora do padrão exigido por um sistema. Em ambiente profissional, analisar problemas com arquivos exige fazer essas distinções com cuidado.
+Esses elementos se relacionam, mas não são equivalentes. Nome e caminho localizam uma entrada em uma estrutura lógica; formato organiza como os bytes devem ser interpretados; extensão apenas sugere uma convenção. Metadados, como data, tamanho e permissões, descrevem o arquivo sem serem seu conteúdo. Em ambiente profissional, a identidade prática também pode depender do sistema, do local e da versão, não apenas do nome visível.
 
 ## Extensão não é formato
 
@@ -64,7 +64,7 @@ Uma distinção introdutória importante é a diferença entre arquivos de texto
 
 Um arquivo binário possui uma estrutura interna que normalmente depende de programa específico para interpretação. Imagens, vídeos, arquivos compactados, executáveis e muitos formatos de documentos não foram feitos para leitura direta como texto comum. Ao abrir um arquivo binário em editor textual simples, a pessoa pode ver símbolos estranhos ou conteúdo sem sentido, porque o programa usado não interpreta a estrutura correta.
 
-Essa diferença não significa que arquivos de texto sejam simples em todos os aspectos nem que arquivos binários sejam sempre avançados. Significa apenas que alguns arquivos foram organizados para serem legíveis como texto, enquanto outros dependem de programas que compreendam sua estrutura interna. Neste momento, não é necessário aprofundar codificação de caracteres, bits ou detalhes internos de formatos. O essencial é perceber que abrir um arquivo não é apenas “mostrar o que está dentro”; é interpretar o conteúdo conforme alguma regra.
+Essa diferença não significa que texto e binário sejam categorias físicas opostas: ambos são bytes. Um arquivo textual requer uma codificação de caracteres, como UTF-8; um CSV também depende de convenções de separador, cabeçalho e campos. Abrir um arquivo é interpretá-lo conforme regras, não apenas “mostrar o que está dentro”.
 
 ## Pastas e diretórios
 

@@ -24,13 +24,13 @@ Agora surge uma pergunta natural: como esse programa é expresso para que possa 
 
 Código-fonte não deve ser visto apenas como "texto técnico". Ele carrega decisões. Ao escrever código-fonte, alguém expressa que dados serão usados, que regras serão aplicadas, que condições serão verificadas, que transformações acontecerão e que saídas serão produzidas. Esse texto precisa ser preciso porque ferramentas não interpretam intenção da mesma forma que pessoas. Também precisa ser legível porque outras pessoas precisarão entendê-lo depois.
 
-## Código-fonte como representação de um programa
+## Código-fonte como representação de uma implementação
 
-Código-fonte é uma representação textual, formal e organizada de instruções, regras e estruturas que descrevem o comportamento esperado de um programa. A palavra "representação" é importante porque código-fonte não é o comportamento em si. Ele expressa o comportamento para que ferramentas possam analisá-lo e para que, em outra etapa, esse comportamento possa ser preparado ou conduzido para execução.
+Código-fonte é a representação, em uma linguagem de programação, de instruções, declarações, estruturas e relações usadas para implementar parte de um sistema. Em geral é registrado como texto, mas isso não significa linguagem natural, um único arquivo ou o sistema inteiro. Uma implementação pode reunir módulos, bibliotecas, configurações, dados de apoio e código gerado.
 
-O código-fonte é textual porque costuma ser escrito como texto em arquivos. É formal porque precisa obedecer a regras de uma linguagem de programação. É organizado porque instruções soltas não bastam; elas precisam aparecer de forma coerente, respeitando estrutura, nomes, relações, ordem e finalidade.
+Ele não é a execução nem o comportamento observado: registra uma implementação que ferramentas podem analisar, transformar ou conduzir à execução. Uma especificação pode dizer o que se espera; a fonte define uma forma particular de tentar realizar isso. Assim, fonte aceita pela ferramenta não prova regra correta.
 
-Um programa pode existir como ideia, especificação, comportamento esperado ou unidade preparada para execução. O código-fonte é uma das formas de registrar esse programa antes da execução. Ele permite que uma pessoa descreva, em linguagem formal, como determinado processamento deve ocorrer.
+Para ser tratado como fonte, o conteúdo precisa seguir regras da linguagem escolhida. A sintaxe trata da forma reconhecível das construções; a semântica, do significado delas na linguagem. Convenções de equipe ajudam a leitura, mas não substituem essas regras formais.
 
 Por isso, código-fonte não é texto comum. Uma frase livre em português pode expressar intenção, mas não necessariamente pode ser processada por uma ferramenta de programação. O código-fonte precisa ser escrito dentro de convenções e regras reconhecíveis pela linguagem escolhida.
 
@@ -43,6 +43,12 @@ Quando o código-fonte descreve um programa de cadastro, ele pode registrar como
 O código-fonte liga instruções a comportamento. Ele não deve ser lido como uma lista de palavras isoladas, mas como uma descrição formal de ações. Cada parte do texto deve contribuir para dizer ao ambiente o que fazer com dados, regras, condições e resultados.
 
 Essa relação também mostra por que ler código-fonte exige mais que reconhecer palavras da linguagem. É preciso entender o comportamento que está sendo representado. O texto pode ser válido para a ferramenta, mas ainda assim representar regra errada, cálculo incompleto ou interpretação ruim do processo de negócio.
+
+## Da necessidade ao comportamento observado
+
+Necessidade, requisito, especificação, algoritmo, código-fonte e execução não são sinônimos. Uma necessidade de negócio é esclarecida em requisitos e especificações; um algoritmo descreve um método; o código-fonte implementa esse método em uma linguagem; e a execução produz comportamento observável.
+
+Em uma folha de pagamento, a regra pode definir quem recebe adicional. Um programa COBOL, estudado futuramente, poderá registrar campos, condições e cálculos para implementá-la. Configuração pode indicar o período e dados de entrada trazem valores; nenhum desses itens isoladamente é execução ou prova que o pagamento está correto.
 
 ## Linguagem natural e linguagem de programação
 
@@ -237,7 +243,7 @@ Por fim, muitos iniciantes ignoram regras de negócio. Em sistemas corporativos,
 
 ## Síntese da aula
 
-Código-fonte é uma representação textual, formal e organizada de instruções, regras e estruturas que expressam o comportamento esperado de um programa. Ele não é qualquer texto digitado no computador, nem é automaticamente o programa em execução. Ele é uma forma de registrar, em linguagem de programação, como dados devem ser tratados, que regras devem ser aplicadas, que processamento deve ocorrer e que saídas devem ser produzidas.
+Código-fonte é uma representação formal, geralmente textual, de instruções, declarações, estruturas e relações usadas para implementar parte de um sistema. Não é qualquer texto digitado, não é automaticamente o programa em execução e não prova por si só que a regra de negócio está correta. Pode ser distribuído entre módulos e conviver com configuração, dados de apoio, bibliotecas e artefatos gerados.
 
 A aula mostrou que linguagem natural e linguagem de programação têm naturezas diferentes. Pessoas lidam com contexto e ambiguidade; ferramentas precisam de forma precisa e regras explícitas. Por isso, computadores não executam intenção humana diretamente. Eles executam instruções formalmente representadas.
 

@@ -147,6 +147,13 @@ Este arquivo registra fontes efetivamente consultadas ou recomendadas para suste
 - **Instituição:** ACM, IEEE Computer Society e AAAI. **Título:** *Computer Science Curricula 2023*. **Ano:** 2024. **Tipo:** diretriz curricular. **Conceito:** fundamentos de sistemas, eventos e desenvolvimento. **Uso:** situar processamento, estado e reatividade no percurso de Ciência da Computação. **Link:** https://csed.acm.org/
 - **Instituição:** IBM. **Título:** *Mainframe workloads: Batch and online transaction processing*. **Ano:** não indicado na página consultada. **Tipo:** documentação institucional. **Conceito:** lote e transação online. **Uso:** distinguir dimensões de processamento sem antecipar prática Mainframe. **Link:** https://www.ibm.com/docs/en/zos-basic-skills?topic=today-mainframe-workloads-batch-online-transaction-processing
 
+## Aulas 08, 10 e 11 — Código-fonte, arquivos e ambientes
+
+- **Instituição:** ISO/IEC/IEEE. **Título:** *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*. **Ano:** 2017. **Tipo:** norma de vocabulário. **Uso:** orientar os limites entre implementação, configuração, execução e ambiente. **Link:** https://www.iso.org/standard/71952.html
+- **Instituição:** Unicode Consortium. **Título:** *The Unicode Standard, Core Specification, Chapter 2*. **Ano:** 2024. **Tipo:** especificação técnica. **Uso:** sustentar a distinção entre bytes, caracteres e codificação em arquivos textuais. **Link:** https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-2/
+- **Instituição:** The Open Group. **Título:** *POSIX.1-2024, Base Definitions*. **Ano:** 2024. **Tipo:** especificação técnica. **Uso:** apoiar a terminologia de arquivo, diretório, caminho e permissões sem pressupor um único sistema operacional. **Link:** https://pubs.opengroup.org/onlinepubs/9799919799/
+- **Instituição:** National Institute of Standards and Technology. **Título:** *SP 800-204C*. **Ano:** 2022. **Tipo:** publicação técnica institucional. **Uso:** contextualizar configuração, implantação e controles de ambiente sem transformar a aula em material de infraestrutura. **Link:** https://csrc.nist.gov/pubs/sp/800/204/c/final
+
 ## Aula 06 — Entrada, processamento e saída
 
 - **Instituição:** IBM. **Título:** *Transaction processing terms and concepts*. **Ano:** não indicado na página consultada. **Tipo:** documentação institucional. **Conceito:** transação, tarefa, unidade de trabalho e alterações relacionadas. **Uso:** qualificar entrada, estado, efeitos e processamento parcial. **Link:** https://www.ibm.com/docs/en/txseries/10.1.0?topic=processing-transaction-terms-concepts

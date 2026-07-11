@@ -171,3 +171,15 @@ Uma Fase 0 revista será uma base conceitual extensa, tecnicamente mais precisa 
 **Pendências:** Aulas 08, 10 e 11 permanecem para revisão de fonte, arquivos, ambiente e configuração. Nenhuma outra aula foi alterada.
 
 **Próxima etapa:** revisão técnica e pedagógica das Aulas 08, 10 e 11.
+
+### Etapa 5 — Revisão técnica das Aulas 08, 10 e 11
+
+**Status:** concluída nesta etapa.
+
+**Conceitos qualificados:** código-fonte passou a ser tratado como implementação formal, geralmente textual e distinta de especificação, configuração, artefato e execução; arquivo passou a ser tratado como abstração persistente cujo conteúdo em bytes depende de interpretação, codificação e formato; ambiente passou a separar finalidade, hospedagem, plataforma e governança, incluindo reprodutibilidade, paridade e desvio de configuração.
+
+**Fontes registradas:** `referencias/fontes-da-fase-00.md` recebeu fontes para terminologia de software, codificação, sistemas de arquivos e controles de ambiente.
+
+**Pendência transversal:** revisar coerência, progressão e repetições entre as 12 aulas antes de alterar consolidação, glossários ou instrumentos avaliativos. Nenhuma aula fora desta etapa foi modificada.
+
+**Próxima etapa:** revisão transversal de coerência, progressão e repetição das 12 aulas.
