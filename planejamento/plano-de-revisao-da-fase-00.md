@@ -151,3 +151,13 @@ Uma Fase 0 revista será uma base conceitual extensa, tecnicamente mais precisa 
 **Pendências observadas para etapas posteriores:** a Aula 08 ainda deve ser refinada para alinhar código-fonte, configuração e artefatos; as Aulas 10 e 11 devem ser revisadas para aprofundar formato, ambiente e configuração sem contradição. Nenhuma delas foi alterada agora.
 
 **Próxima etapa:** revisão das Aulas 01, 02 e 03.
+
+### Etapa 3 — Revisão técnica das Aulas 01, 02 e 03
+
+**Status:** concluída nesta etapa.
+
+**Conceitos qualificados:** TI recebeu definição operacional e perspectiva sociotécnica; sistema passou a explicitar relações, fronteira analítica, ambiente, estado, feedback e emergência como modelos; hardware, software, firmware, dados, SGBD, camadas e fatores humanos foram diferenciados.
+
+**Pendências:** Aulas 05 e 06 devem revisar processamento e EPS como modelo; Aula 08 ainda precisa alinhar fonte, configuração e artefatos. Nenhuma aula posterior foi alterada.
+
+**Próxima etapa:** revisão técnica e pedagógica das Aulas 05 e 06.

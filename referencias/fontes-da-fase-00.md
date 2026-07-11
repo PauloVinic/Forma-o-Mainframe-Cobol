@@ -2,6 +2,21 @@
 
 Este arquivo registra fontes efetivamente consultadas ou recomendadas para sustentar definições centrais da Fase 0. Ele não substitui a explicação das aulas. As referências foram selecionadas para indicar terminologias, modelos, limites e aprofundamentos.
 
+## Aula 01 — Tecnologia da informação
+
+- **Instituição:** ACM, IEEE Computer Society e AAAI. **Título:** *Computer Science Curricula 2023*. **Ano:** 2024. **Tipo:** diretriz curricular. **Uso:** distinguir áreas e reconhecer sobreposições entre computação, desenvolvimento e outros campos. **Link:** https://csed.acm.org/
+- **Instituição:** ISO/IEC/IEEE. **Título:** *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*. **Ano:** 2017. **Tipo:** norma de vocabulário. **Uso:** apoiar terminologia de software e sistemas. **Link:** https://www.iso.org/standard/71952.html
+
+## Aula 02 — Sistemas
+
+- **Instituição:** INCOSE. **Título:** *What is Systems Engineering?* **Ano:** não indicado na página consultada. **Tipo:** material institucional. **Uso:** relações entre elementos, ambiente e propriedades do conjunto. **Link:** https://www.incose.org/about-systems-engineering/system-and-se-definitions/physical-and-conceptual/
+- **Instituição:** ISO/IEC/IEEE. **Título:** *ISO/IEC/IEEE 15288:2023 — Systems and software engineering — System life cycle processes*. **Ano:** 2023. **Tipo:** norma. **Uso:** contextualizar sistemas e ciclo de vida sem impor definição única. **Link:** https://www.iso.org/standard/81702.html
+
+## Aula 03 — Hardware, software e pessoas
+
+- **Instituição:** National Institute of Standards and Technology. **Título:** *Computer Security Resource Center Glossary: firmware*. **Ano:** não indicado na página do glossário. **Tipo:** vocabulário técnico institucional. **Uso:** diferenciar hardware, software e firmware. **Link:** https://csrc.nist.gov/glossary/term/firmware
+- **Instituição:** ACM, IEEE Computer Society e AAAI. **Título:** *Computer Science Curricula 2023*. **Ano:** 2024. **Tipo:** diretriz curricular. **Uso:** situar fundamentos de sistemas, software e fatores profissionais. **Link:** https://csed.acm.org/
+
 ## Aula 04 — Dados, informação e conhecimento
 
 ### Chaim Zins

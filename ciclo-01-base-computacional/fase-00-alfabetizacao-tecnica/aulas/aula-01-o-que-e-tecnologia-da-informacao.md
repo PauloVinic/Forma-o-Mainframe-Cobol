@@ -136,6 +136,14 @@ Organizações como bancos, seguradoras, grandes empresas e órgãos públicos p
 
 COBOL será estudado futuramente como uma linguagem usada para expressar regras corporativas e processar dados em sistemas desse tipo. Mainframe será estudado como ambiente de computação corporativa voltado a processamento robusto, operação controlada e continuidade. Ambos só fazem sentido quando o aluno entende que TI não é apenas computador: é a organização de tecnologia, dados, pessoas e processos para sustentar informação confiável.
 
+## Tecnologia da informação: definição operacional e limites
+
+Tecnologia é mais ampla que equipamento moderno. Pode envolver conhecimento aplicado, técnicas, métodos, artefatos, procedimentos e formas de organizar trabalho. Nesta formação, **tecnologia da informação (TI)** é o conjunto de recursos, capacidades e práticas usados para representar, armazenar, processar, comunicar, recuperar, apresentar, proteger e preservar dados e informações em apoio a operações, decisões e serviços. É uma definição operacional para o curso, não a única definição legítima.
+
+Em organizações, “TI” pode significar recursos técnicos, função responsável por operá-los ou campo de estudo e atuação; esses sentidos se sobrepõem, mas não são idênticos. TI não é sinônimo de Ciência da Computação, sistemas de informação ou engenharia de software. Ciência da Computação estuda fundamentos de computação; engenharia de software concentra métodos para especificar, construir, testar e evoluir software; sistemas de informação enfatizam relações entre pessoas, processos, dados, tecnologia e organização. A TI usa contribuições dessas áreas e também envolve infraestrutura, segurança, integração, operação e governança.
+
+TI não determina sozinha o resultado organizacional. Uma ferramenta pode funcionar tecnicamente e fracassar se o processo for inadequado, os dados forem ruins, a regra for ambígua ou as pessoas não tiverem condições de usar o serviço. Por isso, o curso trata TI como parte de sistemas sociotécnicos: pessoas, objetivos, regras, processos, dados, infraestrutura e organização interagem com a tecnologia. Automatizar etapa mal definida pode apenas ampliar e acelerar um problema.
+
 ## Confusões comuns de iniciantes
 
 Uma confusão frequente é achar que TI é só "mexer no computador". Usar computador pode fazer parte do trabalho em TI, mas a área não se limita ao uso da máquina. TI envolve entender processos, dados, sistemas, segurança, operação, suporte, manutenção e impacto organizacional. Uma pessoa pode mexer muito no computador e ainda não compreender como um sistema sustenta uma operação.
@@ -192,6 +200,11 @@ Esta aula preparou a base para a próxima pergunta da fase: o que é um sistema?
 **Rastreabilidade**: capacidade de acompanhar origem, mudança e destino de dados, ações ou decisões dentro de um processo ou sistema.
 
 **Auditoria**: verificação de dados, ações, controles e resultados para demonstrar o que ocorreu e se as regras foram respeitadas.
+
+## Referências e leituras para aprofundamento
+
+- ACM, IEEE Computer Society e AAAI. *Computer Science Curricula 2023*.
+- ISO/IEC/IEEE. *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*.
 
 ## Critérios de domínio
 

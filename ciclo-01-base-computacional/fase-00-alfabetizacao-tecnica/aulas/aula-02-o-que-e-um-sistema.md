@@ -158,6 +158,14 @@ Um programa COBOL raramente deve ser imaginado como um exercício isolado. Em am
 
 O Mainframe, por sua vez, será estudado como ambiente de computação corporativa em que muitos sistemas precisam de confiabilidade, controle, escala, segurança e continuidade. Entender sistema ajuda o aluno a não olhar apenas para uma linguagem ou máquina. O foco passa a ser o conjunto: dados, programas, jobs, arquivos, bancos, usuários, controles, integrações e processos de negócio.
 
+## Sistema como modelo de análise
+
+“Sistema” é palavra usada em biologia, engenharia, computação e organizações. Nesta formação, sistema é conjunto de elementos e relações cujas interações produzem comportamentos, propriedades ou capacidades que não são compreendidos adequadamente ao olhar cada parte isoladamente. A definição é operacional, não universal.
+
+Relações importam tanto quanto partes: fluxo, comunicação, dependência, restrição, coordenação e influência. Sistemas projetados geralmente têm finalidade atribuída por pessoas; sistemas naturais não precisam ter propósito intencional. Convém distinguir finalidade projetada, função desempenhada e comportamento observado.
+
+Fronteira é delimitação analítica do que será considerado parte do sistema e pode mudar conforme a pergunta. O que fica fora, mas influencia ou é influenciado, compõe ambiente. Subsistema é parte analisável de sistema maior; interface é ponto de relação entre partes, não apenas tela. Entrada, transformação, saída e feedback são modelos úteis, não propriedades universais. Estado é condição relevante em certo momento; feedback é retorno que influencia comportamento posterior. Propriedades como disponibilidade, segurança e experiência de uso podem emergir da interação entre partes e ambiente.
+
 ## Confusões comuns de iniciantes
 
 Uma confusão comum é achar que sistema é apenas uma tela. A tela é uma interface, isto é, um ponto de contato entre usuário e sistema. Ela permite entrada e visualização de saídas, mas por trás dela podem existir regras, dados, permissões, integrações, logs e processos. Reduzir o sistema à tela impede enxergar o funcionamento real.
@@ -231,6 +239,11 @@ A próxima aula tratará de hardware, software e pessoas. Agora que o aluno já 
 **Falha**: ocorrência em que um sistema, componente ou processo não produz o comportamento esperado.
 
 **Operação**: execução organizada das atividades necessárias para que sistemas e processos funcionem no uso real.
+
+## Referências e leituras para aprofundamento
+
+- INCOSE. *What is Systems Engineering?* e materiais do *Systems Engineering Handbook*.
+- ISO/IEC/IEEE. *ISO/IEC/IEEE 15288:2023 — System life cycle processes*.
 
 ## Critérios de domínio
 

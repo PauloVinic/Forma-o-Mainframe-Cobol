@@ -126,6 +126,14 @@ COBOL será estudado futuramente como uma linguagem usada para expressar regras 
 
 Quando o aluno encontrar programas, arquivos, rotinas, permissões, operadores e relatórios em fases posteriores, não deverá olhar para esses elementos como peças soltas. Eles estarão dentro de sistemas que existem para sustentar processos reais.
 
+## Definições operacionais, camadas e fatores humanos
+
+Hardware é o conjunto de componentes materiais e eletrônicos que armazenam, processam, comunicam, captam ou apresentam sinais e dados: processador, memória, armazenamento, controladores, dispositivos de entrada e saída, rede, servidores e terminais. Software é conceito mais amplo e variável; nesta formação, significa conjunto organizado de programas e componentes associados que realizam comportamentos ou serviços. Dependendo da definição, pode incluir dados associados, configurações e documentação. Software não é o comportamento observado em si.
+
+Para análise didática, convém separar instruções, dados de entrada, configuração, estado e artefatos executáveis. Banco de dados é coleção estruturada de dados; **SGBD** é o software que permite definir, armazenar, consultar, controlar e administrar bancos. Firmware é software associado de forma próxima a dispositivo, frequentemente responsável por controle de baixo nível; não é apenas hardware e pode ser atualizado.
+
+Uma visão inicial de camadas inclui hardware, firmware, sistema operacional, bibliotecas e runtimes, serviços, aplicações, dados/configurações e interfaces. Camadas são abstrações úteis, não paredes absolutas. Pessoas não são componentes substituíveis como peças: atuam como usuárias, operadoras, analistas, desenvolvedoras, administradoras, auditoras e pessoas afetadas. Percepção, atenção, experiência, treinamento, comunicação, carga de trabalho, acessibilidade e pressão de tempo influenciam o sistema sociotécnico. Um engano humano pode ocorrer, mas interface, procedimento, regra, controle e ambiente podem ter favorecido ou permitido a ação.
+
 ## Confusões comuns de iniciantes
 
 Uma confusão comum é achar que hardware é apenas "peça de computador". Essa visão não mostra função. CPU, memória, armazenamento, rede, periféricos, servidores e terminais participam de formas diferentes do funcionamento de um sistema. Entender hardware exige perguntar que recurso físico está sendo usado e para qual finalidade.
@@ -210,6 +218,11 @@ Esta aula também reforçou a noção de sistema estudada anteriormente. Em sist
 **Processo**: sequência organizada de atividades executadas para produzir um resultado.
 
 **Regra de negócio**: condição, cálculo, restrição ou decisão que expressa uma necessidade da organização.
+
+## Referências e leituras para aprofundamento
+
+- NIST. *Computer Security Resource Center Glossary: firmware, hardware e software*.
+- ACM, IEEE Computer Society e AAAI. *Computer Science Curricula 2023*.
 
 ## Critérios de domínio
 
