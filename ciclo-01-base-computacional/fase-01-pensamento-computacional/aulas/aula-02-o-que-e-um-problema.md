@@ -12,7 +12,7 @@
 
 ## Objetivo da aula
 
-Ao final desta aula, o aluno deverá conseguir transformar uma situação vaga, uma necessidade, um sintoma, um risco ou uma oportunidade em uma formulação inicial delimitada, analisável e verificável. Para isso, deverá separar o que foi observado do que foi inferido, manter hipóteses causais como hipóteses, identificar interessados e pessoas afetadas, declarar objetivos e estados, estabelecer escopo e condições, e propor critérios que permitam avaliar resultados sem escolher antecipadamente uma solução.
+Ao final desta aula, o aluno deverá transformar uma situação vaga, necessidade, sintoma, risco ou oportunidade em formulação inicial delimitada, analisável e verificável. Deverá separar observação de inferência, preservar hipóteses, identificar interessados e afetados, declarar objetivos, estados, escopo e condições e propor critérios sem escolher antecipadamente uma solução.
 
 A aula introduz C01 e C02 em explicação, aplicação guiada e autonomia inicial em caso simples. Não exige domínio complexo nem produz especificação completa, modelo detalhado ou algoritmo.
 
@@ -58,11 +58,11 @@ As quatro noções se relacionam, mas não são etapas mecânicas. Uma situaçã
 
 ## Problema, pergunta, decisão, risco e oportunidade
 
-Nem todo objeto de análise começa com uma diferença já observada. Uma **pergunta** solicita conhecimento: “qual é a taxa de solicitações devolvidas?”. Respondê-la pode apoiar a formulação, mas a pergunta sozinha não informa por que a taxa importa ou que ação será considerada. Uma **decisão** é uma escolha que alguém precisa fazer entre alternativas, como manter ou mudar um prazo. O problema deve mostrar contexto, objetivos e critérios que tornam essa decisão necessária.
+Nem todo objeto de análise começa com diferença observada. Uma **pergunta** solicita conhecimento: “qual é a taxa de solicitações devolvidas?”. Ela pode apoiar a formulação, mas não informa sozinha por que a resposta importa. Uma **decisão** é escolha entre alternativas, como manter ou mudar um prazo; o problema explicita contexto, objetivos e critérios relevantes.
 
-Um **risco** combina a possibilidade de um evento ou condição futura com consequências relevantes e incerteza. “Pode haver pagamento duplicado quando mensagens são reenviadas” não afirma que duplicidades já ocorreram; ainda assim, pode justificar análise preventiva. Uma **oportunidade** é uma possibilidade de produzir valor ou melhorar um estado, mesmo sem falha presente: por exemplo, permitir que pessoas acompanhem uma solicitação sem telefonar. Não é preciso fabricar uma reclamação para formular uma oportunidade.
+Um **risco** combina evento ou condição futura possível, consequências e incerteza. “Pode haver pagamento duplicado quando mensagens são reenviadas” não afirma ocorrência, mas pode justificar prevenção. Uma **oportunidade** permite produzir valor ou melhorar um estado sem falha presente, como acompanhar uma solicitação sem telefonar. Não é preciso fabricar reclamação.
 
-Esses enquadramentos podem coexistir: demora observada, aumento previsto da demanda, acompanhamento e escolha de capacidade podem representar problema atual, risco, oportunidade e decisão. Declare qual objeto ocupa o centro e como os demais o apoiam; reuni-los sob um rótulo esconde a evidência e a avaliação necessárias.
+Os enquadramentos podem coexistir. Declare qual ocupa o centro e como os demais o apoiam; reuni-los sob um rótulo esconde evidências e avaliações necessárias.
 
 ## Sintoma, causa e hipótese causal
 
@@ -72,13 +72,13 @@ Uma **causa** é um fator que contribuiu para produzir um evento ou condição. 
 
 Uma **hipótese causal** é uma explicação provisória que pode orientar busca de evidências. Se parte das solicitações demora após ser reatribuída, pode-se formular: “reatribuições contribuem para o tempo sem ação”. A hipótese deve indicar que observações a fortaleceriam ou enfraqueceriam: comparar tempos de casos semelhantes com e sem reatribuição, verificar a ordem dos eventos e examinar exceções. “A equipe é desorganizada” não é uma boa hipótese: é amplo, culpabilizante e difícil de examinar.
 
-Uma **causa confirmada** é uma contribuição sustentada no recorte; não precisa ser única, suficiente ou necessária. **Correlação** indica associação, enquanto **coincidência** é coocorrência sem relação sustentada. Uma explicação apenas plausível continua hipótese. Condições técnicas e organizacionais podem contribuir juntas. O sintoma oferece evidência da manifestação, não sua explicação completa.
+Uma **contribuição causal sustentada no recorte** é uma alegação causal apoiada pelas evidências disponíveis e por uma explicação compatível com o caso. Esse apoio é situado e revisável: não implica causa única, suficiente ou necessária. **Correlação** indica associação e, sozinha, não estabelece causação; **coincidência** é coocorrência sem relação sustentada. Novas observações podem fortalecer ou enfraquecer uma hipótese, manter a relação não estabelecida ou sustentar um fator o bastante para determinada decisão.
 
-Necessidade, sintoma e causa ocupam papéis distintos. “Receber resposta previsível” é necessidade; “38% passaram de cinco dias” é sintoma quantificado; “pendências documentais explicam parte da demora” é hipótese até que o alcance da relação seja investigado. A formulação pode avançar sem causa confirmada. Ela deve dizer o que se observa, que explicações estão em exame e que decisões não dependem de fingir certeza.
+Necessidade, sintoma e causa ocupam papéis distintos. “Receber resposta previsível” é necessidade; “38% passaram de cinco dias” é sintoma quantificado; “pendências documentais explicam parte da demora” é hipótese até que seu alcance seja investigado. A formulação e decisões provisórias ou protetivas podem avançar antes do estabelecimento completo das relações causais. Devem registrar observações, explicações em exame, limites da evidência e condições de revisão, sem fingir certeza.
 
 ## Evidência, fato, inferência, hipótese e decisão
 
-Uma formulação rastreável distingue o estatuto das afirmações. **Evidência** é o material usado para sustentar ou contestar uma afirmação: registros, documentos, observações, medições, relatos, normas ou resultados de comparação. Ela possui origem, período, método e limitações. Um relatório pode ser evidência mesmo incompleto; a incompletude limita o que se conclui.
+Uma formulação rastreável distingue o estatuto das afirmações. **Evidência** é material usado para sustentar ou contestar uma afirmação: registros, documentos, observações, medições, relatos, normas ou comparações, sempre com origem, período, método e limitações. Relato ou testemunho é uma possível fonte de evidência sobre experiência ou percepção; não é categoria paralela nem prova automática de seu conteúdo ou causa. “Enviei o documento duas vezes” sustenta que a solicitante fez esse relato, não que ambos os envios foram recebidos ou armazenados; isso exigiria protocolos ou registros de transação.
 
 Chamaremos de **fato do caso** uma afirmação tratada como observada ou estabelecida dentro do recorte, sempre vinculada à evidência disponível. “O registro técnico marca indisponibilidade entre 10h e 13h” pode ser fato do caso. Isso não prova que a indisponibilidade causou todas as demoras. Em outros contextos, novas evidências podem revisar o que antes era aceito.
 
@@ -100,13 +100,13 @@ Um sintoma pode ser fato; uma causa alegada pode ser hipótese; uma evidência p
 
 ## Interessados, pessoas afetadas e responsabilidade pela decisão
 
-Um **interessado** é uma pessoa, grupo ou instituição que possui interesse, responsabilidade, influência ou exposição relevante em relação ao problema ou às respostas. Solicitantes, operadores, gestores, áreas de controle, fornecedores, reguladores e equipes técnicas podem ocupar esse papel. A lista deve nascer do caso, não de um formulário preenchido por hábito.
+Um **interessado** é pessoa, grupo ou instituição com interesse, responsabilidade, influência ou exposição relevante. Solicitantes, operadores, gestores, controle, fornecedores, reguladores e equipes técnicas são exemplos. A lista nasce do caso, não do hábito.
 
-Uma **pessoa afetada** sofre efeitos do estado atual ou de uma intervenção, ainda que não tenha poder, contrato ou participação na reunião. Quem abandona uma fila antes de ser atendido pode desaparecer da métrica e da discussão, embora seja diretamente afetado. Familiares, trabalhadores terceirizados ou pessoas com barreiras de acesso também podem ficar invisíveis quando “o usuário” é tratado como perfil homogêneo.
+Uma **pessoa afetada** sofre efeitos do estado atual ou da intervenção, mesmo sem poder ou participação. Quem abandona uma fila pode desaparecer da métrica, embora seja afetado. Terceirizados e pessoas com barreiras de acesso também ficam invisíveis quando “o usuário” parece homogêneo.
 
-O **responsável pela decisão** possui autoridade para aprovar ou rejeitar encaminhamento. Não é necessariamente solicitante, usuário, operador, especialista do domínio ou responsável técnico. Esses papéis fornecem perspectivas diferentes; a autoridade competente decide metas e aceita riscos.
+O **responsável pela decisão** tem autoridade para aprovar ou rejeitar encaminhamento. Não é necessariamente solicitante, usuário, operador ou especialista. Esses papéis oferecem perspectivas; a autoridade competente decide metas e aceita riscos.
 
-Interessados podem discordar legitimamente. Em um serviço de atendimento, usuários desejam previsibilidade e pouca espera; atendentes precisam de regras aplicáveis e tratamento de exceções; gestão observa capacidade e custo; auditoria requer rastreabilidade; pessoas prioritárias precisam de proteção sem exposição indevida. Formular o problema não elimina a divergência. Registra perspectivas, identifica quem não foi ouvido e declara como decisões serão tomadas.
+Interessados podem discordar legitimamente: usuários buscam previsibilidade; atendentes, regras aplicáveis; gestão, capacidade e custo; auditoria, rastreabilidade; pessoas prioritárias, proteção sem exposição. Formular não elimina divergências: registra perspectivas, ausências e responsabilidade decisória.
 
 ## Objetivo, estados e resultado esperado
 
@@ -149,15 +149,15 @@ Compare: “o regulamento proíbe armazenar esse dado” é restrição; “há 
 
 ## Entradas, saídas, regras e condições
 
-Uma formulação inicial de transformação pergunta o que entra, o que deve sair, que regras governam o domínio e sob quais condições a expectativa vale. Esses elementos introduzem C02 sem descrever ainda uma sequência de execução.
+Uma formulação inicial pergunta o que entra e sai, que regras governam o domínio e sob quais condições a expectativa vale. Isso introduz C02 sem sequência de execução.
 
-**Entrada** é dado, material, evento ou solicitação recebido pelo objeto em análise. Um pedido com itens e quantidades, um formulário acompanhado de documentos e a chegada de uma pessoa à fila são exemplos. **Saída** é algo produzido ou emitido: uma decisão registrada, uma notificação, uma reserva ou uma resposta. Entrada não é sinônimo de evidência; o documento recebido pode ser entrada do processo e, quando examinado, evidência para uma afirmação.
+**Entrada** é dado, material, evento ou solicitação recebido, como pedido, formulário ou chegada à fila. **Saída** é algo produzido ou emitido, como decisão, notificação, reserva ou resposta. Entrada não é sinônimo de evidência: um documento pode ser entrada e, quando examinado, evidência.
 
-Uma **regra** estabelece relação, proibição ou obrigação no domínio. Uma **condição** é circunstância de aplicabilidade; uma **pré-condição** precisa valer antes que a transformação esperada se aplique. Condição não é pressuposto aceito provisoriamente. Sua expressão lógica será estudada depois.
+Uma **regra** estabelece relação, proibição ou obrigação. Uma **condição** delimita aplicabilidade; uma **pré-condição** deve valer antes da transformação. Condição não é pressuposto provisório. Sua expressão lógica virá depois.
 
-Restrições limitam o espaço de resposta; regras governam comportamento ou decisões; condições delimitam quando uma afirmação vale. Há sobreposição possível, mas a pergunta prática muda. “Não expor dado sensível” restringe qualquer solução. “A prioridade deve ser registrada” governa o serviço. “Quando houver risco imediato, a prioridade pode ser alterada por autoridade identificada” declara condição de aplicação.
+Restrições limitam respostas; regras governam comportamento ou decisões; condições delimitam quando algo vale. “Não expor dado sensível” restringe soluções. “A prioridade deve ser registrada” é regra. “Quando houver risco imediato, autoridade identificada pode alterar a prioridade” declara condição.
 
-Esses elementos são identificados quando aplicáveis; uma investigação pode não ter entradas ou saídas completas. Listá-los não produz algoritmo: ainda faltam ordem, decisões, repetição e tratamento de dados. O objetivo é apenas examinar se uma resposta atende ao problema.
+Esses elementos aparecem quando aplicáveis e podem permanecer incompletos. Listá-los não produz algoritmo: faltam ordem, decisões, repetição e tratamento de dados. Servem aqui para examinar respostas ao problema.
 
 ## Critério de sucesso, métrica, meta e linha de base
 
@@ -223,17 +223,17 @@ Para estudar C01 e C02, usaremos um quadro de perguntas, não um formulário uni
 | avaliação | quais resultados, métricas, metas candidatas, linha de base, critérios de sucesso e proteções serão usados? |
 | incerteza e alternativas | que questões continuam abertas e que soluções sugeridas devem ficar fora do enunciado do problema? |
 
-Uma declaração flexível pode assumir esta forma: “No contexto e escopo **X**, a evidência **E** indica a condição atual **A**, relevante para **I**. Pretende-se alcançar **D** por causa do objetivo **O**, sob as condições e limites **L**, avaliando **C** e protegendo **P**. As hipóteses **H** e questões **Q** permanecem em exame; nenhuma solução foi ainda escolhida.” Nem todo caso exige essa ordem ou todos os campos na mesma frase. A qualidade está nas relações justificadas, não no preenchimento mecânico.
+Uma declaração flexível pode assumir esta forma: “No contexto e escopo **X**, a evidência **E** indica a condição atual **A**, relevante para **I**. Pretende-se alcançar **D** por causa do objetivo **O**, sob as condições e limites **L**, avaliando **C** e protegendo **P**. As hipóteses **H** e questões **Q** permanecem em exame; nenhuma solução foi ainda escolhida.” Nem todo caso exige a mesma ordem, todos os campos ou igual profundidade. Campos podem permanecer em aberto; a importância relativa e o detalhamento dependem da próxima decisão. Uma formulação mínima suficiente pode ser melhor que uma versão artificialmente completa. O quadro organiza perguntas, mas não substitui investigação, e preencher células não demonstra domínio: a qualidade está nas relações justificadas.
 
 Perguntas de Pólya sobre incógnita, dados e condições inspiram esclarecimento, não uma sequência universal. O CS2023 sustenta a progressão por competências e o tratamento explícito de formulação e ambiguidade.
 
 ## Caso progressivo — formulação inicial do estoque
 
-No caso hipotético de abertura, sabemos que, durante 28 dias, 192 de 2.400 linhas de três produtos críticos não foram atendidas integralmente na primeira separação: 84 de 1.400 no CD Norte e 108 de 1.000 no CD Sul. Em 29 ocorrências falta histórico completo. Há hipóteses sobre saldo desatualizado e entradas atrasadas, mas os grupos observados podem se sobrepor e nenhuma causa foi confirmada. A gestão sugeriu taxa inferior a 3% por centro durante três ciclos; a meta ainda requer aprovação.
+No caso hipotético de abertura, sabemos que, durante 28 dias, 192 de 2.400 linhas de três produtos críticos não foram atendidas integralmente na primeira separação: 84 de 1.400 no CD Norte e 108 de 1.000 no CD Sul. Em 29 ocorrências falta histórico completo. Há hipóteses sobre saldo desatualizado e entradas atrasadas, mas os grupos observados podem se sobrepor e nenhuma relação causal foi estabelecida no recorte. A gestão sugeriu taxa inferior a 3% por centro durante três ciclos; a meta ainda requer aprovação.
 
 Uma formulação inicial possível é:
 
-> Nos três produtos e dois centros incluídos, 192 de 2.400 linhas não foram atendidas integralmente na primeira separação durante 28 dias, com taxas calculadas de 6% no CD Norte e 10,8% no CD Sul. Pretende-se reduzir a ocorrência de modo sustentado; perdas, custo, divergências e deslocamento para outros produtos são proteções candidatas a validar. A taxa inferior a 3% em cada centro por três ciclos é meta candidata, não requisito validado. A formulação pressupõe provisoriamente critérios de contagem comparáveis e mantém abertas a qualidade dos registros, o impacto ao cliente, as causas, as linhas de base das proteções e a autoridade sobre a meta. Aumento de estoque, redistribuição, correção de registros e ferramenta de previsão permanecem alternativas não avaliadas.
+> Nos três produtos e dois centros incluídos, 192 de 2.400 linhas não foram atendidas integralmente na primeira separação em 28 dias: 6% no CD Norte e 10,8% no Sul. Pretende-se reduzir a ocorrência de modo sustentado, protegendo perdas, custo, divergências e outros produtos. A taxa inferior a 3% por centro em três ciclos é meta candidata. Permanecem abertos comparabilidade da contagem, qualidade dos registros, impacto, relações causais, linhas de base das proteções e autoridade sobre a meta. Estoque adicional, redistribuição, correção de registros e previsão são alternativas não avaliadas.
 
 A formulação é verificável sem fingir completude: contém observação, recorte, objetivo, proteção e incerteza. Ela não divide compras, armazenagem e separação, não desenha fluxo e não escolhe intervenção. Esse trabalho permanece disponível para as próximas aulas.
 
@@ -243,21 +243,21 @@ Considere a solicitação hipotética: “Compre um sistema com inteligência ar
 
 Antes de ler o comentário, anote: fatos; inferências; hipóteses; objetivo possível; interessados e afetados ausentes; escopo; critérios e questões abertas. Depois escreva duas frases sem nomear tecnologia.
 
-Comentário: `95/500 = 19%` é inferência quantitativa se os registros forem comparáveis. “A inteligência artificial resolverá” não é fato nem causa demonstrada. Um objetivo possível é reduzir retrabalho e tempo até resposta válida sem prejudicar correção, conformidade, contestação e proteção de dados. Quatro dias e 80% são números propostos, não critérios legitimados. Ainda faltam definições de medição, população, autoridade e impacto. Uma boa reescrita preserva essas lacunas e mantém sistema novo, automação e mudança de regra como alternativas.
+Comentário: `95/500 = 19%` é inferência quantitativa se os registros forem comparáveis. “A inteligência artificial resolverá” não é fato nem alegação causal sustentada. Um objetivo possível é reduzir retrabalho e tempo até resposta válida, protegendo correção, conformidade, contestação e dados. Quatro dias e 80% são propostas, não critérios legitimados. Faltam medição, população, autoridade e impacto. A reescrita deve preservar lacunas e manter sistema, automação e mudança de regra como alternativas.
 
 ## Confusões recorrentes e critérios de qualidade
 
-Repetir a reclamação preserva ambiguidade; repetir a solução elimina alternativas; registrar apenas o sintoma não explica o objeto; declarar causa sem evidência produz falsa certeza. Lista de desejos, número isolado e formulário preenchido não substituem raciocínio, nem é preciso ocultar incerteza para avançar.
+Repetir a reclamação preserva ambiguidade; repetir a solução elimina alternativas; registrar apenas o sintoma não explica o objeto; declarar relação causal sem apoio adequado produz falsa certeza. Lista de desejos, número isolado e formulário preenchido não substituem raciocínio, nem é preciso ocultar incerteza para avançar.
 
-Revise uma formulação perguntando se ela é relevante para interessados identificados, rastreável a evidências, neutra quanto a soluções ainda não escolhidas, delimitada, internamente coerente, verificável e revisável. Verifique também se distingue preferências de restrições, torna pressupostos visíveis, registra pessoas afetadas ausentes e inclui efeitos a proteger. A formulação deve ser suficiente para a próxima decisão, não uma descrição total da realidade.
+Revise uma formulação perguntando se ela é relevante para interessados identificados, rastreável a evidências, neutra quanto a soluções ainda não escolhidas, delimitada, internamente coerente, verificável e revisável. Verifique também se distingue preferências de restrições, torna pressupostos visíveis, registra pessoas afetadas ausentes e inclui efeitos a proteger. **A formulação deve conter informação suficiente para orientar a próxima decisão sem ocultar incertezas relevantes.**
 
 ## Exercícios
 
 As questões 1 a 3 são objetivas. Justifique a escolha e explique por que as demais são inadequadas, ainda que contenham algum elemento plausível.
 
-1. Um gestor pede um chatbot porque usuários esperam por respostas. Qual formulação inicial é mais adequada? **a)** a ausência do chatbot; **b)** a diferença observada entre o tempo atual e o aceitável, no recorte definido, sem assumir tecnologia; **c)** perguntas repetidas como causa confirmada; **d)** padronizar respostas pela ferramenta como requisito já aprovado.
-2. Um relatório registra 240 cobranças duplicadas; a equipe afirma que uma integração pode estar reprocessando mensagens; a gestão decide suspender reenvios durante a investigação. Qual sequência classifica melhor as afirmações? **a)** fato do caso, hipótese causal, decisão; **b)** hipótese, evidência, causa; **c)** sintoma, decisão, evidência; **d)** causa, inferência, requisito.
-3. O objetivo é reduzir cadastros inválidos. Qual candidato é mais verificável? **a)** implantar validação automática; **b)** melhorar bastante a qualidade; **c)** reduzir a taxa de 7% para no máximo 2% em dois ciclos, usando a mesma regra de medição e proteção contra rejeições indevidas; **d)** alcançar 80% de satisfação com a interface.
+1. Um gestor pede um chatbot porque usuários relatam demora. Qual formulação inicial é mais adequada? **a)** No próximo mês, reduzir a espera média e registrar minutos até cada resposta. **b)** No canal, eliminar perguntas repetidas, tomadas como causa da demora, e contar repetições. **c)** No canal e período definidos, alcançar o limite de espera, preservar correção e acesso e usar chatbot obrigatoriamente. **d)** No canal, população e período delimitados, reduzir a diferença entre espera observada e aceitável, validar critérios e proteções e manter causas e intervenções em aberto.
+2. Um relatório do último mês registra 240 cobranças duplicadas; a equipe atribui possível reprocessamento a uma integração; a gestão suspende reenvios durante a investigação. Qual sequência é mais adequada? **a)** fato do caso sustentado pelo relatório e limitado ao período; hipótese causal; decisão provisória. **b)** inferência quantitativa; hipótese causal; decisão provisória. **c)** fato do caso; contribuição causal sustentada no recorte; decisão provisória. **d)** fato do caso; hipótese causal; critério de sucesso.
+3. O objetivo é reduzir cadastros inválidos. Qual candidato é mais alinhado? **a)** Em dois ciclos, elevar de 70% para 95% a validação automática; tempo médio menor que dois minutos. **b)** Em dois ciclos, reduzir de 7% para 2% os inválidos entre aprovados, comparando-os à linha de base de todos os recebidos; satisfação de pelo menos 80%. **c)** Em dois ciclos, reduzir de 7% para no máximo 2% os inválidos entre todos os cadastros do canal, pelo mesmo método; rejeições indevidas em no máximo 1%. **d)** Em dois ciclos, reduzir de 70 para 20 os inválidos entre reprocessados, com volume variável; custo mensal abaixo de R$ 5.000.
 
 Responda discursivamente:
 
@@ -272,7 +272,7 @@ Analise os casos:
 9. Um cadastro possui 70 campos vazios em 1.000 registros. A equipe diz que “usuários são descuidados” e pede campos obrigatórios. Separe fato, inferência, hipótese, julgamento indevido, lacuna e solução presumida.
 10. Após uma indisponibilidade de três horas, 90 solicitações atrasaram; outras 290 atrasadas não atravessaram o evento. Formule sintoma, hipótese causal limitada, evidência adicional necessária e decisão provisória que não declare causa.
 11. Em uma fila, gestão quer reduzir mediana, usuários querem previsão, auditoria quer rastreabilidade e pessoas que abandonaram não foram ouvidas. Identifique dois conflitos, uma pessoa afetada ausente, um responsável plausível pela decisão e dois critérios de proteção.
-12. No estoque progressivo, preencha os sete blocos do modelo didático. Preserve como abertas a causa, a qualidade dos registros e a aprovação da meta; não divida o processo em etapas.
+12. No estoque progressivo, use os sete blocos como perguntas de apoio. Registre apenas o que o caso sustenta e marque lacunas ou itens não aplicáveis com justificativa. Preserve como abertas as relações causais, a qualidade dos registros e a aprovação da meta; não divida o processo em etapas.
 
 13. Considere `r ≤ 2%`, `t ∈ [0, 5]` dias e `D = {identidade, residência, renda}`. Explique os símbolos, diga se `r = 2%` e `t = 5` satisfazem os limites, dê um exemplo de `d ∈ D` e indique quatro definições contextuais necessárias antes de usar esses critérios.
 14. Construa um contraexemplo para a afirmação “se o critério é numérico, o problema está bem formulado”. Use uma métrica precisa que meça o aspecto errado ou incentive consequência indesejada.
@@ -286,13 +286,13 @@ Nas objetivas, procure a alternativa que separa problema, evidência, hipótese,
 
 ### Recuperação ativa e reflexão
 
-Sem consultar o texto, responda: qual a diferença entre situação e problema? Por que sintoma não é causa? O que separa hipótese causal de causa confirmada? Por que solução não deve entrar silenciosamente na formulação? Como escopo e fronteira se relacionam? Qual a diferença entre restrição e recurso? Como objetivo, métrica e meta diferem? Por que atingir uma métrica pode não resolver o problema? Quando manter uma questão em aberto? O que torna um critério verificável?
+Sem consultar o texto, responda: qual a diferença entre situação e problema? Por que sintoma não é causa? O que separa hipótese causal, relação não estabelecida e contribuição causal sustentada no recorte? Por que solução não deve entrar silenciosamente na formulação? Como escopo e fronteira se relacionam? Qual a diferença entre restrição e recurso? Como objetivo, métrica e meta diferem? Por que atingir uma métrica pode não resolver o problema? Quando manter uma questão em aberto? O que torna um critério verificável?
 
 Reflita sobre quem tem poder para formular e decidir. Como pessoas afetadas ausentes, metas inadequadas, automação prematura, objetivos conflitantes e responsabilidade indefinida mudariam um caso de seu trabalho?
 
 ### Síntese
 
-Formular um problema é construir um objeto delimitado e revisável para análise. A formulação relaciona situação, necessidade, evidência, interessados, objetivos, estados, escopo, condições e critérios. Ela separa sintoma de causa, fato de hipótese, meta de objetivo e restrição de preferência. Não elimina incerteza nem escolhe ferramenta: torna escolhas visíveis, permite avaliar respostas e prepara o todo para decomposição posterior.
+Formular um problema é construir um objeto delimitado e revisável para análise. A formulação relaciona situação, necessidade, evidência, interessados, objetivos, estados, escopo, condições e critérios. Ela separa sintoma de causa, fato do caso de hipótese, meta de objetivo e restrição de preferência. Não elimina incerteza nem escolhe ferramenta: torna escolhas visíveis, permite avaliar respostas e prepara o todo para decomposição posterior.
 
 ### Mini glossário
 
@@ -302,10 +302,11 @@ Formular um problema é construir um objeto delimitado e revisável para anális
 | necessidade | condição considerada necessária ou valiosa por alguém |
 | problema | objeto delimitado de análise diante de diferença, obstáculo, risco, incerteza, decisão, necessidade ou oportunidade |
 | sintoma | manifestação percebida ou registrada |
-| causa | fator sustentado como contribuinte de um efeito |
+| causa | fator cuja contribuição para um efeito é sustentada no recorte |
 | hipótese causal | explicação provisória e examinável sobre causa |
-| evidência | material que sustenta ou contesta afirmação |
-| inferência | conclusão derivada de evidências por raciocínio |
+| evidência | material situado, com origem e alcance, que sustenta ou contesta afirmação |
+| fato do caso | afirmação tratada como observada ou estabelecida no recorte, vinculada à evidência disponível |
+| inferência | conclusão derivada de fatos e evidências por raciocínio, limitada pela base usada |
 | objetivo | mudança de valor que se procura |
 | interessado | quem possui interesse, responsabilidade, influência ou exposição |
 | pessoa afetada | quem sofre efeitos, mesmo sem poder decisório |
@@ -333,7 +334,7 @@ Formular um problema é construir um objeto delimitado e revisável para anális
 
 ### Critérios de domínio da aula
 
-No Nível 1, o aluno reconhece termos e exemplos. No Nível 2, explica as diferenças entre situação, necessidade, problema e solução; sintoma, hipótese e evidência; interessado e pessoa afetada; restrição, recurso e preferência; objetivo, métrica e meta. No Nível 3, declara estados, escopo e exclusões, explicita pressupostos e questões abertas, propõe critério verificável e avalia uma formulação com orientação. Inicia o Nível 4 somente quando reformula um caso simples, preserva lacunas, rejeita solução prematura e explica limites. Casos complexos e domínio final de C01/C02 ficam para a progressão da fase.
+No Nível 1, o aluno reconhece termos e exemplos. No Nível 2, explica as distinções centrais. No Nível 3, declara estados, escopo, exclusões, pressupostos e questões abertas, propõe critério verificável e avalia uma formulação com orientação. Inicia o Nível 4 ao reformular caso simples, preservar lacunas, rejeitar solução prematura e explicar limites. Casos complexos e domínio final de C01/C02 ficam para a progressão da fase.
 
 ### Conexão com a Aula 03
 
@@ -359,13 +360,13 @@ Esta aula formulou o problema como um todo. A Aula 03 ensinará a decompô-lo pr
 
 ### Métricas e carga sugerida
 
-- **Extensão editorial:** aproximadamente 6.638 palavras, 371 linhas, 25 seções H2 e 11 subseções (8 H3 e 3 H4).
+- **Extensão editorial:** aproximadamente 6.625 palavras, 372 linhas, 25 seções H2 e 11 subseções (8 H3 e 3 H4).
 - **Atividades:** 15 exercícios — 3 objetivos, 5 discursivos, 4 análises de caso, 1 exercício matemático, 1 contraexemplo e 1 reescrita —, além da prática guiada e da recuperação ativa.
 - **Casos e contrastes substantivos:** estoque, benefício, atendimento, reembolso, cobrança e cadastro, com variações internas.
 - **Fontes utilizadas:** 7; a bibliografia distingue resolução de problemas, problemas pouco estruturados, currículo, vocabulário, requisitos e matemática elementar.
 - **Matemática introduzida:** igualdade, desigualdades, intervalos inclusivos e exclusivos, conjuntos e pertencimento, taxa, linha de base e meta.
 - **Leitura:** 1h35 a 1h55.
 - **Exercícios da aula:** 1h40 a 2h10.
-- **Prática associada:** 3h a 4h.
+- **Prática associada:** 3h30 a 4h30 no percurso essencial; 4h30 a 5h30 com aprofundamento.
 - **Revisão e recuperação ativa:** 25 a 35 minutos.
-- **Carga total sugerida:** 6h40 a 8h40, ajustável conforme experiência e profundidade das respostas.
+- **Carga total sugerida:** 7h10 a 9h10 no percurso essencial; 8h10 a 10h10 com aprofundamento, ajustável conforme experiência.

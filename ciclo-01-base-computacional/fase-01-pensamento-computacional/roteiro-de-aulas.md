@@ -16,7 +16,7 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 02 — O que é um problema
 
-**Estado:** aula integral e prática associada desenvolvidas.
+**Estado:** aula integral e prática associada desenvolvidas e revisadas técnica e pedagogicamente.
 
 **Finalidade:** transformar situações vagas em problemas delimitados e verificáveis.
 
