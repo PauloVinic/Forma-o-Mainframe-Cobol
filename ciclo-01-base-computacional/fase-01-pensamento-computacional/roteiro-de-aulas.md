@@ -16,6 +16,8 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 02 — O que é um problema
 
+**Estado:** aula integral e prática associada desenvolvidas.
+
 **Finalidade:** transformar situações vagas em problemas delimitados e verificáveis.
 
 **Desenvolvimento:** situação, necessidade, problema, sintoma, causa e hipótese causal; objetivo; estado inicial e desejado; resultado esperado; interessado; escopo; restrição; recurso; entrada; saída; regra; condição; critério de sucesso; ambiguidade e problema mal definido. Retomada funcional de necessidade, requisito, regra de negócio e especificação da Fase 0.
