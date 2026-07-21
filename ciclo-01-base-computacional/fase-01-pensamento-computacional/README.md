@@ -8,7 +8,7 @@ Pensamento computacional não é sinônimo de programação nem uma receita úni
 
 ## Estado da fase
 
-O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio, mas nenhuma aula integral foi criada. Os diretórios `aulas/`, `exercicios/`, `avaliacoes/` e `praticas/` reservam a organização futura sem antecipar materiais.
+O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio. A **Aula 01 — O que é pensamento computacional** foi desenvolvida em `aulas/aula-01-o-que-e-pensamento-computacional.md`, com prática associada em `praticas/pratica-01-reconhecendo-pensamento-computacional.md`; as demais aulas permanecem apenas planejadas.
 
 ## Resultados esperados
 
