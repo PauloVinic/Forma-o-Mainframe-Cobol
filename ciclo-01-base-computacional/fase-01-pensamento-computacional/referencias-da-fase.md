@@ -25,6 +25,12 @@ As referências abaixo sustentam definições, debates, progressão curricular, 
 - PÓLYA, George. *How to Solve It: A New Aspect of Mathematical Method*. 2. ed. Princeton: Princeton University Press, 1957. Referência para compreender, planejar, executar e revisar soluções, adaptada sem transformar heurística em algoritmo universal.
 - AHO, Alfred V.; HOPCROFT, John E.; ULLMAN, Jeffrey D. *Data Structures and Algorithms*. Reading, MA: Addison-Wesley, 1983. Apoio clássico para relação entre problemas, algoritmos e estruturas; aprofundamento fica para fase posterior.
 
+## Decomposição e sistemas
+
+- SIMON, Herbert A. The Architecture of Complexity. *Proceedings of the American Philosophical Society*, v. 106, n. 6, p. 467–482, 1962. [Registro estável](https://www.jstor.org/stable/985254). Apoia hierarquia, níveis e atenção às interações entre partes; não implica decomposição única nem independência completa.
+- PARNAS, David L. On the Criteria To Be Used in Decomposing Systems into Modules. *Communications of the ACM*, v. 15, n. 12, p. 1053–1058, 1972. DOI: [10.1145/361598.361623](https://doi.org/10.1145/361598.361623). Usado na Aula 03 somente para mostrar que o critério de divisão importa e que sequência de processamento não é a única base possível; projeto modular permanece reservado.
+- ISO; IEC; IEEE. *ISO/IEC/IEEE 15288:2023 — Systems and software engineering — System life cycle processes*. 2. ed. Geneva: ISO, 2023. [Registro oficial](https://www.iso.org/standard/81702.html). Apoia a possibilidade de aplicação iterativa, concorrente e recursiva a sistemas e seus elementos; não prescreve o método pedagógico da fase.
+
 ## Matemática e lógica
 
 - ROSEN, Kenneth H. *Discrete Mathematics and Its Applications*. 8. ed. New York: McGraw-Hill, 2019. Apoia proposições, conjuntos, relações, funções, contagem e crescimento; somente fundamentos necessários entram agora.
@@ -42,7 +48,8 @@ As referências abaixo sustentam definições, debates, progressão curricular, 
 | Aulas | Núcleo de fontes |
 |---|---|
 | 01 | Papert; Wing; National Research Council; Denning; Shute et al.; CS2023 |
-| 02–06 | Pólya; CS2023; ISO/IEC/IEEE 24765; Rosen |
+| 02 e 04–06 | Pólya; CS2023; ISO/IEC/IEEE 24765; Rosen |
+| 03 | Pólya; CS2023; Simon; Parnas; ISO/IEC/IEEE 24765 e 15288 |
 | 07–11 | CS2023; Cormen et al.; Knuth; Rosen; Lehman et al. |
 | 12 | ISO/IEC/IEEE 24765 e 29119-1; Myers et al.; SWEBOK |
 | 13 | CS2023; Cormen et al.; Knuth |

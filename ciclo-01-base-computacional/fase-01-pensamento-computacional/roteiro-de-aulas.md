@@ -30,6 +30,8 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 03 — Decomposição de problemas
 
+**Estado:** aula integral desenvolvida em `aulas/aula-03-decomposicao-de-problemas.md`, com prática associada em `praticas/pratica-03-decompondo-problemas.md`; ambas aguardam revisão técnica e pedagógica.
+
 **Finalidade:** dividir complexidade preservando relações e possibilidade de recomposição.
 
 **Desenvolvimento:** partes, responsabilidades, dependências, ordem e níveis; decomposição funcional, por dados e por etapas; critérios para parar de decompor; granularidade; interfaces iniciais; riscos de duplicidade, lacunas, partes incompatíveis e otimização local; recomposição e validação do todo.
