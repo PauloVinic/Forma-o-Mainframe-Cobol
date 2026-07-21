@@ -5,7 +5,7 @@
 - **Fase:** Fase 1 — Pensamento Computacional
 - **Aula relacionada:** Aula 01 — O que é pensamento computacional
 - **Nível esperado:** Nível 1 — Reconhecimento; Nível 2 — Explicação; início guiado do Nível 3 — Aplicação guiada
-- **Tempo estimado:** 2 h 30 min a 3 h, incluindo tentativa, consulta da solução e revisão
+- **Tempo estimado:** 2 h 30 min a 3 h 15 min, incluindo tentativa, consulta da solução e revisão
 
 ## Objetivo
 
@@ -83,106 +83,123 @@ Neste título, “não tecnológica” significa **sem computador ou tecnologia 
 
 > A família usa uma folha de papel com o nome do item, o motivo da necessidade, a indicação de que ele já existe ou não em casa e o resultado da compra: obtido, substituído, não encontrado ou deixado para depois. Antes e depois da compra, uma pessoa revisa as necessidades consideradas essenciais. Substituições dependem do orçamento, de restrições, de preferências e do julgamento das pessoas envolvidas. Nenhum computador é utilizado.
 
-## Tabela de análise
+## Etapa 1 — Mapa rápido das 12 descrições
 
-Preencha uma tabela para cada situação, mantendo as três descrições separadas.
+Compare todas as versões, mas responda de forma breve. Na primeira coluna, use uma classificação predominante, como **necessidade vaga**, **procedimento informal** ou **formulação estruturada inicial**. Uso de ferramenta, sinais parciais de pensamento computacional e proposta de automação podem aparecer como qualificações secundárias.
 
-| Campo de análise | Descrição A | Descrição B | Descrição C |
-|---|---|---|---|
-| Classificação predominante e classificações secundárias |  |  |  |
-| Objetivo aparente |  |  |  |
-| Elementos explícitos |  |  |  |
-| Suposições necessárias |  |  |  |
-| Dados ou estados identificáveis |  |  |  |
-| Procedimento presente |  |  |  |
-| Possibilidade de verificação |  |  |  |
-| Elementos de pensamento computacional |  |  |  |
-| Elementos ausentes |  |  |  |
-| Risco de automatização prematura |  |  |  |
+| Descrição | Classificação predominante e qualificação | Evidência textual decisiva |
+|---|---|---|
+| 1A |  |  |
+| 1B |  |  |
+| 1C |  |  |
+| 2A |  |  |
+| 2B |  |  |
+| 2C |  |  |
+| 3A |  |  |
+| 3B |  |  |
+| 3C |  |  |
+| 4A |  |  |
+| 4B |  |  |
+| 4C |  |  |
+
+Uma classificação sem trecho de apoio não é suficiente. Também não transforme uma palavra isolada, como “sistema”, “estado” ou “revisão”, em prova automática.
+
+## Etapa 2 — Análise aprofundada de quatro casos
+
+Analise apenas **1B, 2C, 3B e 4C**, um caso de cada domínio. Limite cada célula a uma ou duas frases.
+
+| Caso | Evidência explícita | Inferência tentadora | Escolha justificada | Informação que poderia mudar a escolha |
+|---|---|---|---|---|
+| 1B |  |  |  |  |
+| 2C |  |  |  |  |
+| 3B |  |  |  |  |
+| 4C |  |  |  |  |
+
+O objetivo não é descobrir um rótulo secreto. É mostrar por que a escolha atual decorre do texto e em que condição precisaria ser revista.
+
+## Etapa 3 — Uma lente diferente por domínio
+
+1. **Estoque — do procedimento à estrutura.** Compare 1B e 1C. Indique três elementos que se tornaram explícitos e duas lacunas que ainda impedem verificar uma indicação de reposição. Não complete as regras ausentes.
+2. **Benefício — rastreabilidade e limite.** Explique por que os registros previstos em 2C permitem examinar uma decisão, mas não garantem regra adequada, dado correto ou tratamento justo. Identifique uma pessoa ou grupo que suportaria o risco de erro.
+3. **Atendimento — classificação discutível.** Apresente duas classificações plausíveis para 3B, escolha uma delas e indique que nova evidência faria você rever essa escolha.
+4. **Compra cotidiana — transferência sem computador.** Explique por que a ausência de computador não decide a classificação de 4C e indique onde julgamento humano continua indispensável.
+
+Cada resposta deve ter entre 60 e 100 palavras. Use as perguntas como apoio; não produza especificação completa, regra de decisão ou solução tecnológica.
+
+## Etapa 4 — Síntese e revisão
+
+- produza um contraexemplo de 80 a 120 palavras para uma destas afirmações: “usar computador demonstra pensamento computacional”, “qualquer procedimento repetível é uma solução adequada” ou “automatizar torna um processo correto”;
+- escolha uma descrição A e registre **três fatos explícitos, três lacunas e duas perguntas de esclarecimento**, sem reescrever o problema nem propor solução;
+- consulte a solução comentada somente depois da tentativa e registre duas revisões: o que mudou e que evidência motivou a mudança.
+
+## Organização do tempo
+
+- leitura das situações e mapa rápido: 30 a 40 min;
+- análises aprofundadas e quatro lentes: 60 a 75 min;
+- contraexemplo e quadro de fatos, lacunas e perguntas: 25 a 35 min;
+- consulta à solução, revisão e autocorreção: 35 a 45 min.
 
 ## Entrega esperada
 
-Entregue:
-
-- quatro tabelas preenchidas;
-- uma justificativa de 150 a 250 palavras para uma classificação discutível, preferencialmente 3B, 4B ou 4C;
-- um contraexemplo a uma destas afirmações: “usar computador demonstra pensamento computacional”, “qualquer lista de passos é algoritmo” ou “automatizar torna um processo correto”;
-- uma versão melhorada de uma descrição vaga, com 100 a 180 palavras, registrando o conhecido, o que precisa ser esclarecido e como o resultado poderia ser examinado, ainda sem solução completa;
-- depois da consulta à solução comentada, um registro breve de duas revisões realizadas.
+Entregue o mapa dos 12 casos, a tabela aprofundada, as quatro respostas por domínio, o contraexemplo, o quadro de fatos/lacunas/perguntas e o registro das duas revisões. Respostas concisas são preferíveis a preenchimento repetitivo.
 
 # Solução comentada — consulte apenas depois de tentar
 
-As respostas abaixo são referências de análise, não redações obrigatórias. “Explícito” corresponde à evidência textual; “suposição” corresponde a inferência; “classificação” é escolha justificada. Uma alternativa deve ser aceita quando usa evidência, declara critérios e reconhece lacunas.
+Use esta parte para comparar critérios, não para copiar redações. O mapa oferece uma classificação aceitável e uma âncora textual; outras escolhas continuam válidas quando distinguem evidência, inferência e decisão e reconhecem as lacunas.
 
-## Situação 1 — Comentário
+## Mapa de referência
 
-### 1A
+| Descrição | Classificação aceitável | Âncora textual |
+|---|---|---|
+| 1A | necessidade vaga | declara indisponibilidade, mas não define escopo ou verificação |
+| 1B | procedimento informal com ferramenta | informa momento, responsável e ação; “baixo” e “suficiente” permanecem vagos |
+| 1C | formulação estruturada inicial | explicita informações, resultado rastreável e pontos ainda indefinidos |
+| 2A | necessidade vaga com objetivos em tensão | pede rapidez e prevenção de pagamento indevido sem critérios |
+| 2B | procedimento informal com ferramenta e proposta prematura de automação | usa sistema, mas “tudo certo” e “casos mais fáceis” não são definidos |
+| 2C | formulação estruturada inicial e sociotécnica | registra documentos, regra, motivo, exceções e análise humana |
+| 3A | necessidade vaga | “diminuir” e “atender melhor” não possuem medida |
+| 3B | procedimento informal com sinais parciais | representa solicitações e ordem, mas não define urgência ou retorno |
+| 3C | formulação estruturada inicial | explicita campos, estados, explicação posterior e perguntas abertas |
+| 4A | necessidade cotidiana vaga | “item importante” não possui critério declarado |
+| 4B | procedimento informal manual com sinais parciais | usa lista e marcação, mas não distingue todos os resultados |
+| 4C | formulação estruturada inicial manual e limítrofe | representa itens e estados, prevê revisão e preserva julgamento humano |
 
-**Evidência:** o texto nomeia centros, produtos e um estado indesejado, mas não informa escopo, período, procedimento nem o significado de “ficar sem”. **Inferência:** presumir que toda falta tem a mesma causa ou que já existe uma regra de reposição seria inventar informação. **Classificação escolhida:** descrição vaga de uma necessidade; o objetivo aparente é evitar indisponibilidade e ainda não há base para verificar o resultado. **Risco de automatização prematura:** produzir excesso de estoque ou priorização inadequada a partir de critérios não declarados.
+As letras A, B e C ajudam a comparação, mas não funcionam como gabarito automático. Em especial, 3B, 4B e 4C admitem mais de uma classificação predominante.
 
-### 1B
+## Modelo de análise aprofundada — 2C
 
-**Evidência:** há uma planilha, um momento, um responsável, uma observação, uma ação e uma comunicação; “baixo” e “quantidade suficiente” não são definidos. **Inferência:** não se pode concluir que a planilha contenha histórico confiável nem que pessoas diferentes julguem da mesma forma. **Classificação escolhida:** procedimento informal com uso de ferramenta e sinais parciais de pensamento computacional. A verificação é parcial, pois pode haver registro, mas nenhum resultado esperado foi definido. **Risco de automatização prematura:** repetir em escala decisões baseadas em termos vagos.
+**Evidência:** a descrição torna explícitos documentos, verificações, versão da regra, motivo da decisão, exceções e análise humana. Também declara o que permanece aberto: regras aplicáveis, acesso, correção, contestação e critérios para comparar casos.
 
-### 1C
+**Inferência tentadora:** a existência de rastreabilidade não prova que a regra seja adequada, que os dados estejam corretos ou que casos semelhantes recebam tratamento consistente. Esses pontos precisam ser investigados.
 
-**Evidência:** objeto de análise, informações disponíveis, resultado esperado e lacunas estão declarados; a origem de uma indicação poderia ser examinada. **Inferência:** não se pode presumir que os registros sejam atuais, que “saldo disponível” já tenha significado comum ou que exista uma regra aprovada. **Classificação escolhida:** formulação estruturada inicial; “modelo inicial” também é justificável, desde que não seja confundido com especificação completa. Ainda não existe procedimento de execução nem garantia de correção. **Risco de automatização prematura:** dar aparência de precisão a indicações produzidas com conceitos, limites ou responsabilidades indefinidos.
+**Escolha justificada:** uma classificação defensável é “formulação estruturada inicial e sociotécnica, com possibilidade parcial de verificação”. Ela é inicial porque ainda não há especificação completa; é sociotécnica porque decisões, revisão e responsabilidade continuam distribuídas entre pessoas, regras e sistemas.
 
-## Situação 2 — Comentário
+**Informação que poderia mudar a escolha:** se documentos, versões e motivos não fossem realmente registrados, a classificação perderia força. Se regras, critérios, responsabilidades e formas de contestação fossem definidos e validados, o caso estaria mais maduro, embora isso ainda não garantisse uma decisão correta ou justa.
 
-### 2A
+Use a mesma estrutura em 1B, 3B e 4C. Não procure imitar o tamanho do modelo: procure tornar visível a passagem da evidência para a decisão.
 
-**Evidência:** o texto menciona velocidade e prevenção de pagamento indevido, sem dados, regras, procedimento ou medida. **Inferência:** não é possível saber se os dois objetivos são compatíveis; aprovar menos poderia reduzir pagamentos e atrasar casos devidos, enquanto aprovar mais rapidamente poderia elevar risco. **Classificação escolhida:** descrição vaga de uma necessidade com objetivos potencialmente conflitantes. **Risco de automatização prematura:** transferir ao solicitante o custo de critérios e conflitos ainda não esclarecidos.
+## Casos limítrofes
 
-### 2B
+### 3B — procedimento ou formulação inicial?
 
-**Evidência:** há uso de sistema, conferência, aprovação, devolução e uma proposta de reordenar casos; “tudo certo” e “casos mais fáceis” não têm critério. **Inferência:** estados como em análise, aprovado e devolvido podem ser reconhecidos, mas o texto não permite presumir elegibilidade, justiça da fila ou tratamento de exceções. **Classificação escolhida:** procedimento informal com uso de ferramenta e proposta de automação. O sistema utilizado não torna a formulação suficiente. **Risco de automatização prematura:** priorizar ou devolver solicitações por uma noção não definida de facilidade ou correção.
+“Procedimento informal com sinais parciais” enfatiza que urgência, empate, retorno e acessibilidade não estão definidos. “Formulação inicial insuficiente” também pode ser aceita se a justificativa reconhecer as representações e os estados já presentes sem fingir que o problema está resolvido. A melhor resposta depende do critério declarado, não do rótulo isolado.
 
-### 2C
+### 4B — pensamento computacional ou organização cotidiana?
 
-**Evidência:** documentos, verificações, versão da regra, motivo, exceções e análise humana são explícitos; regras, acesso, correção, contestação e critérios de consistência permanecem abertos. **Inferência:** rastreabilidade não permite presumir que a regra seja adequada, que os dados estejam corretos ou que casos semelhantes já recebam tratamento consistente. **Classificação escolhida:** formulação estruturada inicial e deliberadamente sociotécnica, com possibilidade parcial de verificação. **Risco de automatização prematura:** aplicar de modo rastreável uma regra inadequada ou dados incorretos e ampliar efeitos sobre pessoas.
+A lista externa e a marcação mostram representação e acompanhamento de estado. Ao mesmo tempo, o texto não distingue compra, substituição e desistência, nem declara critérios compartilhados. Classificá-lo como procedimento informal com sobreposição parcial é mais prudente do que transformar toda lista em pensamento computacional.
 
-## Situação 3 — Comentário
+### 4C — estrutura sem computador
 
-### 3A
+A folha representa itens, motivos e estados, prevê revisão e preserva julgamento humano. Isso sustenta uma formulação estruturada inicial executada manualmente. Também é defensável falar em resolução cotidiana com forte sobreposição, desde que a ausência de computador não seja usada como argumento decisivo.
 
-**Evidência:** há dois objetivos gerais, reduzir fila e atender melhor, sem medida, público, período ou procedimento. **Inferência:** os objetivos podem convergir ou competir; o texto não autoriza escolher uma interpretação de “melhor”. **Classificação escolhida:** descrição vaga de uma necessidade, sem base suficiente para verificação. **Risco de automatização prematura:** otimizar apenas velocidade e prejudicar qualidade, acessibilidade ou casos complexos.
+## Critérios para revisar as quatro lentes
 
-### 3B
+- **Estoque:** a comparação entre 1B e 1C deve mostrar o que muda na representação do problema, e não apenas dizer que uma descrição é “mais detalhada”.
+- **Benefício:** procure quem poderá reconstruir uma decisão, quais limites continuam abertos e por que rastreabilidade não equivale a correção.
+- **Atendimento:** se você propôs duas classificações para 3B, verifique se ambas usam evidências do texto e se cada uma assume um critério diferente.
+- **Atividade cotidiana:** sua análise deve explicar por que computador não é requisito e, ao mesmo tempo, por que qualquer sequência organizada não basta.
 
-**Evidência:** a senha representa uma solicitação; existe ordem de chegada, prioridade para urgência e uma ação diante da ausência. **Inferência:** estados como aguardando, chamada e ausente podem ser reconhecidos, mas urgência, empate, retorno e acessibilidade não foram definidos. **Classificação escolhida:** procedimento informal com elementos de representação, estado e priorização; “formulação inicial insuficiente” é defensável se as lacunas forem reconhecidas. **Risco de automatização prematura:** repetir em escala uma classificação de urgência ou uma ordem inadequada.
-
-### 3C
-
-**Evidência:** campos, estados, explicação posterior e perguntas abertas estão explícitos; não há regra completa de ordenação nem definição de “atender melhor”. **Inferência:** a presença dos campos não permite concluir que os critérios sejam legítimos ou que qualidade se reduza ao tempo de espera. **Classificação escolhida:** formulação estruturada inicial, com possibilidade de verificar parte da ordem, mas não a qualidade total do atendimento. **Risco de automatização prematura:** aplicar critérios ainda não legitimados e prejudicar pessoas ou grupos.
-
-## Situação 4 — Comentário
-
-### 4A
-
-**Evidência:** há um objetivo cotidiano, mas “item importante” não tem significado declarado e não existe procedimento ou forma de verificação. **Inferência:** não se pode presumir quem decide a importância, quais compras pertencem à semana ou por que algo foi esquecido. **Classificação escolhida:** descrição vaga de uma necessidade cotidiana. **Risco de automatização prematura:** escolher um aplicativo que apenas digitalize a ambiguidade.
-
-### 4B
-
-**Evidência:** há inspeção da cozinha, registro em papel e marcação dos itens encontrados; a lista representa necessidades, mas o ato de riscar não distingue compra, substituição ou desistência. **Inferência:** observar a cozinha pode não revelar todas as necessidades, e pessoas diferentes podem usar critérios distintos. **Classificação escolhida:** procedimento informal manual com representação externa e sinais parciais de pensamento computacional; “raciocínio cotidiano organizado com sobreposição” também é aceitável. **Risco de automatização prematura:** ampliar uma lista incompleta ou retirar julgamento contextual sem esclarecer necessidade, resultado e exceções.
-
-### 4C
-
-**Evidência:** a folha representa itens, motivos e estados; há revisão, categorias de resultado e limites humanos explícitos; nenhum computador é utilizado. **Inferência:** não se pode presumir que orçamento, restrições ou preferências estejam completos nem que toda substituição admita regra fixa. **Classificação escolhida:** formulação estruturada inicial executada manualmente; “resolução geral organizada com forte sobreposição” também é justificável quando apoiada em representação, estado, repetibilidade e verificação. A ausência de computador não elimina esses sinais. **Risco de automatização prematura:** recomendar compras ou substituições inadequadas a partir de informações familiares incompletas e reduzir o espaço do julgamento contextual.
-
-## Modelos de entregas complementares
-
-### Justificativa possível para 4C
-
-A descrição 4C apresenta elementos de pensamento computacional sem programação porque explicita uma representação, distingue estados e prevê revisão. A evidência está nos campos da folha e nas categorias de resultado. A classificação não precisa ser absoluta: o processo continua cotidiano e inclui julgamentos humanos não reduzidos a regras. Por isso, “formulação estruturada inicial com elementos de pensamento computacional” é mais preciso que afirmar apenas “é pensamento computacional”. Também seria defensável falar em sobreposição com raciocínio organizado, desde que a ausência de computador não seja usada para negar os elementos observáveis.
-
-### Contraexemplo possível
-
-Uma pessoa copia para uma planilha um número recebido por mensagem e encaminha o arquivo porque essa foi a instrução. Ela usa computador e uma representação tabular, mas a descrição não mostra que tenha formulado o problema, compreendido o dado, escolhido o procedimento ou verificado o resultado. O processo mais amplo pode ter sido estruturado por outra pessoa; o simples uso da planilha não demonstra isso.
-
-### Melhoria possível para 1A
-
-> A necessidade declarada é reduzir episódios em que produtos necessários não estão disponíveis nos centros de distribuição. Antes de escolher uma solução, a equipe precisa esclarecer quais produtos, centros e períodos pertencem ao escopo; o que será considerado falta; quais informações sobre estoque existem e quando são atualizadas; quais movimentos ainda não foram concluídos; quem decide sobre reposição; e que evidência permitiria observar melhora. Esses pontos são perguntas abertas. A descrição não define uma regra de reposição nem determina que o processo deva ser automatizado.
+No contraexemplo autoral, verifique a fronteira correspondente à afirmação escolhida: tecnologia sem evidência de formulação, repetibilidade sem adequação ou automação sem garantia de correção. No inventário de uma descrição A, não converta suposições em fatos: lacunas devem terminar como perguntas investigáveis.
 
 ## Critérios de autocorreção
 
@@ -195,4 +212,4 @@ Uma pessoa copia para uma planilha um número recebido por mensagem e encaminha 
 | Integridade | inventa regra, dado ou ferramenta | marca o que falta | transforma lacunas em perguntas |
 | Limites | trata automação como correta ou neutra | identifica risco pertinente | relaciona risco a objetivo, dado, pessoa ou responsabilidade |
 
-Uma resposta alternativa é válida quando sustenta a classificação no texto, explicita critérios, reconhece limites, não transforma inferência em fato e não exige computador para reconhecer estrutura. Depois de comparar, revise duas células da sua tabela e registre por que mudaram. Copiar a solução sem justificar a revisão não produz nova evidência de domínio.
+Uma resposta alternativa é válida quando sustenta a classificação no texto, explicita critérios, reconhece limites, não transforma inferência em fato e não exige computador para reconhecer estrutura. Depois de comparar, revise duas respostas do mapa ou da tabela aprofundada e registre por que mudaram. Copiar a solução sem justificar a revisão não produz nova evidência de domínio.

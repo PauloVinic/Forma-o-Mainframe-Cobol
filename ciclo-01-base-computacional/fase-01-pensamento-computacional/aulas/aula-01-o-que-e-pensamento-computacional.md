@@ -36,23 +36,23 @@ Uma rede de distribuição opera vários centros e recebe a seguinte solicitaç�
 
 > Precisamos evitar que os centros de distribuição fiquem sem produtos.
 
-A frase expressa uma necessidade legítima. Produtos indisponíveis podem interromper vendas, atrasar entregas e prejudicar clientes. Ainda assim, a solicitação não define completamente um problema. “Ficar sem” significa saldo igual a zero, quantidade insuficiente para pedidos confirmados ou risco de ruptura nos próximos dias? Todos os produtos merecem o mesmo tratamento? Qual centro, período e nível de serviço estão em questão? O saldo registrado corresponde ao saldo físico? Há entregas já contratadas? Quanto custa manter estoque adicional? Quem pode autorizar compras?
+A frase expressa uma necessidade legítima, mas não esclarece produtos, centros, período nem o significado de “ficar sem”. Também não informa que dados ou estados estão disponíveis, quais regras limitam uma ação ou que evidência indicaria melhora. Saldo físico, saldo registrado e quantidade já comprometida, por exemplo, podem sustentar interpretações diferentes.
 
-Também não há uma solução inevitável. A organização poderia aumentar estoques, melhorar previsões, corrigir atrasos de fornecedores, redistribuir itens entre centros, rever cadastros ou combinar essas medidas. Comprar mais de tudo talvez reduza algumas faltas, mas aumente capital imobilizado, perdas e espaço ocupado. Instalar uma ferramenta de previsão talvez ajude, mas não corrige dados atrasados por si só.
+Também não há solução inevitável. Aumentar estoque, redistribuir itens, corrigir registros ou rever entregas responderia a diagnósticos distintos. Escolher imediatamente uma ferramenta de previsão transformaria uma alternativa em parte presumida do problema.
 
-Pensar computacionalmente começa, neste caso, por resistir ao salto da necessidade para a ferramenta. A situação precisa tornar visíveis objetos observados, informações disponíveis, mudanças relevantes, regras, incertezas, possíveis ações e formas de verificar resultados. Não faremos essa formulação completa agora — esse será o foco da Aula 02. Por enquanto, o caso mostra por que uma intenção compreensível para pessoas ainda pode ser insuficiente para análise, repetição ou automatização.
+Por enquanto, basta distinguir necessidade expressa, informação conhecida e perguntas ainda abertas. A formulação completa pertence à Aula 02; aqui, o caso apenas mostra por que uma intenção compreensível ainda pode ser insuficiente para análise ou automatização.
 
 ## Uma definição operacional para a formação
 
 Nesta formação, adotaremos a seguinte definição operacional:
 
-> **Pensamento computacional é uma família de práticas e perspectivas usada para formular problemas e representar soluções de modo que elementos relevantes — como dados, estados, relações, regras, partes, resultados e limites — se tornem explícitos e analisáveis, e que procedimentos ou estratégias possam ser executados, verificados e aprimorados por pessoas, máquinas ou sistemas sociotécnicos, com automatização quando ela for pertinente.**
+> **Pensamento computacional é uma família de práticas e perspectivas orientadas pela computação para formular problemas e representar soluções de modo compatível com o processamento de informação. Nessas representações, elementos relevantes — como dados, estados, decomposições, relações, regras, procedimentos e limites — podem tornar-se explícitos para análise; estratégias podem ser executadas ou simuladas, resultados verificados e soluções revistas por pessoas, máquinas ou sistemas sociotécnicos. Isso não exige programação nem torna a automação obrigatória.**
 
-“Definição operacional” significa uma convenção explícita para orientar estudo e avaliação. Ela indica o que o aluno deverá reconhecer e fazer, mas não pretende encerrar um debate acadêmico. Nas próximas aulas, palavras como problema, estado, decomposição, modelo, padrão, representação e algoritmo ganharão tratamento próprio. A definição será, portanto, refinada pela prática.
+“Definição operacional” significa uma convenção explícita para orientar estudo e avaliação. Ela indica o que o aluno deverá reconhecer e fazer, mas não encerra o debate acadêmico. Problema, estado, decomposição, modelo, padrão, representação e algoritmo ganharão tratamento próprio nas próximas aulas.
 
-Chamar o conceito de **família** evita uma sequência única e obrigatória. **Formular** lembra que a situação não chega pronta; **representar** torna relações examináveis. Separar elementos analisáveis de procedimentos executáveis evita tratar dados ou limites como coisas executáveis. **Verificar e aprimorar** mostram que propor passos não basta. Incluir **pessoas, máquinas e sistemas sociotécnicos** impede reduzir toda solução a software, enquanto “quando pertinente” evita pressupor que automatizar seja sempre desejável.
+O trecho **orientadas pela computação** estabelece uma fronteira: não basta que uma atividade humana seja organizada; ela precisa mobilizar práticas ou formas de representação relacionadas ao processamento de informação. Chamar o conceito de **família** evita uma sequência obrigatória. Admitir execução ou simulação por diferentes agentes preserva atividades manuais e sistemas híbridos sem tratar toda solução como programa nem toda automação como desejável.
 
-Essa formulação é inspirada, entre outras fontes, pela definição apresentada por Jeannette Wing em 2010, atribuída ao trabalho com Jan Cuny e Larry Snyder: problemas e soluções são formulados de modo que um agente de processamento de informação possa efetivamente realizar a solução. Wing esclarece que esse agente pode ser humano, máquina ou uma combinação. A definição do curso acrescenta, para fins pedagógicos, a necessidade de verificar, revisar e declarar limites. Ela não afirma que toda solução precise virar programa.
+Essa formulação dialoga, entre outras fontes, com a definição que Wing apresentou em 2010 como usada por ela, Jan Cuny e Larry Snyder, inspirada por uma troca de mensagens com Al Aho. Nela, problemas e soluções são formulados para que um agente de processamento de informação possa realizar a solução; esse agente pode ser humano, máquina ou combinação. A definição do curso acrescenta, para fins pedagógicos, verificação, revisão e limites declarados.
 
 ## Por que o conceito permanece debatido
 
@@ -74,7 +74,11 @@ O artigo de Wing na *Communications of the ACM*, em 2006, teve papel central na 
 
 Essa expansão trouxe refinamentos e críticas. Revisões organizaram componentes recorrentes sem estabelecer modelo único, e Denning alertou contra incluir operação de ferramentas ou qualquer rotina como evidência. A história não vai de um inventor a uma definição final: registra usos, difusão, apropriações e críticas.
 
-## Relação com a Ciência da Computação
+## Fronteiras do conceito
+
+Uma definição útil precisa mostrar a relação com a computação e também o que não basta para caracterizar pensamento computacional.
+
+### Relação com a Ciência da Computação
 
 Pensamento computacional se relaciona diretamente com a Ciência da Computação porque mobiliza ideias centrais ao estudo da computação: representar informação, trabalhar em diferentes níveis de abstração, decompor sistemas, construir procedimentos, acompanhar estados, avaliar custos e examinar o que pode ou não ser realizado por determinados meios. O relatório curricular CS2023 inclui, entre características esperadas de egressos, resolução de problemas, decomposição, reconhecimento de padrões de solução, pensamento algorítmico e trabalho em múltiplos níveis de abstração.
 
@@ -82,7 +86,7 @@ Essa relação não transforma pensamento computacional na disciplina completa. 
 
 Também não é necessário conhecer previamente uma linguagem para começar. A capacidade de tornar uma regra explícita, escolher dados relevantes ou questionar como um resultado será verificado pode anteceder a implementação. Mais tarde, programação permitirá materializar parte dessas decisões e produzir comportamento executável. Neste momento, separar as camadas é pedagogicamente necessário.
 
-## Pensamento computacional não é programação
+### Pensamento computacional não é programação
 
 Programar envolve construir uma implementação em uma linguagem e em um ambiente técnico. Pensamento computacional atua também antes, durante e depois dessa atividade: ajuda a formular o que está em questão, selecionar representações, estruturar uma solução, prever comportamento, verificar resultados e revisar escolhas. Uma pessoa pode escrever código sintaticamente válido para um problema mal entendido; nesse caso, houve programação, mas a formulação continua frágil.
 
@@ -99,7 +103,7 @@ Para preservar o vocabulário da Fase 0, compare os termos sem tentar esgotá-lo
 
 Uma progressão didática possível é: situação → problema formulado → modelo → solução → algoritmo → implementação → programa → execução → resultado observado. Ela não é uma linha rígida. Um teste pode levar à revisão do algoritmo; uma limitação técnica pode exigir novo modelo; uma conversa com interessados pode reformular o problema. O valor da progressão está em impedir que código e resultado sejam tratados como se contivessem, sozinhos, todas as decisões anteriores.
 
-## Pensamento computacional não é uso de computador
+### Pensamento computacional não é uso de computador
 
 Uma pessoa pode preencher uma planilha, clicar em um relatório ou aceitar a sugestão de um aplicativo sem compreender quais dados foram usados, quais regras produziram o resultado ou em que condições ele deixa de ser confiável. Há uso de computador, mas não há evidência suficiente de formulação ou projeto computacional por parte do usuário.
 
@@ -109,7 +113,7 @@ O inverso também ocorre. Uma equipe pode representar manualmente estados de ped
 
 Operar ferramentas é uma competência real e pode ser necessária. O ponto é não usá-la como substituto para compreender ou projetar o processamento. Ferramentas incorporam decisões tomadas por outras pessoas; saber utilizá-las não demonstra automaticamente saber formular as decisões que elas executam.
 
-## Pensamento computacional não é qualquer pensamento organizado
+### Pensamento computacional não é qualquer pensamento organizado
 
 Se toda atividade organizada fosse pensamento computacional, o termo deixaria de distinguir algo. Planejar uma conversa delicada, interpretar uma obra de arte ou deliberar sobre um valor moral pode envolver disciplina, sequência e revisão sem que seja útil classificar a atividade inteira como computacional. A presença de ordem é insuficiente.
 
@@ -143,13 +147,11 @@ Reconhecer padrões envolve semelhanças, diferenças e regularidades. Faltas ap
 
 ### Procedimentos e algoritmos
 
-Uma intenção como “reponha quando estiver baixo” precisa ganhar precisão antes de orientar execução consistente. Quem ou o que observa? O que conta como baixo? Que ação é permitida? Como registrar o resultado? Um procedimento informal pode depender de experiência humana e contexto tácito. Um algoritmo exige definição mais rigorosa para uma classe de situações, mas essa definição pertence à Aula 07. Nesta aula, o ponto é apenas distinguir intenção, orientação informal e procedimento suficientemente examinável.
+Uma intenção como “reponha quando estiver baixo” precisa ganhar precisão antes de orientar execução consistente. Um procedimento informal ainda pode depender de experiência e contexto tácito. A Aula 07 estabelecerá os critérios de um algoritmo; aqui, basta distinguir intenção, orientação informal e procedimento que começa a se tornar examinável.
 
 ### Representação
 
-Raciocínio mantido apenas na cabeça é difícil de comparar, comunicar e verificar. Texto estruturado pode tornar perguntas explícitas; tabelas podem aproximar atributos; diagramas podem destacar relações; modelos podem selecionar aspectos relevantes; e, futuramente, pseudocódigo e outras notações poderão expressar procedimentos. O pseudocódigo será estudado em aula posterior; aqui ele é apenas mencionado, sem notação ou exemplo. Cada representação evidencia algo e oculta algo. Uma tabela favorece comparação entre centros, mas talvez esconda a ordem dos eventos; uma narrativa preserva contexto, mas pode deixar regras ambíguas.
-
-Representar não garante qualidade. Uma regra inadequada pode ser desenhada com clareza, e uma tabela precisa pode conter dados errados. A representação cria uma superfície para análise: pessoas podem apontar lacunas, comparar versões e discutir divergências. A escolha e combinação de formas será assunto da Aula 06.
+Raciocínio mantido apenas na cabeça é difícil de comparar, comunicar e verificar. Texto estruturado, tabelas, diagramas e modelos tornam aspectos diferentes examináveis; futuramente, pseudocódigo poderá expressar procedimentos. Ele é apenas mencionado aqui, sem notação ou exemplo. Representar não garante qualidade, mas cria uma superfície para localizar lacunas e divergências. A escolha, a combinação e as perdas de cada forma pertencem à Aula 06.
 
 ### Verificação, avaliação e revisão
 
@@ -159,7 +161,9 @@ Testar, depurar e discutir correção ganharão tratamento próprio na Aula 12; 
 
 Essas dimensões formam ciclos. Uma tentativa de verificação pode revelar dado ausente e levar à reformulação; uma representação pode mostrar que a decomposição perdeu uma relação; uma exceção pode restringir uma generalização; um limite de automação pode devolver uma decisão ao julgamento humano.
 
-## Pessoas, máquinas e sistemas sociotécnicos
+## Pessoas, máquinas, escala e automação
+
+### Distribuição da execução e da responsabilidade
 
 Uma solução estruturada pode ser executada manualmente, automatizada ou dividida entre pessoas e tecnologias. Aqui, **execução** tem sentido amplo: uma pessoa realiza um procedimento; um computador executa instruções de um programa. Reconhecer ambos os agentes não torna as formas idênticas. Uma equipe pode conferir solicitações, sistemas podem calcular indicadores e encaminhar exceções, e pessoas autorizadas podem decidir casos dependentes de contexto. A análise computacional não obriga implementação integral em software.
 
@@ -169,7 +173,7 @@ Automatizar muda a distribuição do trabalho e da responsabilidade; não elimin
 
 Alguns aspectos resistem à automatização porque dependem de informação não registrada, negociação, valores ou julgamento contextual. Outros poderiam ser automatizados, mas não deveriam sê-lo sem controles, explicabilidade ou supervisão. Pensamento computacional ajuda a tornar essas fronteiras discutíveis; não decide sozinho onde colocá-las.
 
-## Escala, repetição e automação
+### Quando escala e repetição importam
 
 A abordagem computacional ganha importância quando uma organização lida com grande volume, tarefas recorrentes, múltiplos estados, muitas regras, integrações e necessidade de rastreabilidade. Conferir manualmente cinco movimentos pode ser viável; conferir milhões exige representações e procedimentos que preservem consistência, permitam dividir trabalho e registrem o que ocorreu. Escala torna ambiguidades caras.
 
@@ -205,60 +209,37 @@ A descrição adiciona uma observação e uma ação, mas continua dependente de
 
 ### Versão C — Formulação inicial estruturada
 
-Sem decidir regras, podemos organizar o que merece investigação:
+Sem decidir regras, podemos separar o que já foi dito, o que apenas parece relevante e o que continua desconhecido:
 
-| Aspecto | Elementos inicialmente visíveis | Questões ainda abertas |
-|---|---|---|
-| Objetos observados | produtos, centros, movimentos e pedidos | quais produtos e centros entram no escopo? |
-| Estados relevantes | quantidade registrada, quantidade física, quantidade comprometida | qual medida define disponibilidade? |
-| Eventos | venda, recebimento, ajuste, transferência e cancelamento | quando cada evento passa a produzir efeito? |
-| Dados possíveis | saldos, datas, demanda, entregas previstas e prazos | origem, qualidade e atualidade são suficientes? |
-| Regras | algum critério indicará risco e alguma ação será permitida | quem define limites e autoriza ações? |
-| Resultados | alerta, pedido, transferência ou decisão humana | o que será produzido e para quem? |
-| Exceções | produto bloqueado, dado divergente, fornecedor indisponível | como reconhecer e encaminhar cada caso? |
-| Evidências | histórico de movimentos, registros de decisão e contagem física | o que permitirá verificar resultado e causa? |
+| Aspecto | Conhecido na situação | Hipótese ou inferência a confirmar | Ainda desconhecido |
+|---|---|---|---|
+| Objetos | há produtos e centros de distribuição | movimentos e pedidos podem afetar disponibilidade | quais produtos e centros pertencem ao escopo? |
+| Estados | a indisponibilidade é indesejada | saldos físico, registrado e comprometido podem diferir | que estado caracteriza “falta”? |
+| Eventos e dados | nenhuma fonte foi declarada | vendas, recebimentos, transferências e datas podem importar | que dados existem e com que qualidade e atualidade? |
+| Regras e ações | nenhuma regra ou ação foi definida | alerta, compra ou transferência são alternativas possíveis | que critérios valem e quem autoriza cada ação? |
+| Resultado e evidência | deseja-se reduzir faltas | históricos e contagens podem apoiar verificação | qual resultado será aceito e como será examinado? |
 
-A versão C ainda não é especificação nem algoritmo. Sua contribuição é separar o explicitamente observado das perguntas em aberto. Ela torna a situação comparável e discutível sem preencher lacunas com suposições silenciosas. A Aula 02 ensinará a avançar dessa organização inicial para um problema delimitado.
+A coluna intermediária não acrescenta fatos: ela registra inferências que precisariam ser confirmadas. A versão C ainda não é problema completamente formulado, especificação ou algoritmo. Sua contribuição é tornar a diferença entre conhecido, inferido e desconhecido comparável, preparando a delimitação que será ensinada na Aula 02.
 
-## Exemplos e contraexemplos
+## Exemplos, contraexemplos e erros de classificação
 
-**Exemplo 1 — Conciliação de cobranças.** Uma equipe identifica fontes, representa estados, separa divergências, descreve procedimento repetível, verifica amostras e registra casos não cobertos. Há sinais claros antes de qualquer implementação.
+### Contrastes entre casos
 
-**Exemplo 2 — Rotas de entrega.** Analistas modelam pontos, horários e capacidade, comparam estratégias e examinam custos e exceções. O modelo não decide se rapidez deve prevalecer sobre condições de trabalho ou impacto ambiental.
+**Exemplo positivo 1 — Conciliação de cobranças.** Uma equipe identifica fontes, representa estados, separa divergências, descreve um procedimento repetível, verifica amostras e registra casos não cobertos. Há sinais relacionados à computação antes de qualquer implementação.
 
-**Uso de computador sem formulação 1.** Uma pessoa cola dados em planilha pronta e envia o total sem conhecer origem, regra ou exclusões. Há operação, não evidência bastante de formulação.
+**Exemplo positivo 2 — Rotas de entrega.** Analistas representam pontos, horários e capacidade, comparam estratégias e examinam custos e exceções. O modelo apoia processamento e simulação, mas não decide se rapidez deve prevalecer sobre condições de trabalho ou impacto ambiental.
 
-**Uso de computador sem formulação 2.** Um gestor pede inteligência artificial contra atrasos sem identificar tipos, causas, dados, restrições ou sucesso. A tecnologia antecede o problema.
+**Dois contraexemplos com computador.** Uma pessoa cola dados em planilha pronta e envia o total sem conhecer origem, regra ou exclusões. Em outra organização, um gestor pede inteligência artificial contra atrasos sem distinguir tipos, causas, dados, restrições ou sucesso. No primeiro caso há operação sem evidência suficiente de formulação; no segundo, a tecnologia foi escolhida antes do problema.
 
-**Raciocínio organizado não necessariamente computacional.** Uma mediadora organiza conversa, considera emoções e adapta perguntas a respostas singulares. Há método, mas classificar todo o julgamento relacional como computacional pode não acrescentar explicação.
+**Caso limítrofe.** Uma mediadora organiza uma conversa, considera emoções e adapta perguntas a respostas singulares. Há método e revisão, mas talvez nenhuma vantagem explicativa em classificar todo o julgamento relacional como pensamento computacional. A classificação mudaria se parte do processo fosse representada por estados, regras examináveis e formas de verificação, sem reduzir a mediação a esses elementos.
 
-**Caso híbrido.** Um sistema verifica documentos e encaminha solicitações; pessoas interpretam exceções e justificam decisões; auditoria examina registros. A solução combina automação, julgamento e responsabilidade humana.
+**Caso híbrido.** Um sistema verifica documentos e encaminha solicitações; pessoas interpretam exceções e justificam decisões; auditoria examina registros. A solução combina processamento automatizado, julgamento contextual e responsabilidade distribuída.
 
-## Confusões comuns
+### Erros recorrentes ao interpretar as dimensões
 
-**“Pensamento computacional é programação.”** Programação pode expressar e testar soluções, mas uma implementação não substitui formulação, escolha de representação ou análise de limites. Também é possível realizar essas práticas sem programar.
+Uma lista pode omitir condições e depender de julgamento tácito; por isso, não se torna algoritmo apenas por ordenar passos. Do mesmo modo, decompor não é criar partes arbitrárias, abstrair não é ignorar qualquer detalhe e reconhecer uma regularidade não prova uma regra. Critério, relação, exceção e limite continuam necessários, mas serão desenvolvidos nas aulas próprias.
 
-**“Qualquer lista de passos é algoritmo.”** Uma lista pode omitir condições, depender de julgamento tácito ou servir apenas a uma ocorrência. A definição rigorosa de algoritmo virá depois; não use a analogia de receita como definição.
-
-**“Usar computador significa pensar computacionalmente.”** Operar uma ferramenta pode apenas executar decisões incorporadas por terceiros. A evidência está na capacidade de formular, representar, examinar ou adaptar a computação, não no clique.
-
-**“Os quatro pilares são consenso definitivo.”** Eles formam um modelo didático útil, mas não único nem exaustivo. A própria literatura agrupa componentes de maneiras diferentes.
-
-**“Decompor é criar uma lista.”** Uma decomposição útil possui critério, relações e recomposição. Listas arbitrárias podem esconder dependências.
-
-**“Abstrair é ignorar detalhes.”** Abstração é omissão controlada segundo propósito. Ignorar um detalhe que altera a conclusão é defeito do modelo.
-
-**“Encontrar padrão prova uma regra.”** Regularidade observada sugere hipótese ou generalização; diferenças, exceções e dados adicionais podem restringi-la.
-
-**“Automatizar torna o processo correto.”** Automação executa regras com consistência operacional, inclusive regras erradas. Correção e adequação precisam de evidência.
-
-**“A solução dispensa conhecimento do negócio.”** Sem domínio, dados e exceções podem ser interpretados incorretamente. Especialistas de computação e do domínio precisam colaborar.
-
-**“Isso serve apenas a profissionais de tecnologia.”** Pessoas de outras áreas podem participar da formulação e avaliação de soluções computacionais. Isso não prova benefício universal nem elimina a necessidade de formação específica.
-
-**“Toda atividade humana deve ser automatizada.”** Viabilidade técnica não determina legitimidade, valor ou responsabilidade. Algumas decisões devem manter julgamento e contestação humanos.
-
-**“Formular o problema é escolher a ferramenta.”** Ferramenta é alternativa de solução. Antecipá-la pode estreitar a investigação e transformar preferência em requisito.
+Automatizar pode reproduzir com consistência uma regra inadequada. Conhecimento do domínio continua necessário para interpretar dados e consequências, e viabilidade técnica não decide legitimidade. Pessoas de outras áreas podem participar de formulações computacionais, mas isso não transforma toda atividade humana em computação. Ferramenta é alternativa de solução, não definição antecipada do problema.
 
 ## Prática guiada dentro da aula
 
@@ -278,101 +259,96 @@ Na segunda, objetivo e momento estão mais visíveis, e há dados potencialmente
 
 ### Reconhecimento
 
-1. Qual alternativa apresenta a melhor evidência de pensamento computacional nesta aula?
+1. Em qual relato há evidência mais forte de pensamento computacional?
 
-   a. Utilizar diariamente um aplicativo com muitas funções.
+   a. O analista adapta o fluxo recomendado pelo aplicativo depois de dois erros e repete a nova sequência com sucesso.
 
-   b. Memorizar os nomes dos quatro pilares.
+   b. A equipe identifica a origem dos valores, representa exceções, declara condições e compara o resultado com um registro independente.
 
-   c. Tornar dados, regras, estados e limites de uma solução explícitos para que possam ser examinados.
+   c. O gestor divide o trabalho entre setores, padroniza uma planilha e acompanha o tempo total de atendimento.
 
-   d. Escolher uma linguagem antes de esclarecer a necessidade.
+   d. A pessoa registra estados e confere o total esperado, mas não sabe que registros devem participar nem por quê.
 
-2. Uma equipe escreveu uma sequência clara, executou uma vez e obteve o resultado desejado. Qual conclusão é mais adequada?
+2. Uma equipe executou uma sequência uma vez e obteve o resultado desejado. Qual conclusão é sustentada sem extrapolação?
 
-   a. A sequência é necessariamente um algoritmo correto para todos os casos.
+   a. Entradas de formato semelhante provavelmente produzirão o mesmo resultado.
 
-   b. Há evidência sobre um caso, mas ainda faltam domínio, condições, exceções e verificação mais ampla.
+   b. Aquele caso produziu o resultado esperado nas condições observadas.
 
-   c. O resultado prova que a formulação inicial estava completa.
+   c. A regra representa corretamente o objetivo organizacional pretendido.
 
-   d. A execução torna desnecessário conhecer o objetivo.
+   d. Exceções que não apareceram podem ser desconsideradas nesta classe de casos.
 
-3. Sobre os quatro pilares, assinale a formulação mais precisa.
+3. Um curso usa decomposição, padrões, abstração e algoritmos, mas também trabalha representação, dados e verificação. Qual interpretação é mais precisa?
 
-   a. São uma taxonomia universal que exclui outras dimensões.
+   a. Os quatro elementos formam um núcleo necessário; representação, dados e verificação apenas avaliam sua aplicação.
 
-   b. São quatro etapas que toda solução deve percorrer na mesma ordem.
+   b. O curso adotou um mapa pedagógico recorrente e reconheceu que outras organizações também são possíveis.
 
-   c. São um modelo didático útil, mas não único nem exaustivo.
+   c. O curso escolheu uma taxonomia operacional local que se torna completa quando recebe os três tópicos adicionais.
 
-   d. São nomes diferentes para programação.
+   d. O curso usa os quatro elementos como sequência heurística e distribui representação, dados e verificação entre as etapas.
 
-4. Classifique cada afirmação como **evidência suficiente**, **sinal parcial** ou **não suficiente** para reconhecer pensamento computacional e justifique: “usa um computador”; “registra estados e compara resultado esperado”; “segue uma rotina conhecida”; “explicita regras e casos não cobertos”.
+4. Distribua as descrições entre “evidência fraca” e “evidência relevante, ainda inconclusiva”; empates são permitidos. Justifique e indique uma informação adicional que poderia alterar cada grupo: “usa um computador”; “segue uma rotina conhecida”; “registra estados e compara resultado esperado”; “explicita regras e casos não cobertos”.
 
 ### Explicação
 
 5. Explique, com palavras próprias, por que pensamento computacional não é sinônimo de programação. Use programa e execução na resposta.
 
-6. Diferencie representação de realidade. Dê um exemplo em que uma representação útil omite um detalhe e outro em que a omissão seria perigosa.
+6. Explique por que o uso da expressão por Papert e a difusão promovida por Wing não sustentam uma narrativa simples de “inventor e definição final”.
 
-7. Explique por que a inexistência de definição universal não torna o conceito inútil. Que responsabilidades essa diversidade cria para um curso?
+7. Escolha um elemento da definição operacional e explique que inclusão indevida poderia ocorrer se ele fosse removido. Não basta repetir a definição.
 
-8. Compare abstração e decomposição em nível introdutório, mostrando como podem depender uma da outra sem tratá-las como a mesma coisa.
+8. No caso de estoque, indique um aspecto que uma decomposição futura precisaria preservar e uma seleção de detalhes que já funcione como abstração inicial. Explique a diferença sem decompor o problema nem criar um modelo.
 
-9. Explique duas limitações do pensamento computacional diante de decisão ética ou organizacional.
+9. Explique por que admitir execução por pessoas e máquinas não distribui automaticamente responsabilidade nem torna as duas formas de execução idênticas.
 
 ### Análise introdutória de casos
 
-10. Uma empresa diz: “Automatize a aprovação de reembolsos para acabar com erros”. Identifique objetivo aparente, suposições, informações ausentes, risco de automatização prematura e duas perguntas que deveriam anteceder a ferramenta.
+10. Uma empresa diz: “Automatize a aprovação de reembolsos para acabar com erros”. Identifique duas reduções conceituais presentes na frase e explique seus riscos, sem formular o problema nem propor solução.
 
 11. Um hospital usa um sistema que ordena atendimentos, mas profissionais podem alterar a prioridade mediante justificativa registrada. Identifique elementos humanos, tecnológicos e de verificação. Explique por que o caso é sociotécnico.
 
-12. Duas filiais recebem a orientação “reponha itens muito vendidos”. Uma usa vendas da última semana; outra, média de seis meses. Compare as formulações e explique por que a frase não sustenta execução consistente.
+12. Duas equipes aplicam a mesma regra de reposição. Uma recebe saldos atualizados a cada hora; a outra, somente no fim do dia. Explique por que procedimento igual não garante significado ou resultado comparável.
 
 ### Reflexão e transferência
 
 13. Escolha uma atividade do seu contexto que use computador. Que evidência permitiria distinguir operação da ferramenta de participação na formulação computacional?
 
-14. Imagine uma decisão tecnicamente automatizável que deveria manter revisão humana. Justifique com base em consequência, informação ausente, contestação ou responsabilidade.
+14. Crie um caso limítrofe que apresente alguns sinais de pensamento computacional, mas cuja classificação permaneça discutível. Indique a evidência que sustenta cada lado.
 
 ### Contraexemplo
 
-15. Produza um contraexemplo para a afirmação “se um procedimento é repetível, então ele é uma solução adequada”. Mostre qual propriedade está presente e qual continua ausente.
+15. Crie uma situação em que os quatro pilares estejam presentes e, ainda assim, a solução seja inadequada por causa do objetivo, dos dados ou de um limite ignorado.
 
-## Orientações de autocorreção
+### Orientações de autocorreção
 
 Nas questões objetivas, verifique se sua escolha respeita as qualificações da aula, em vez de procurar apenas uma palavra familiar. Nas respostas abertas, procure distinção explícita, exemplo coerente, limite e justificativa. Em casos ambíguos, separar informação fornecida, inferência e pergunta vale mais que inventar uma solução. Uma resposta pode divergir dos exemplos da aula e ainda ser adequada se declarar critérios e não antecipar fatos.
 
 Se você chama qualquer rotina de algoritmo, qualquer uso de aplicativo de pensamento computacional ou qualquer automatização de solução correta, retome as seções de distinção. Se consegue reconhecer os termos, mas não explicar por que uma descrição é insuficiente, faça a prática associada antes de avançar.
 
-## Perguntas de recuperação ativa
+## Recuperação ativa e reflexão
+
+### Perguntas de recuperação ativa
 
 Responda sem consultar o texto e confira depois:
 
-1. Qual é a definição operacional adotada pela formação?
-2. Por que pensamento computacional não é sinônimo de programação?
-3. Que características tornam uma formulação mais verificável?
-4. Por que os quatro pilares não devem ser tratados como definição universal?
-5. Como representação e abstração se relacionam?
-6. Em que situação usar computador não demonstra pensamento computacional?
-7. Por que uma lista de passos não é automaticamente um algoritmo?
-8. O que torna uma solução sociotécnica?
-9. Que limite ético ou organizacional não é resolvido por um procedimento?
-10. Como dados ruins podem afetar uma solução precisamente executada?
+1. Que relação com a computação delimita a definição operacional adotada?
+2. Por que pensamento computacional não é sinônimo de programação nem de uso de computador?
+3. Por que os quatro pilares não devem ser tratados como taxonomia universal?
+4. Como representação e verificação tornam uma solução examinável?
+5. O que caracteriza um sistema sociotécnico e onde permanece a responsabilidade?
+6. Que limite ético, organizacional ou epistêmico um procedimento não resolve sozinho?
 
-## Perguntas para reflexão
+### Perguntas para reflexão
 
-- Quando automatizar uma decisão desloca responsabilidade em vez de eliminá-la?
-- Quem ganha e quem perde quando um objetivo é traduzido em uma métrica única?
-- Como uma representação pode tornar um problema mais tratável e, ao mesmo tempo, ocultar pessoas afetadas?
-- Que consequências surgem quando uma organização trata uma hipótese como dado verdadeiro?
-- Em quais situações recusar a automação pode ser uma decisão tecnicamente responsável?
-- Como permitir contestação quando uma regra é executada em grande escala?
+- Quando automatizar uma decisão redistribui responsabilidade em vez de eliminá-la?
+- Como uma representação pode tornar um problema tratável e, ao mesmo tempo, ocultar pessoas ou condições relevantes?
+- Em que situação recusar automação seria uma decisão tecnicamente responsável, e que evidência apoiaria essa escolha?
 
 ## Síntese da aula
 
-Pensamento computacional foi definido, para esta formação, como uma família de práticas e perspectivas que ajuda a formular problemas, tornar elementos explícitos e analisáveis e representar procedimentos ou estratégias que possam ser executados, verificados e aprimorados por pessoas, máquinas ou sistemas sociotécnicos. A definição é operacional e não encerra o debate acadêmico.
+Pensamento computacional foi definido, para esta formação, como uma família de práticas e perspectivas orientadas pela computação. Ela ajuda a formular problemas e a representar soluções de modo compatível com o processamento de informação, de forma que elementos relevantes, como dados, estados, relações, regras, procedimentos e limites, possam tornar-se examináveis. Pessoas, máquinas ou sistemas sociotécnicos podem executar ou simular estratégias, verificar resultados e revisar soluções, sem que programação ou automação sejam obrigatórias. A definição é operacional e não encerra o debate acadêmico.
 
 O conceito se relaciona à Ciência da Computação, mas não equivale à disciplina, à programação ou ao uso de computadores. Decomposição, padrões, abstração e algoritmos formam um modelo introdutório útil, não uma taxonomia definitiva. Representação, dados, estados, automação, avaliação, revisão, custos e limites também importam.
 
@@ -380,7 +356,7 @@ Uma abordagem computacional pode aumentar precisão e escala, mas não escolhe o
 
 ## Mini glossário
 
-**Pensamento computacional:** práticas para formular problemas e tornar soluções representáveis, analisáveis e verificáveis em relação à computação.
+**Pensamento computacional:** família de práticas e perspectivas orientadas pela computação para formular problemas e tornar soluções representáveis, analisáveis e verificáveis, sem exigir programação ou automação.
 
 **Problema:** obstáculo relevante entre situação inicial e desejada; será delimitado na Aula 02.
 
@@ -437,7 +413,7 @@ A Aula 01 apresentou um modo geral de observar problemas e soluções. A **Aula 
 
 - PAPERT, Seymour. *Mindstorms: Children, Computers, and Powerful Ideas*. New York: Basic Books, 1980, p. 182.
 - WING, Jeannette M. Computational Thinking. *Communications of the ACM*, v. 49, n. 3, p. 33–35, 2006. DOI: 10.1145/1118178.1118215. [Cópia hospedada pela Carnegie Mellon University](https://www.cs.cmu.edu/~CompThink/papers/Wing06.pdf).
-- WING, Jeannette M. *Computational Thinking: What and Why?* Manuscrito institucional, Carnegie Mellon University, 17 nov. 2010, 6 p. [Texto em página institucional](https://www.cs.cmu.edu/~CompThink/papers/TheLinkWing.pdf).
+- WING, Jeannette M. *Computational Thinking: What and Why?* Documento institucional, Carnegie Mellon University, 17 nov. 2010, 6 p. [Texto em página institucional](https://www.cs.cmu.edu/~CompThink/papers/TheLinkWing.pdf).
 - NATIONAL RESEARCH COUNCIL. *Report of a Workshop on the Scope and Nature of Computational Thinking*. Washington, DC: The National Academies Press, 2010. DOI: [10.17226/12840](https://doi.org/10.17226/12840).
 - SHUTE, Valerie J.; SUN, Chen; ASBELL-CLARKE, Jodi. Demystifying computational thinking. *Educational Research Review*, v. 22, p. 142–158, 2017. DOI: [10.1016/j.edurev.2017.09.003](https://doi.org/10.1016/j.edurev.2017.09.003).
 
@@ -453,16 +429,18 @@ A Aula 01 apresentou um modo geral de observar problemas e soluções. A **Aula 
 
 A contagem abaixo usa `Measure-Object -Word` do PowerShell:
 
-- **Palavras:** 6.495;
-- **Linhas:** 468;
-- **Seções de segundo nível:** 31;
+- **Palavras:** 6.320;
+- **Linhas:** 446;
+- **Seções de segundo nível:** 24;
 - **Exercícios:** 15;
-- **Casos ou situações desenvolvidos:** 3 versões do caso progressivo, 6 exemplos e contraexemplos e 2 descrições da prática guiada, além de 3 casos nos exercícios;
+- **Casos ou situações centrais:** 1 caso progressivo em 3 versões, 6 casos de contraste, 1 prática guiada em 2 descrições e 3 casos fornecidos para análise nos exercícios;
 - **Fontes efetivamente utilizadas:** 7;
-- **Tempo estimado de leitura:** 2 h 30 min a 3 h 15 min;
-- **Tempo estimado para exercícios e recuperação ativa:** 2 h a 2 h 30 min;
-- **Tempo estimado para a prática associada:** 2 h 30 min a 3 h;
-- **Revisão e síntese própria:** 45 min a 1 h;
-- **Carga total sugerida:** 7 h 45 min a 9 h 45 min.
+- **Leitura atenta:** 1 h 15 min a 1 h 40 min;
+- **Pausas de elaboração e anotações:** 40 min a 55 min;
+- **Exercícios da aula:** 1 h 45 min a 2 h 15 min;
+- **Tentativa da prática associada antes da solução:** 1 h 45 min a 2 h 15 min;
+- **Consulta da solução e revisão da prática:** 45 min a 1 h;
+- **Recuperação ativa e síntese final:** 30 min a 40 min;
+- **Carga total sugerida:** 6 h 40 min a 8 h 45 min.
 
-Os intervalos incluem leitura, pausas de elaboração, exercícios, prática, comparação com comentários e revisão.
+Os intervalos tornam explícitos os blocos da estimativa. Na prática associada, tentativa, consulta e revisão somam 2 h 30 min a 3 h 15 min.

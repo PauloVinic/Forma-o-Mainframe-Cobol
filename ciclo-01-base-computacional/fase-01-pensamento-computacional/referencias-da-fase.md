@@ -6,15 +6,16 @@ As referências abaixo sustentam definições, debates, progressão curricular, 
 
 ## Pensamento computacional
 
+- PAPERT, Seymour. *Mindstorms: Children, Computers, and Powerful Ideas*. New York: Basic Books, 1980, p. 182. Fonte primária para o uso anterior da expressão “computational thinking”, sem tratá-la como definição contemporânea nem atribuir a um único autor a origem das práticas relacionadas.
 - WING, Jeannette M. Computational Thinking. *Communications of the ACM*, v. 49, n. 3, p. 33–35, 2006. DOI: [10.1145/1118178.1118215](https://doi.org/10.1145/1118178.1118215). Referência histórica para alcance, formulação de problemas, abstração e distinção entre pensar computacionalmente e apenas programar.
-- WING, Jeannette M. Computational Thinking: What and Why? *The Link*, Carnegie Mellon University, 2010. [Página institucional da autora](https://www.cs.cmu.edu/~CompThink/resources/TheLinkWing.pdf). Refinamento do conceito e de sua relação com abstrações e automação.
+- WING, Jeannette M. *Computational Thinking: What and Why?* Documento institucional, Carnegie Mellon University, 17 nov. 2010, 6 p. [Texto institucional](https://www.cs.cmu.edu/~CompThink/resources/TheLinkWing.pdf). Refinamento do conceito e de sua relação com abstrações e automação.
 - NATIONAL RESEARCH COUNCIL. *Report of a Workshop on the Scope and Nature of Computational Thinking*. Washington, DC: The National Academies Press, 2010. DOI: [10.17226/12840](https://doi.org/10.17226/12840). Reúne perspectivas diferentes e ajuda a declarar que o conceito tem alcance e fronteiras debatidos.
 - DENNING, Peter J. Remaining Trouble Spots with Computational Thinking. *Communications of the ACM*, v. 60, n. 6, p. 33–39, 2017. DOI: [10.1145/2998438](https://doi.org/10.1145/2998438). Contraponto para evitar atribuições históricas ou promessas excessivas.
 - SHUTE, Valerie J.; SUN, Chen; ASBELL-CLARKE, Jodi. Demystifying computational thinking. *Educational Research Review*, v. 22, p. 142–158, 2017. DOI: [10.1016/j.edurev.2017.09.003](https://doi.org/10.1016/j.edurev.2017.09.003). Revisão de definições, intervenções e avaliações.
 
 ## Currículo e competências
 
-- ACM; IEEE COMPUTER SOCIETY; AAAI. *Computer Science Curricula 2023: Curriculum Guidelines for Undergraduate Degree Programs in Computer Science*. 2023/2024. [Portal oficial do relatório](https://csed.acm.org/). Orienta a independência entre fundamentos algorítmicos e implementação, a base matemática, os níveis de competência e as conexões entre áreas.
+- KUMAR, Amruth N. et al. *Computer Science Curricula 2023*. ACM Press, IEEE Computer Society Press e AAAI Press, 2023. DOI: [10.1145/3664191](https://doi.org/10.1145/3664191). [Relatório oficial](https://ieeecs-media.computer.org/media/education/reports/CS2023.pdf). Orienta a independência entre fundamentos algorítmicos e implementação, a base matemática, os níveis de competência e as conexões entre áreas.
 - ANDERSON, Lorin W.; KRATHWOHL, David R. (ed.). *A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives*. New York: Longman, 2001. Base para recordar, compreender, aplicar, analisar, avaliar e criar; a matriz usa ações observáveis, não rótulos isolados.
 
 ## Algoritmos e resolução de problemas
@@ -40,7 +41,7 @@ As referências abaixo sustentam definições, debates, progressão curricular, 
 
 | Aulas | Núcleo de fontes |
 |---|---|
-| 01 | Wing; National Research Council; Denning; Shute et al. |
+| 01 | Papert; Wing; National Research Council; Denning; Shute et al.; CS2023 |
 | 02–06 | Pólya; CS2023; ISO/IEC/IEEE 24765; Rosen |
 | 07–11 | CS2023; Cormen et al.; Knuth; Rosen; Lehman et al. |
 | 12 | ISO/IEC/IEEE 24765 e 29119-1; Myers et al.; SWEBOK |

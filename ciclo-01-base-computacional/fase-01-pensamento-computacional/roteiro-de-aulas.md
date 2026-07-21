@@ -4,7 +4,7 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 01 — O que é pensamento computacional
 
-**Estado:** aula integral desenvolvida em `aulas/aula-01-o-que-e-pensamento-computacional.md`, com prática associada em `praticas/pratica-01-reconhecendo-pensamento-computacional.md`.
+**Estado:** aula integral revisada técnica e pedagogicamente em `aulas/aula-01-o-que-e-pensamento-computacional.md`, com prática associada revisada em `praticas/pratica-01-reconhecendo-pensamento-computacional.md`.
 
 **Finalidade:** apresentar pensamento computacional como família de práticas e perspectivas para formular problemas e soluções computáveis, relacionada à Ciência da Computação, mas não reduzida a programar.
 
