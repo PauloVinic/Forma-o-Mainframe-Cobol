@@ -10,6 +10,10 @@ A formação será construída em ciclos e fases. Cada fase terá objetivo próp
 
 O repositório começa com uma fundação organizacional, pedagógica e editorial. Antes de criar aulas, exercícios ou exemplos de código, é necessário registrar a direção do projeto, a ordem de desenvolvimento, os critérios de qualidade e os modelos que serão usados para manter consistência.
 
+## Estado atual do percurso
+
+A **Fase 0 — Alfabetização Técnica**, primeira fase do Ciclo 1 — Base Computacional, possui 12 aulas revisadas e materiais de consolidação e está disponível para estudo. A **Fase 1 — Pensamento Computacional: De problemas informais a soluções estruturadas**, segunda fase do mesmo ciclo, está em planejamento. Seu planejamento fica em `ciclo-01-base-computacional/fase-01-pensamento-computacional/`.
+
 ## Por que comecar pelos fundamentos
 
 Mainframe e COBOL não são assuntos isolados. Eles aparecem em ambientes onde dados precisam ser processados com previsibilidade, onde operações de negócio dependem de arquivos, transações, bancos de dados, rotinas batch, integração e manutenção de sistemas de longa duração. Sem compreender esses fundamentos, o aluno pode até copiar comandos ou ler pequenos trechos de código, mas terá dificuldade para entender o comportamento de sistemas reais.

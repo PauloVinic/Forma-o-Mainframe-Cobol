@@ -12,9 +12,11 @@ O objetivo desta fase é construir o vocabulário mínimo para estudar computaç
 
 Esta fase prepara a próxima etapa ao dar ao aluno palavras e distinções básicas para acompanhar raciocínios mais estruturados. A conexão futura com Mainframe e COBOL está no fato de que ambientes corporativos exigem leitura precisa de documentação, mensagens, fluxos, nomes de arquivos, descrições de jobs e regras de negócio.
 
-A Fase 0 entrou em planejamento detalhado em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/`. As 12 aulas principais foram desenvolvidas, e a consolidação da fase foi criada com revisão geral, estudo dirigido, exercícios teóricos, avaliações, rubrica, checklist final e plano de estudo. A fase ainda deve passar por estudo do aluno e eventual revisão ou ajuste antes de ser considerada encerrada para avanço à Fase 1.
+A Fase 0 está disponível para estudo em `ciclo-01-base-computacional/fase-00-alfabetizacao-tecnica/`. Suas 12 aulas passaram por revisão técnica individual, e a fase possui revisão geral, estudo dirigido, exercícios teóricos, avaliações, rubrica, checklist final e plano de estudo. Eventuais ajustes futuros da consolidação não bloqueiam o planejamento da fase seguinte.
 
-### Fase 1 — Pensamento computacional
+### Fase 1 — Pensamento Computacional
+
+**De problemas informais a soluções estruturadas.** Esta é a segunda fase do Ciclo 1 e está em planejamento detalhado em `ciclo-01-base-computacional/fase-01-pensamento-computacional/`.
 
 O objetivo desta fase é ensinar a decompor problemas, reconhecer padrões, criar abstrações e pensar em sequências de transformação. Ela existe porque programação não começa na digitação de comandos, mas na capacidade de organizar um problema de modo que ele possa ser resolvido por processamento.
 
