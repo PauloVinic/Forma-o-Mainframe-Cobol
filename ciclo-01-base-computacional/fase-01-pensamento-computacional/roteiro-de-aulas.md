@@ -56,7 +56,7 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 05 — Padrões e generalização
 
-**Estado:** aula integral desenvolvida em `aulas/aula-05-padroes-e-generalizacao.md`, com prática associada em `praticas/pratica-05-classificando-e-generalizando.md`.
+**Estado:** aula integral revisada técnica e pedagogicamente em `aulas/aula-05-padroes-e-generalizacao.md`, com prática associada revisada em `praticas/pratica-05-classificando-e-generalizando.md`.
 
 **Finalidade:** usar semelhanças e diferenças para reaproveitar raciocínio sem apagar exceções relevantes.
 

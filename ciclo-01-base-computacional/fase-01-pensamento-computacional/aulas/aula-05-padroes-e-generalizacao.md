@@ -81,6 +81,8 @@ Adotaremos:
 
 Classe ou categoria é um conjunto de casos tratados conjuntamente segundo critério. Pode ser descritiva, como “histórico incompleto”; operacional, como “aguarda evidência”; normativa, quando uma política define tratamento; ou construída para análise. “Classe” aqui não se refere a linguagem de programação.
 
+Uma **classe analítica** agrupa por propriedade relevante, como impacto elevado ou divergência registrada. Um **estado da informação** indica o que se pode saber: divergência desconhecida, classificação pendente ou informação insuficiente. Estado informacional pode virar classe operacional para organizar investigação, mas seu critério continua informacional, pode coexistir com classes analíticas e não descreve causa.
+
 ### Critério de pertencimento
 
 Um critério deve permitir explicar por que o caso entra, por que não entra, o que ocorre quando falta informação, se múltiplo pertencimento é permitido e se as classes precisam cobrir o universo. “Parece problemático” não é critério. “Possui histórico marcado como incompleto no período” é examinável, embora dependa da qualidade do registro.
@@ -93,19 +95,17 @@ Em classificação exclusiva, cada caso recebe uma classe segundo o critério. E
 
 Classificação exaustiva cobre todo o universo declarado. Uma não exaustiva preserva desconhecido, pendente, não classificável ou fora do escopo. “Outros” só é útil com significado e revisão; não deve esconder critério ausente. Nem toda classificação é partição.
 
+“Impacto elevado” e “pendente” não ocupam a mesma dimensão sem explicação: o primeiro descreve propriedade analítica; o segundo, capacidade atual de concluir. Uma ocorrência pode ter impacto elevado e estar pendente quanto à divergência.
+
 ### Casos limítrofes
 
 Caso limítrofe fica próximo de um limite convencional ou admite interpretações justificáveis. Se “impacto elevado” começa em valor definido, um caso exatamente no limite revela se o operador usado e a unidade foram declarados. O limite não é lei natural: é escolha ligada ao propósito.
 
-Casos limítrofes também aparecem sem número. Uma solicitação pode trazer documento parcialmente legível: classificá-la como “documentação completa” ou “incompleta” depende do que completo significa para a pergunta. Se o critério apenas diz “documento presente”, ele pode admitir um arquivo inutilizável. O caso não é inconveniente periférico; ele revela que o pertencimento foi especificado de modo insuficiente.
-
-Quando duas pessoas justificadas classificam o mesmo caso de formas diferentes, não se deve escolher uma resposta por autoridade ou maioria sem examinar o critério. A divergência pode revelar termo ambíguo, atributos ausentes ou classes que deveriam sobrepor-se. Registrar o desacordo fornece evidência para revisão.
+Caso limítrofe também pode ser documento parcialmente legível: “presente” não significa “suficiente”. Classificações justificadas diferentes revelam termo ambíguo, atributo ausente ou necessidade de sobreposição e devem motivar revisão do critério.
 
 ### Consequências da classificação
 
-Uma classificação pode ser apenas descritiva e ainda produzir consequências quando incorporada a relatório, prioridade ou distribuição de recursos. A categoria “baixa prioridade” pode alongar espera; “não classificável” pode retirar caso de indicador; “outros” pode tornar um grupo invisível. O efeito não prova que a classificação seja inadequada, mas entra na avaliação de seu propósito.
-
-Por isso, classe precisa ter uso permitido e proibido. “Impacto elevado” pode servir para localizar casos que merecem exame sem autorizar conclusão sobre causa ou culpa. “Histórico incompleto” pode acionar coleta de evidência sem ser tratado como prova de falha operacional. A separação entre rótulo e decisão protege pessoas e melhora a análise.
+Classificação descritiva ainda produz consequências quando orienta relatório, prioridade ou recursos. “Baixa prioridade” alonga espera; “não classificável” pode retirar caso do indicador. Por isso, declare uso permitido e proibido: impacto pode localizar casos sem provar culpa; histórico incompleto pode orientar coleta sem provar falha.
 
 ## Regularidade, padrão e coincidência
 
@@ -117,15 +117,23 @@ Regularidade é recorrência ou consistência observada entre casos segundo atri
 
 Padrão depende da abstração, pode ser provisório e não é automaticamente causal ou universal. Precisa sobreviver à procura de casos contrários. Diferentes modelos podem tornar padrões diferentes visíveis porque selecionam atributos e níveis distintos.
 
+A progressão usada será: observações registram atributos; regularidade identifica recorrência; padrão candidato interpreta sua estrutura; regra candidata formula condições e conclusão; regra sustentada no recorte permanece compatível, até o momento, com casos contrários procurados e limites. “Sustentada” não significa universalmente verdadeira: continua provisória, dependente do domínio e revisável.
+
 ### Repetição não basta
 
 Repetição é ocorrência novamente observada. Coincidência é repetição sem sustentação suficiente para tratá-la como estrutura relevante. Regularidade descreve consistência no conjunto. Padrão candidato é uma interpretação examinável dessa regularidade. Regra sustentada é formulação que passou pelos casos e limites definidos até o momento.
 
 Três ocorrências do mesmo produto não provam padrão se esse produto domina a população. Cinco históricos incompletos acompanharem divergência não prova que incompletude produz divergência. Frequência pode motivar pergunta, nunca substituir critério e evidência.
 
-O denominador importa mesmo sem estatística formal. Se oito de dez casos são do Centro A, encontrar seis ocorrências de uma característica nesse centro não basta para afirmar concentração incomum. Precisamos pelo menos reconhecer a composição do conjunto e evitar comparar contagens como se as oportunidades fossem iguais. Esta aula não estima probabilidades; ensina a não esconder a base da observação.
+Mesmo sem estatística formal, não esconda denominador nem confunda ausência observada com ausência de observação. Se condições são desconhecidas, “não encontramos” não significa “não existe”.
 
-Também é preciso distinguir ausência observada e ausência de observação. Se nenhum caso conhecido registra condição física inadequada, a conclusão responsável limita-se aos registros disponíveis. Quando várias condições estão desconhecidas, “não encontramos” não pode ser reescrito como “não existe”.
+### Força das afirmações
+
+“Alguns casos incompletos possuem divergência registrada” é existencial: um caso favorável sustenta que existe ao menos um. “Todo caso incompleto possui divergência registrada” é universal: um único caso conhecido, dentro do domínio e das condições, com divergência não registrada é contraexemplo.
+
+“Casos incompletos apresentam divergência com maior frequência no conjunto examinado” é proporcional. Um caso contrário não a refuta sozinho. Exige numerador, denominador, população, período, comparação e significado de “maior”. Aqui permanece descrição simples, sem significância ou previsão.
+
+O padrão candidato “incompletude acompanha divergência” é ambíguo quanto à força. Caso contrário impede universalizá-lo e enfraquece interpretação ampla, mas não elimina toda coocorrência parcial. Para testar por contraexemplo único, escreva explicitamente a regra universal.
 
 ### Onde padrões podem aparecer
 
@@ -167,9 +175,7 @@ Generalização ampla inclui casos que não satisfazem condições. “Todo valo
 
 Ajuste excessivo ocorre quando se adicionam detalhes somente para proteger a regra contra cada contraexemplo, até ela repetir a lista conhecida. Não estamos estudando aprendizado de máquina; a ideia é lógica e prática: uma regra reutilizável precisa equilibrar alcance e restrições justificáveis.
 
-Uma forma simples de examinar esse equilíbrio é pedir que cada condição tenha função explicável. Se remover “Centro A” não muda a sustentação nem o propósito, a condição pode ser detalhe memorizado. Se removê-la inclui casos que usam definição incompatível, ela protege o domínio de modo substantivo. A diferença está na justificativa e na evidência, não no número de condições.
-
-Regra estreita pode ser correta e ainda pouco útil. “Nos casos H1 e H12 houve divergência registrada” descreve os exemplos com segurança, mas não generaliza. Regra ampla pode ser útil como hipótese e ainda não estar sustentada. O estatuto “candidata” comunica que sua função atual é orientar exame, não autorizar conclusão.
+Cada condição precisa de função explicável. Detalhe que apenas memoriza caso deve sair; condição que impede misturar definições protege o domínio. Regra estreita pode estar correta e ser pouco útil; regra ampla pode servir como hipótese sem estar sustentada.
 
 ### Domínio e condições de validade
 
@@ -177,9 +183,7 @@ Declare universo, população, período, atributos, exclusões e condições. �
 
 Reutilizar raciocínio exige semelhança pertinente. Transferir uma regra do estoque para transações apenas porque ambos têm “impacto” ignora significados diferentes. O método de declarar atributo, procurar contraexemplo e revisar pode ser reutilizado; a conclusão substantiva, não automaticamente.
 
-Domínio não deve ser alterado depois de observar resultado apenas para fazer a regra parecer correta. É legítimo restringi-lo quando o contraexemplo revela condição substantiva antes omitida, mas a mudança precisa ser registrada. “Vale somente para os casos que confirmam” é circular. “Vale para ocorrências com divergência conhecida porque a conclusão usa esse atributo” é restrição examinável, embora ainda precise de evidência.
-
-Condições também podem mudar no tempo. Uma definição administrativa, fonte de dados ou política pode ser revista. Regra sustentada num ciclo deixa de ser automaticamente aplicável ao seguinte. Data, versão da definição e população são partes do alcance, não detalhes documentais.
+Domínio não muda só para salvar a regra. Restrição substantiva após contraexemplo exige nova versão; “vale nos casos que confirmam” é circular. Definições e políticas também mudam: data, versão e população integram o alcance.
 
 ## Exemplos, contraexemplos, exceções e revisão
 
@@ -194,6 +198,8 @@ Exemplos devem variar de modo relevante. Dez casos quase idênticos podem oferec
 ### Exceção declarada não é proteção retórica
 
 Exceção é caso que a própria regra exclui por condição explícita e justificada. Se uma política diz “salvo transações previamente autorizadas”, uma transação autorizada não refuta a regra normativa. Porém, chamar todo caso contrário de exceção depois de observá-lo torna a regra imune a evidência.
+
+Se o caso pertencia ao domínio original e contradizia a conclusão, era contraexemplo àquela versão. Após reconhecê-lo e justificar a revisão, nova regra pode prever cláusula especial. O histórico preserva regra original, caso contrário, reconhecimento, justificativa e nova versão. “Salvo casos diferentes” é cláusula vazia; criar uma para cada caso apenas memoriza exemplos.
 
 Caso fora do domínio também não é contraexemplo: uma regra sobre três produtos não é refutada por quarto produto, mas esse caso pode mostrar que o domínio é estreito. Caso desconhecido não favorece nem contradiz enquanto faltar informação relevante.
 
@@ -215,9 +221,7 @@ Um percurso possível é: declarar pergunta e unidade; selecionar atributos; ver
 
 Esse roteiro organiza investigação, mas não é algoritmo. Não define execução, término, contrato ou implementação.
 
-Em cada passagem, registre evidência e decisão. Na comparação, anote atributos ignorados. Na classificação, preserve casos que não entram. No padrão, separe observações favoráveis de desconhecidos. Na regra, declare o tipo. No contraexemplo, confirme que o caso pertence ao domínio. Na revisão, explique o que mudou e que uso deixou de ser autorizado.
-
-O roteiro pode começar por contraexemplo já conhecido ou por classificação existente que precisa ser auditada. Não há sequência obrigatória. O requisito é manter rastreabilidade entre pergunta, atributos, casos, regra e revisão.
+Registre atributos ignorados, casos não classificados, desconhecidos, tipo de regra, domínio do caso contrário e usos retirados após revisão. O percurso pode começar por contraexemplo ou classificação existente; precisa manter rastreabilidade, não ordem rígida.
 
 ### Conjuntos e pertencimento
 
@@ -231,9 +235,13 @@ Uma partição é caso particular: classes não vazias cobrem `U` e são disjunt
 
 ### Classificação como função e semelhança como relação
 
-Somente quando a classificação é exclusiva e definida para cada caso admissível, pode ser expressa por `g: U → K`, onde `K` é o conjunto de classes. Se houver pendentes, restrinja o domínio explicitamente ou inclua categoria controlada. Não introduziremos funções parciais formalmente.
+Com classes sobrepostas, use `R_class ⊆ U × K`, onde `U` contém casos e `K`, classes. `(x, k) ∈ R_class` significa que `x` pertence a `k`; o mesmo caso pode aparecer em vários pares.
+
+Somente quando a classificação é exclusiva e definida para cada caso admissível, use `g: U → K`. Cada caso do domínio recebe exatamente uma classe. Com pendentes, restrinja o domínio mantendo excluídos visíveis ou inclua categoria controlada. Não introduziremos funções parciais formalmente.
 
 Semelhança pode ser tratada como relação `S ⊆ U × U`: pares de casos considerados semelhantes segundo critério. Isso não significa identidade nem exige, nesta aula, propriedades formais de relação de equivalência.
+
+Igualdade num atributo não implica semelhança global; semelhança não obriga mesma classe; mesma classe não torna casos idênticos. Critério e diferenças ignoradas permanecem registrados.
 
 Comparações como “impacto ≥ limite definido” dependem de unidade, período, definição e propósito. O número não transforma limite convencional em verdade natural.
 
@@ -262,7 +270,7 @@ As classes se sobrepõem. H4 pertence a qualidade e divergência; H6 permanece n
 
 ### Padrões candidatos e contraexemplos
 
-Padrão candidato 1: “históricos incompletos acompanham divergência registrada”. H4 favorece, mas H8 contradiz a formulação ampla e H2/H11 são desconhecidos. A regra não se sustenta como universal; no máximo, “algumas ocorrências incompletas também possuem divergência registrada no conjunto didático”. Isso pouco reutiliza e não estabelece causa.
+Padrão candidato 1: “históricos incompletos acompanham divergência registrada”. H4 favorece, H8 impede universalizar e H2/H11 são desconhecidos. Formule então “toda ocorrência com histórico incompleto possui divergência registrada”: H8 é contraexemplo. A forma existencial “algumas...” é sustentada por H4, mas possui pouco alcance. Nenhuma estabelece causa.
 
 Padrão candidato 2: “impacto elevado ocorre somente com divergência registrada”. H5 e H9 favorecem; H2 e H6 têm divergência desconhecida, portanto não podem ser usados como confirmação. A regra precisa aguardar evidência ou restringir-se aos casos com divergência conhecida. Mesmo restrita, não explica o impacto.
 
@@ -292,13 +300,13 @@ Aplicação pode produzir três resultados legítimos: pertencimento sustentado,
 
 O P2 agora reúne modelos operacional e gerencial, matriz de atributos, classificações sobrepostas, padrões candidatos, regras revistas, contraexemplos, domínio, limites e desconhecidos. A forma de registrar e combinar esses elementos com menor ambiguidade fica pendente para a Aula 06.
 
-## Prática guiada interna: transações
+## Prática guiada interna: agendamentos
 
-Considere a regra superficial: “todas as transações acima de R$ 10.000 são suspeitas”. Os casos são hipotéticos: T1, R$ 15.000, pagamento corporativo autorizado; T2, R$ 800, destinatário desconhecido e contestação registrada; T3, R$ 12.000, autorização desconhecida; T4, R$ 20.000, valor alto e dado cadastral incompleto.
+Considere a regra “todo agendamento remarcado foi causado por ausência do cliente”. Casos hipotéticos: A1 foi remarcado após indisponibilidade da unidade; A2, após ausência registrada; A3 tem motivo desconhecido; A4 foi remarcado por conflito cadastral e aguarda confirmação.
 
-Valor alto é atributo insuficiente para transformar classificação em decisão. T1 é contraexemplo à regra universal se “suspeita” significar problemática apenas pelo valor. T2 mostra que valor baixo não exclui sinais relevantes. T3 permanece desconhecida quanto à autorização. T4 pode pertencer simultaneamente às classes descritivas “valor alto” e “cadastro incompleto”.
+A1 é contraexemplo à forma universal. A2 é favorável, mas não prova universalidade. A3 não favorece nem contradiz. A4 pertence a classes analíticas de remarcação e conflito e ao estado informacional “aguarda confirmação”.
 
-Uma revisão responsável separa descrição e decisão: “classificar como valor alto as transações acima do limite convencional; examinar com outros atributos antes de decidir tratamento”. O limite, a moeda, o período, o domínio e o uso proibido precisam ser declarados. A coocorrência de valor e problema não demonstra que o valor causou o problema.
+Uma revisão responsável rejeita a causa universal e mantém descrição: “há remarcações por motivos diferentes no conjunto; motivo desconhecido permanece explícito”. Classificar motivo não decide atendimento nem demonstra que remarcação produziu conflito.
 
 ## Atividades, síntese e domínio
 
@@ -310,27 +318,27 @@ Repetição não prova padrão; padrão não prova causa; frequência não cria 
 
 Generalização não é abstração nem previsão. Regra detalhada pode apenas memorizar exemplos. Classe pequena pode ter alto impacto. Categorias organizacionais não são naturais ou neutras: classificações distribuem atenção e consequências e precisam admitir contestação e revisão.
 
-Outro erro é supor que uma classificação existente já foi validada por estar em uso. Uso frequente demonstra adoção, não adequação. Também é inadequado mudar atributo após cada resultado sem versionar o critério: casos iguais passam a receber rótulos diferentes sem explicação. Finalmente, aplicar regra a caso novo não encerra trabalho; o resultado pode revelar limite e exigir retorno aos atributos ou às classes.
+Uso frequente demonstra adoção, não adequação. Mudar atributo sem versionar critério torna rótulos incomparáveis. Caso novo pode revelar limite e exigir retorno às classes.
 
 ### Exercícios essenciais
 
 1. **Objetiva.** Duas ocorrências têm o mesmo produto. Qual conclusão é mais adequada?
-   A) São semelhantes para qualquer pergunta porque compartilham o objeto principal.
-   B) São iguais no atributo produto; semelhança adicional depende de propósito e atributos.
-   C) Devem pertencer à mesma classe, salvo se os centros forem diferentes.
-   D) Formam padrão se o produto também apareceu em terceiro caso.
+   A) A igualdade basta para classe definida por produto e autoriza reutilizar essa classe em outras perguntas.
+   B) O produto comum permite hipótese de semelhança, confirmada se nenhuma diferença estiver registrada.
+   C) Semelhança depende de propósito, atributos e diferenças ignoradas; produto igual é evidência delimitada.
+   D) Produto e centro iguais sustentam padrão inicial, embora não expliquem causa.
 
-2. **Objetiva.** Uma classificação contém “divergência”, “impacto elevado” e “histórico incompleto”. Um caso atende aos três critérios. Isso indica:
-   A) erro, porque toda classificação precisa de classe única;
-   B) sobreposição possível, se cada critério e o propósito permitirem;
-   C) partição, porque as três classes cobrem o caso;
-   D) desconhecimento, porque três rótulos impedem classificação.
+2. **Objetiva.** Uma classificação contém “divergência registrada”, “impacto elevado” e “histórico incompleto”. Um caso atende aos três critérios. Isso indica:
+   A) relação sobreposta possível, se são dimensões distintas que podem coexistir no propósito;
+   B) partição incompleta, pois deve prevalecer a classe de maior impacto;
+   C) redundância provável, pois múltiplos rótulos exigem o mesmo critério;
+   D) estado informacional único, pois histórico incompleto impede classes analíticas.
 
-3. **Objetiva.** Uma regra diz “toda ocorrência incompleta possui divergência”. Há caso incompleto, dentro do domínio, com divergência conhecida como não registrada. Ele é:
-   A) exceção automática por ser raro;
-   B) caso fora do domínio por contrariar a conclusão;
-   C) contraexemplo que exige rejeitar ou revisar a regra;
-   D) exemplo favorável de incompletude.
+3. **Objetiva.** A regra diz “toda ocorrência incompleta possui divergência registrada”. Surge caso incompleto, dentro do domínio e das condições, com divergência não registrada. Ele deve ser:
+   A) removido do domínio revisto antes de avaliar a versão original;
+   B) tratado como limítrofe, pois incompletude admite desconhecidos;
+   C) reconhecido como contraexemplo da versão universal antes de revisar;
+   D) usado para confirmar regra frequencial diferente.
 
 4. **Dissertativa.** Defina unidade de comparação e explique como misturar centro, produto e ocorrência pode produzir regularidade falsa.
 
@@ -338,15 +346,15 @@ Outro erro é supor que uma classificação existente já foi validada por estar
 
 6. **Análise de caso.** Duas áreas usam “resolvido” com significados diferentes. Avalie comparabilidade, semelhança aparente e revisão necessária.
 
-7. **Classificação.** Para cinco solicitações fornecidas por você, proponha três classes, ao menos uma sobreposição e uma categoria pendente. Declare critérios.
+7. **Classificação.** S1: documento completo e impacto alto; S2: incompleto e baixo; S3: completo e impacto desconhecido; S4: incompleto e alto; S5: completude desconhecida e impacto médio. Proponha três classes, uma sobreposição e um estado pendente. Declare critérios.
 
 8. **Dissertativa.** Diferencie regularidade, padrão candidato e regra, explicando por que nenhuma prova causa.
 
-9. **Análise de regra.** “Todo pagamento atrasado deve receber multa” mistura descrição ou norma? Declare domínio, exceção justificável e informação desconhecida.
+9. **Análise normativa.** Em “todo pagamento atrasado deve receber multa”, separe fato e obrigação; identifique caráter normativo; declare domínio; proponha cláusula especial justificável; e explique por que frequência não confirma a norma.
 
-10. **Contraexemplo e revisão.** Crie contraexemplo para “todo impacto elevado possui divergência” e produza uma versão restrita ou rejeite-a.
+10. **Contraexemplo e revisão.** Para “todo caso do recorte com impacto elevado possui divergência registrada”, crie caso dentro do domínio e condições que contradiga a conclusão. Preserve a versão original e depois restrinja com justificativa ou rejeite-a.
 
-11. **Caso novo.** Aplique uma regra revista aos casos N1, N2 e N3. Registre pertencimentos, recusa por insuficiência e necessidade de nova revisão.
+11. **Caso novo.** Aplique a regra revista a N1, N2 e N3. Registre pertencimentos, recusa por insuficiência e eventual revisão. O resultado não prova definitivamente a regra.
 
 ### Exercícios de aprofundamento opcional
 
@@ -415,8 +423,8 @@ O percurso não termina quando a regra funciona num caso novo. É preciso regist
 **Regra classificatória:** declara pertencimento.
 **Regra normativa:** declara o que deve ocorrer.
 **Exemplo:** caso compatível com a regra.
-**Contraexemplo:** caso do domínio que contradiz afirmação geral.
-**Exceção:** caso excluído por condição explícita e justificada.
+**Contraexemplo:** caso do domínio e das condições que contradiz conclusão geral.
+**Exceção:** condição especial explícita; se criada após contraexemplo, exige versão e justificativa.
 **Caso limítrofe:** caso próximo de limite convencional.
 **Generalização:** extensão justificada a classe ou caso novo.
 **Domínio:** conjunto de casos ao qual a afirmação se aplica.
@@ -451,14 +459,14 @@ As tabelas desta aula foram suporte simples. Não comparamos meios nem ensinamos
 
 ### Carga estimada
 
-- Estrutura: 15 H2 e 40 H3; 11 exercícios essenciais e sete opcionais.
+- Estrutura: 15 H2 e 41 H3; 11 exercícios essenciais e sete opcionais.
 - Casos: 12 ocorrências e três casos novos na aula; 14 ocorrências, quatro casos novos e quatro transações na prática.
 - Fontes: seis.
 - Matemática: subconjunto, pertencimento, interseção, partição, conjunto de pendentes, função classificatória e relação de semelhança.
 - Leitura e anotações: 2h–2h30.
 - Recuperação ativa: 20–30 min.
 - Exercícios essenciais: 1h30–2h.
-- Prática essencial: 2h30–3h30.
+- Prática essencial: 3h–4h15.
 - Solução, revisão e autoavaliação: 30–45 min.
-- Trilha essencial: aproximadamente 6h50–9h15.
-- Percurso completo opcional: aproximadamente 10h–13h30, com exercícios adicionais, segunda classificação, matemática ampliada, transferência e consequências.
+- Trilha essencial: aproximadamente 7h20–9h45.
+- Percurso completo opcional: aproximadamente 10h30–14h, com 14 casos simultâneos, exercícios adicionais, segunda regra, matemática, transferência e consequências.

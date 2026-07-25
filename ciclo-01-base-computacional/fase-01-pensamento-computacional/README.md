@@ -8,7 +8,7 @@ Pensamento computacional não é sinônimo de programação nem uma receita úni
 
 ## Estado da fase
 
-O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio. As **Aulas 01 a 04** e suas práticas foram desenvolvidas e revisadas técnica e pedagogicamente; a **Aula 05 — Padrões e generalização** e sua prática associada foram desenvolvidas integralmente; as Aulas 06 a 14 permanecem apenas planejadas.
+O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio. As **Aulas 01 a 05** e suas práticas foram desenvolvidas e revisadas técnica e pedagogicamente; as Aulas 06 a 14 permanecem apenas planejadas.
 
 ## Resultados esperados
 
