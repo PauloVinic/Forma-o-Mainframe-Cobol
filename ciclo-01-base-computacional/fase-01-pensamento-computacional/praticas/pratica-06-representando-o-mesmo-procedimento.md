@@ -4,9 +4,9 @@
 
 Representar o mesmo procedimento organizacional em formas diferentes, escolher principal e complementar, converter e auditar perdas, ambiguidades e divergências.
 
-Na trilha essencial, produza texto estruturado, tabela, diagrama simples e uma complementar entre mini tabela de decisão, mini modelo de estado ou pseudocódigo. Faça conversão, rastreabilidade, mudança e revisão. Tempo: 3h–4h.
+Na trilha essencial, produza integralmente uma forma textual obrigatória e uma segunda forma escolhida entre tabela e diagrama de relações. Analise um pequeno artefato parcialmente inadequado na modalidade não escolhida, mas não o reconstrua por completo. Escolha principal e complementar entre as duas formas produzidas; faça conversão, rastreabilidade, mudança e revisão. Tempo: 3h15–4h30.
 
-No aprofundamento opcional, produza todas as complementares, segunda conversão, acessibilidade ampliada, três versões e transferência. Não é requisito para avançar.
+No aprofundamento opcional, construa a terceira forma básica, uma representação especializada, segunda conversão, acessibilidade ampliada, três versões e transferência. Não é requisito para avançar.
 
 ## Bloco 1 — Necessidade de representação
 
@@ -72,11 +72,9 @@ Use uma estrutura mínima como referência, sem copiá-la mecanicamente:
 
 Cada afirmação importante deve trazer um ou mais IDs E1–E13. Um mesmo ID pode aparecer em trechos distintos quando o texto apresenta a regra e depois seu limite. Depois de escrever, leia apenas os títulos e a primeira frase de cada item: eles devem permitir localizar a informação sem depender de leitura integral.
 
-Faça ainda um teste de negação. Pergunte se o texto permitiria concluir “desconhecido é incompleto”, “uma classe determina causa” ou “o encaminhamento é automático”. Se permitir, mesmo sem dizer isso literalmente, acrescente limite ou reorganize a frase. A representação também é responsável pelas inferências previsíveis que sua forma favorece.
+## Bloco 4 — Tabela: construir ou analisar
 
-## Bloco 4 — Tabela
-
-Escolha uma finalidade: elementos/responsabilidades, condições/encaminhamentos, rastreabilidade ou estados informacionais.
+Se tabela for sua segunda forma escolhida, construa-a integralmente. Escolha uma finalidade: elementos/responsabilidades, condições/encaminhamentos, rastreabilidade ou estados informacionais.
 
 | ID da linha | Unidade | Condição ou atributo | Estado informacional | Encaminhamento | Origem |
 |---|---|---|---|---|---|
@@ -91,11 +89,19 @@ Antes de preencher, complete: “cada linha representa ______”. Não misture o
 
 Inclua legenda dos valores especiais. “Desconhecido” significa informação atualmente indisponível; “não aplicável” significa dimensão fora do caso conforme critério; “ausência confirmada” indica verificação negativa; “pendente” indica trabalho ou decisão ainda aberto. Esses rótulos não são intercambiáveis. Caso a fonte não ofereça exemplo legítimo de algum valor, registre-o na legenda sem atribuí-lo a uma ocorrência inventada.
 
-Revise a ordenação. Se ordenar por impacto, declare que a ordem é apenas para leitura, ou justifique a prioridade por E7 e E9 sem ultrapassar E8. Verifique se destaque, cor ou posição sugerem conclusão não autorizada. Acrescente descrição textual para qualquer distinção visual relevante.
+Se escolheu diagrama como segunda forma, não preencha a tabela completa. Analise este artefato fornecido:
 
-## Bloco 5 — Diagrama simples
+| Histórico | Encaminhamento |
+|---|---|
+| completo | classificar |
+| incompleto | obter evidência |
+|  | encaminhar |
 
-Escolha elementos, significado das caixas, relações, direção e legenda. Pode usar tabela:
+Localize o vazio ambíguo, a responsabilidade ausente, o encaminhamento que parece automático e a perda da exceção E9. Revise apenas uma linha e registre quais esclarecimentos ainda dependem da fonte. A construção integral dessa terceira forma fica no aprofundamento.
+
+## Bloco 5 — Diagrama: construir ou analisar
+
+Se diagrama for sua segunda forma escolhida, construa-o integralmente. Escolha elementos, significado das caixas, relações, direção e legenda. Pode usar tabela:
 
 | Origem | Relação | Destino | ID da fonte |
 |---|---|---|---|
@@ -110,7 +116,7 @@ O desenho pode ser feito à mão ou com recurso digital, mas a entrega textual e
 
 Defina a fronteira: o diagrama descreve informação, responsabilidade ou procedimento? Não misture atividade, estado e pessoa com a mesma aparência sem legenda. Se um elemento externo for necessário, marque-o como externo ao recorte. Depois, leia cada seta como uma frase completa e confronte-a com o ID da fonte.
 
-Faça o teste de acessibilidade sem cor e sem posição. Imagine que as relações sejam lidas numa lista linear. Os rótulos ainda permitem reconstruir o significado? Se não, a forma depende de pista visual não declarada. Corrija a legenda ou a descrição.
+Se escolheu tabela como segunda forma, não construa o diagrama completo. Analise o artefato fornecido `Evidência → Classificação → Encaminhamento`. Identifique o significado ausente das setas, a possível causalidade indevida, a autoridade decisória omitida e o limite E13 perdido. Proponha rótulo para uma seta e uma nota de escopo; deixe a reconstrução integral para o aprofundamento.
 
 ## Bloco 6 — Principal e complementar
 
@@ -128,11 +134,20 @@ Explique por que uma forma sozinha não basta e como a segunda cobre perda real.
 
 Escreva uma justificativa de 150 a 250 palavras. Ela deve mencionar a pergunta do Bloco 1, uma força e uma perda concretas da principal, uma força complementar, o público, a frequência de atualização e um uso proibido de cada forma. “A tabela é mais organizada” não basta; diga qual comparação ela torna possível e qual contexto comprime.
 
-Defina também a autoridade de referência: quando houver divergência, qual artefato deve ser consultado para a regra, qual para a origem e qual para relações? Isso não transforma um artefato em verdade absoluta; apenas evita que uma inconsistência seja resolvida por preferência visual.
+Defina também a **fonte de referência para cada tipo de conteúdo**: quando houver divergência, qual artefato deve ser consultado para a regra, para os fatos de origem, para as relações e para o histórico de mudança? Isso não transforma nenhum artefato em verdade universal; apenas evita resolver inconsistência por preferência visual.
+
+| Conteúdo | Fonte de referência |
+|---|---|
+| regra vigente | texto identificado |
+| fatos de origem | fonte E1–E13 |
+| relações | segunda forma, se for diagrama |
+| histórico de mudança | registro de versões |
+
+Registre separadamente que a **autoridade decisória** de E8 e E9 é pessoa, papel ou instância autorizada a decidir; ela não se confunde com a fonte documental de referência.
 
 ## Bloco 7 — Conversão
 
-Escolha texto → tabela, tabela → diagrama ou diagrama → texto. Quando viável, faça a primeira tentativa sem consultar a origem. Depois compare:
+Converta entre as duas formas completas: texto → tabela, tabela → texto, texto → diagrama ou diagrama → texto. Quando viável, faça a primeira tentativa sem consultar a origem. Depois compare:
 
 | Item | Registro |
 |---|---|
@@ -153,13 +168,11 @@ Depois da comparação, classifique cada diferença:
 - **manter pendente**, quando a fonte é insuficiente;
 - **remover**, quando houve invenção.
 
-Se a primeira conversão tiver preservado tudo, procure especialmente responsabilidade, exceção, limites e estatutos do conhecimento. Uma conversão perfeita é possível em recorte pequeno, mas uma auditoria sem nenhuma observação pode indicar leitura superficial.
-
 ## Bloco 8 — Rastreabilidade
 
-| Origem | Texto | Tabela | Diagrama | Situação |
+| Origem ou grupo explicitado | Texto | Segunda forma | Artefato analisado | Situação no pacote |
 |---|---|---|---|---|
-| E1 |  |  |  |  |
+| E1 |  |  | não se aplica à forma / referência |  |
 | E2 |  |  |  |  |
 | E3 |  |  |  |  |
 | E4 |  |  |  |  |
@@ -175,15 +188,15 @@ Se a primeira conversão tiver preservado tudo, procure especialmente responsabi
 
 Todo elemento essencial aparece em ao menos uma forma. Cobertura não prova qualidade semântica.
 
-Preencha a matriz com identificadores específicos, não apenas “sim”. Use, por exemplo, T3, L2 e D4. Na coluna situação, marque preservado, parcial, omitido com justificativa, incompatível ou pendente. Um elemento pode ser deliberadamente omitido do diagrama e preservado no texto; isso é aceitável se a escolha estiver explícita e não comprometer o uso do diagrama.
+Preencha a matriz com identificadores específicos, não apenas “sim”. Use, por exemplo, T3, L2 e D4. Na coluna situação, marque preservado, parcial, “não se aplica à forma”, “omitido com justificativa”, “preservado na complementar”, incompatível ou pendente. Um elemento pode ser deliberadamente omitido de uma forma e preservado na complementar; isso é aceitável se a escolha estiver explícita e não comprometer seu uso. Agrupe elementos relacionados somente quando explicar a síntese e conservar a possibilidade de localizar cada origem.
 
 Faça duas varreduras. Na primeira, percorra E1–E13 e encontre destinos. Na segunda, percorra todos os itens criados e encontre origem. A segunda detecta informação inventada que uma matriz orientada apenas pela fonte não mostra. Registre elementos do destino sem origem numa lista de “órfãos” e resolva-os.
 
-Selecione três vínculos e confira o significado palavra por palavra. A mera presença de E3 ao lado de uma linha que iguala desconhecido e incompleto não representa cobertura correta; representa incompatibilidade rastreada. Corrija o conteúdo e só então altere a situação.
+Selecione de três a cinco vínculos críticos e confira o significado palavra por palavra. A mera presença de E3 ao lado de uma linha que iguala desconhecido e incompleto não representa cobertura correta; representa incompatibilidade rastreada. Corrija o conteúdo e só então altere a situação. Sem vínculo numa forma específica pode ser omissão deliberada; sem vínculo em todo o pacote pode ser perda essencial.
 
-## Bloco 9 — Uma representação complementar
+## Bloco 9 — Representação especializada opcional
 
-Escolha apenas uma no essencial.
+Este bloco pertence ao aprofundamento. Escolha uma modalidade somente depois de concluir as duas formas essenciais. Na trilha essencial, basta interpretar o exemplo curto correspondente apresentado na aula ou nos exercícios; não há terceira forma completa obrigatória.
 
 ### Mini tabela de decisão
 
@@ -197,11 +210,11 @@ Use até quatro estados, eventos e transições. Não faça rastreamento. Estado
 
 Represente procedimento fornecido em notação não executável e independente de linguagem. Não tente provar algoritmo.
 
-Justifique por que a escolhida cobre limite da principal.
+Justifique que limite do pacote a forma especializada cobre e que novo custo de manutenção introduz.
 
 Se escolher tabela de decisão, declare as condições, resultados e pelo menos uma combinação que a fonte não resolve. Não complete essa combinação por intuição. Se escolher modelo de estado, use substantivos ou expressões de condição para estados e verbos/eventos para transições; explique por que “classificar ocorrência” é atividade e “classificação pendente” pode ser estado. Se escolher pseudocódigo, mantenha termos do glossário, declare o início do recorte e marque qualquer condição externa como referência ou pendência.
 
-Compare a complementar com texto, tabela e diagrama já produzidos. Localize pelo menos um ganho e uma nova perda. A complementar não está dispensada de rastreabilidade: acrescente uma coluna à matriz ou crie tabela separada com E1–E13 e seus elementos.
+Compare a especializada com as duas formas produzidas e com o artefato analisado. Localize pelo menos um ganho e uma nova perda. No aprofundamento, acrescente uma coluna à matriz, faça varredura ampliada de órfãos e compare as versões aplicáveis. Pseudocódigo com repetição, se encontrado em material adicional, é apenas leitura antecipatória da forma; não ensine iteração.
 
 ## Bloco 10 — Mudança controlada
 
@@ -222,32 +235,29 @@ Registre ao menos uma correção realizada após a auditoria.
 
 Realize a auditoria em três passagens. Na primeira, confira conteúdo e limites. Na segunda, confira convenções, acessibilidade e legibilidade. Na terceira, confira versões e vínculos. Para cada problema, registre evidência, risco, correção e artefato afetado.
 
-Troque temporariamente os artefatos com outra pessoa, se houver parceria disponível, sem explicar as convenções oralmente. Peça que ela responda à pergunta do Bloco 1 e indique uma inferência que considerou possível. Se estiver trabalhando sozinho, aguarde alguns minutos, leia na ordem complementar → diagrama → tabela → texto e anote onde precisou adivinhar. A necessidade de explicação externa mostra que algo deve entrar na própria entrega.
-
 Finalize com uma declaração curta de limites: o que o pacote permite interpretar, o que não permite decidir e quais pendências impedem uso operacional. Essa declaração é parte da qualidade, não uma admissão de fracasso.
 
 ## Entrega esperada
 
-Entregue propósito/público, análise da fonte, texto, tabela, diagrama, escolhas, uma complementar, conversão, matriz, auditoria, versões revistas e autoavaliação.
+Entregue propósito/público, análise da fonte, texto estruturado, segunda forma escolhida, análise localizada da modalidade não escolhida, escolha entre principal e complementar, conversão, matriz, auditoria, versões revistas e autoavaliação.
 
 Organize os arquivos ou seções nesta ordem e dê a cada um título e versão. Não apague a versão anterior após o Bloco 10: mantenha-a como evidência da mudança. A entrega essencial deve conter:
 
 - folha de propósito, público e convenções;
 - fonte E1–E13 anotada e lista de pendências;
 - texto estruturado identificado;
-- tabela com legenda de valores;
-- diagrama e descrição textual;
+- segunda forma escolhida: tabela com legenda de valores ou diagrama com descrição textual;
+- análise e revisão localizada do pequeno artefato fornecido na modalidade não escolhida;
 - justificativa de principal e complementar;
 - registro de conversão e diferenças;
 - matriz de rastreabilidade nos dois sentidos;
-- complementar escolhida;
 - registro de mudança, auditoria e autocorreção.
 
 Antes de consultar a solução, escreva em cinco linhas o que a sua principal mostra melhor, o que ela perde, como a complementar ajuda, qual divergência foi corrigida e qual limitação permanece.
 
 ## Solução comentada — consulte somente depois da tentativa
 
-Não existe pacote único. Para público operacional, tabela de condições pode ser principal e texto estruturado complementar; para auditoria, matriz de rastreabilidade pode ser principal. A justificativa deve partir da pergunta.
+Não existe pacote único. Para público operacional, tabela de condições pode ser principal e texto estruturado complementar; quando as relações forem prioritárias, o diagrama pode ser principal e o texto estruturado complementar. Para auditoria, a matriz apoia a conferência, mas não substitui as duas formas escolhidas. A justificativa deve partir da pergunta.
 
 Conversão parcial possível:
 
@@ -259,7 +269,7 @@ Conversão parcial possível:
 
 Acrescentar “encaminhar automaticamente” seria indevido: E8 mantém autoridade. Converter desconhecido em incompleto contradiz E3. O diagrama de relações pode perder E12 se proteções não virarem elemento ou anotação.
 
-Após a mudança do Bloco 10, texto, tabela, complementar escolhida e matriz podem ser afetados. Atualize apenas os artefatos que contêm ou dependem da regra, mas registre os demais como conferidos. Uma versão nova sem vínculo atualizado continua inconsistente.
+Após a mudança do Bloco 10, texto, segunda forma e matriz podem ser afetados. Atualize apenas os artefatos que contêm ou dependem da regra, mas registre os demais como conferidos. Uma versão nova sem vínculo atualizado continua inconsistente. A fonte E1–E13 continua sendo referência para os fatos; a autoridade decisória permanece externa e não pode ser inventada.
 
 Deixe suas células originais. Compare significado, não aparência, e defenda alternativa coerente.
 
@@ -285,12 +295,16 @@ Deixe suas células originais. Compare significado, não aparência, e defenda a
 | revisão | copia solução | muda por evidência | registra impacto |
 | limites | universaliza | declara uso proibido | mantém fronteira |
 
-O essencial termina quando nenhum critério está em “precisa de revisão” e você explica o que cada forma mostra, perde e como E1–E13 permanecem rastreáveis.
+O essencial termina quando nenhum critério está em “precisa de revisão” e você explica o que cada uma das duas formas mostra, perde e como E1–E13 permanecem rastreáveis no pacote.
 
 ## Carga
 
-- Prática essencial: 3h–4h.
+- Leitura e preparação da fonte: 35–50 min.
+- Representações essenciais — texto e segunda forma: 1h15–1h40.
+- Conversão, rastreabilidade e auditoria semântica: 55–75 min.
+- Mudança, revisão e autoavaliação: 30–45 min.
+- Prática essencial: 3h15–4h30.
 - Solução, revisão e autoavaliação: 30–45 min.
-- Aprofundamento opcional: 3h–5h adicionais.
-- Trilha integrada: 7h30–9h45.
+- Aprofundamento opcional: 3h–5h adicionais, com terceira forma, modalidade especializada, segunda conversão, transferência e auditoria ampliada.
+- Trilha integrada: 7h45–10h15.
 - Percurso completo opcional: 12h–16h.

@@ -11,7 +11,7 @@
 - **Prática associada:** [Prática 06 — Representar, converter e auditar](../praticas/pratica-06-representando-o-mesmo-procedimento.md)
 - **Projeto integrado:** conclusão do P2 com pacote de representações coerentes, rastreáveis e revisáveis
 
-Ao concluir, o aluno deverá escolher uma representação principal e uma complementar; justificar as escolhas; construir texto estruturado, tabela e diagrama simples; interpretar fluxograma, tabela de decisão, modelo de estado e pseudocódigo introdutórios; converter formas; localizar perdas e acréscimos; verificar consistência; construir rastreabilidade; e revisar versões após mudança.
+Ao concluir, o aluno deverá escolher uma representação principal e uma complementar; justificar as escolhas; construir texto estruturado e uma segunda forma entre tabela e diagrama simples; analisar a terceira forma básica; interpretar fluxograma, tabela de decisão, modelo de estado e pseudocódigo introdutórios; converter formas; localizar perdas e acréscimos; verificar consistência; construir rastreabilidade; e revisar versões após mudança.
 
 C06 é essencial, mas esta aula inicia o Nível 4 apenas em problemas e procedimentos simples já compreendidos. Representações complexas exigirão prática posterior e conhecimento do domínio.
 
@@ -64,12 +64,6 @@ Representação principal é a referência mais adequada ao uso prioritário, n�
 ### Uma seleção orientada por perguntas
 
 O primeiro erro de seleção costuma ocorrer antes de qualquer desenho: escolher a forma porque ela está disponível ou parece profissional. Uma planilha aberta convida à tabela; uma ferramenta gráfica convida ao diagrama. A ordem deveria ser inversa. Primeiro se determina o que alguém precisa descobrir, comparar, decidir ou revisar; só então se escolhe a forma. A pergunta “quais condições levam a cada resultado?” favorece uma tabela de decisão pequena. “Que relações ligam as entidades?” favorece um diagrama de relações. “Por que a exceção existe?” provavelmente exige texto. “Em que condição o caso se encontra e o que pode fazê-lo mudar?” sugere um modelo de estado.
-
-O público também altera a escolha. Um especialista pode interpretar abreviações estáveis; uma pessoa afetada pelo procedimento pode precisar de termos cotidianos, exemplos e alternativa textual ao desenho. Um responsável por auditoria procura origem, versão e justificativa. Uma equipe que atualiza o conteúdo procura unidades pequenas, identificadores e dependências. Não existe “público geral” sem características: idioma, familiaridade com o domínio, tarefa, tempo disponível e consequências do erro precisam ser considerados.
-
-Adequação não é preferência estética. Uma representação pode ser agradável e inadequada porque esconde a informação necessária. Legibilidade também não significa apenas letras grandes: envolve densidade, ordem de leitura, vocabulário, hierarquia e esforço para encontrar uma resposta. Precisão não significa detalhar tudo; significa reduzir interpretações incompatíveis no ponto relevante. Um diagrama lotado pode ser menos preciso para o uso real porque o leitor deixa de localizar relações críticas.
-
-Verificabilidade exige que uma afirmação possa ser localizada e confrontada com a origem. Uma longa narrativa sem IDs dificulta a conferência, mesmo que esteja correta. Manutenibilidade exige saber onde uma mudança repercute. Economia pede que cada símbolo, coluna ou artefato tenha função. Acessibilidade pede mais de uma pista para informações importantes: rótulo além de cor, descrição além da posição, ordem explícita além de proximidade visual.
 
 Por fim, complementaridade é avaliada pela diferença de capacidades. Texto e tabela podem compartilhar o mesmo conteúdo, mas desempenhar papéis diferentes: o texto preserva motivos e exceções; a tabela expõe padrões e lacunas. Um diagrama complementar pode mostrar dependências que ficam dispersas nas linhas. A combinação se justifica quando o ganho compensa o custo de manter coerência e versões. Criar muitas formas sem responsáveis por atualização aumenta, e não reduz, o risco.
 
@@ -157,7 +151,7 @@ Fluxogramas precisam de cuidado adicional. Uma atividade deve dizer o que ocorre
 
 ### Tabela de decisão introdutória
 
-Tabela de decisão organiza poucas condições e resultados. Exemplo:
+Tabela de decisão organiza poucas condições e resultados. O quadro seguinte é um **exemplo didático hipotético**, construído com regras fornecidas apenas para analisar a representação. Ele não registra regra confirmada do projeto de estoque nem autoriza ação automática:
 
 | Histórico | Impacto | Encaminhamento representado |
 |---|---|---|
@@ -166,7 +160,7 @@ Tabela de decisão organiza poucas condições e resultados. Exemplo:
 | desconhecido | qualquer | manter pendente |
 | completo | elevado | submeter à autoridade |
 
-“Qualquer” é convenção declarada. A tabela ajuda a perceber combinação ausente, mas não é tabela-verdade e não prova cobertura total. Condições podem ser ambíguas e resultados podem depender de regra externa.
+“Qualquer” significa, somente neste exemplo, que o valor do impacto não altera o encaminhamento representado naquela linha. A combinação “histórico completo e impacto não classificado” continua ausente. As condições não são completas, a tabela não é tabela-verdade, não prova cobertura e não cria regra a partir de taxas ou padrões da Aula 05. Todo encaminhamento permanece sujeito à regra externa e à autoridade decisória competente.
 
 ### Modelo de estado introdutório
 
@@ -184,18 +178,19 @@ Isso não é rastreamento de execução. Não estudaremos variáveis, invariante
 
 ## Pseudocódigo como representação
 
-Pseudocódigo é notação textual estruturada para expressar procedimento sem exigir sintaxe de linguagem executável. Pode revelar sequência, condição, repetição e responsabilidade abstrata. Deve ser legível, consistente e independente de linguagem.
+Pseudocódigo é notação textual estruturada para expressar procedimento sem exigir sintaxe de linguagem executável. Pode revelar estrutura e responsabilidade abstrata. Deve ser legível, consistente e independente de linguagem.
 
 Um exemplo introdutório, apresentado como texto e não como programa:
 
-> PARA cada ocorrência selecionada<br>
-> &nbsp;&nbsp;SE o histórico estiver desconhecido<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;REGISTRAR pendência<br>
-> &nbsp;&nbsp;SENÃO<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;REGISTRAR a classificação sustentada<br>
-> FIM
+> RECEBER uma ocorrência selecionada<br>
+> IDENTIFICAR o estado informado do histórico<br>
+> SE o histórico estiver desconhecido<br>
+> &nbsp;&nbsp;REGISTRAR pendência<br>
+> CASO CONTRÁRIO<br>
+> &nbsp;&nbsp;REGISTRAR a classificação sustentada<br>
+> ENCERRAR o recorte representado
 
-Esse trecho representa procedimento fornecido; não prova correção, completude ou término. “Selecionada” precisa de definição, e exceções podem estar ausentes.
+O trecho representa um procedimento; não prova correção, completude ou término algorítmico. “Selecionada” e “classificação sustentada” dependem de definições. A Aula 07 definirá algoritmo, a Aula 09 aprofundará decisões e a Aula 10 tratará repetição; este exemplo não ensina essas construções integralmente.
 
 Pseudocódigo não é código simplificado, não executa e não deve imitar Java, Python, JavaScript, COBOL ou outra sintaxe. Linguagem natural vaga não vira precisão só por usar maiúsculas e recuo.
 
@@ -209,11 +204,11 @@ O leitor deve conseguir reconhecer o início e o fim do recorte, as unidades tra
 
 Uma condição examinável precisa permitir ao leitor saber que informação seria consultada. “Se estiver adequado” é fraco sem critério. “Se o histórico estiver desconhecido” é mais claro, desde que “desconhecido” já tenha definição. Uma ação como “resolver o caso” pode esconder várias responsabilidades e resultados. Nesta fase, vale decompor apenas o necessário para que o procedimento fornecido seja interpretável, sem tentar construir uma solução executável.
 
-Repetição também exige unidade e limite conceituais. “Para cada ocorrência selecionada” indica repetição, porém ainda deixa aberta a regra de seleção. Isso pode ser aceitável se a seleção estiver fora do recorte e a referência estiver registrada. Se a seleção for essencial ao resultado, a omissão precisa virar pendência. Uma representação honesta torna o desconhecido visível; não inventa uma condição só para parecer completa.
+Uma condição externa também exige limite conceitual. “Ocorrência selecionada” deixa aberta a regra de seleção. Isso pode ser aceitável se a seleção estiver fora do recorte e a referência estiver registrada. Se for essencial ao resultado, a omissão precisa virar pendência. Uma representação honesta torna o desconhecido visível; não inventa uma condição só para parecer completa.
 
 Ao comparar pseudocódigo com fluxograma, procure equivalência sem exigir aparência idêntica. Uma decisão no fluxo pode corresponder a uma condição textual. Duas atividades consecutivas podem corresponder a dois enunciados. Uma nota de limite pode não aparecer dentro do fluxo e continuar preservada por vínculo ao texto complementar. Se o pseudocódigo acrescenta uma ordem que a fonte descrevia como simultânea, houve alteração semântica.
 
-Também não se deve avaliar o trecho perguntando apenas se “parece código”. Palavras em maiúsculas, termos como SE e PARA, alinhamento ou fechamento visual não asseguram entrada definida, saída, efetividade nem término. Essas propriedades pertencem à discussão de algoritmos da Aula 07. Aqui, o pseudocódigo é uma lente para enxergar a estrutura alegada de um procedimento e confrontá-la com sua fonte.
+Também não se deve avaliar o trecho perguntando apenas se “parece código”. Palavras em maiúsculas, termos condicionais, alinhamento ou fechamento visual não asseguram entrada definida, saída, efetividade nem término. Essas propriedades pertencem à discussão de algoritmos da Aula 07. Aqui, o pseudocódigo é uma lente para enxergar a estrutura alegada de um procedimento e confrontá-la com sua fonte.
 
 ## Combinação, conversão, consistência e rastreabilidade
 
@@ -249,7 +244,9 @@ Seja `O` o conjunto de elementos da origem e `R` o conjunto de elementos represe
 
 `T ⊆ O × R`
 
-Um par `(o, r) ∈ T` registra que o elemento representado `r` deriva ou corresponde ao elemento `o`. Elemento essencial de `O` sem par pode estar perdido; elemento de `R` sem origem exige justificativa ou remoção.
+Um par `(o, r) ∈ T` registra que o elemento representado `r` deriva ou corresponde ao elemento `o`. A relação pode ser muitos para muitos: uma origem pode aparecer em várias formas, e um elemento representado pode sintetizar várias origens. Um vínculo não prova equivalência semântica.
+
+Sem vínculo em um artefato específico pode haver omissão deliberada, desde que a complementar preserve o conteúdo e o uso da primeira esteja limitado. Sem vínculo em todo o pacote pode haver perda essencial. Elemento representado sem origem ou justificativa é **órfão**; convenção ou esclarecimento acrescentado e explicitamente justificado não é invenção. A cobertura é avaliada no pacote, não obrigatoriamente em cada forma isolada.
 
 Cobertura não prova qualidade. Um vínculo pode existir e estar semanticamente errado. A matriz registra situação:
 
@@ -353,27 +350,27 @@ Duas formas diferentes podem ser consistentes; conversão não é copiar. Célul
 
 ### Exercícios essenciais
 
-1. **Objetiva.** Qual afirmação melhor distingue conteúdo e representação?<br>
-   A) Conteúdo é a informação selecionada; representação é a forma convencional que a torna examinável, com possíveis perdas.<br>
-   B) Conteúdo é texto original; representação é qualquer versão visual equivalente.<br>
-   C) Conteúdo e representação são equivalentes quando usam os mesmos termos.<br>
-   D) Representação substitui conteúdo quando possui rastreabilidade.
+1. **Objetiva.** Qual afirmação distingue corretamente conteúdo e representação?<br>
+   A) A representação seleciona e organiza conteúdo por convenções; por isso, mudar a forma pode preservar ou alterar significado e deve ser auditado.<br>
+   B) A representação muda a forma do conteúdo, mas nunca seu significado, desde que mantenha os mesmos termos principais.<br>
+   C) A representação deve conter todo o conteúdo da origem; qualquer seleção caracteriza erro, independentemente do propósito.<br>
+   D) A representação torna-se equivalente à origem quando todos os elementos possuem vínculos de rastreabilidade.
 
-2. **Objetiva.** Num diagrama, uma seta liga “evidência” a “decisão”. A interpretação adequada é:<br>
-   A) evidencia causalidade porque a direção foi desenhada;<br>
-   B) representa sequência, salvo legenda contrária;<br>
-   C) depende de legenda que declare relação e direção;<br>
-   D) representa envio porque conecta elementos distintos.
+2. **Objetiva.** Num diagrama, uma seta liga “evidência” a “decisão”. Qual interpretação é adequada?<br>
+   A) O sentido depende do contexto; a direção da seta basta para indicar que a evidência ocorre antes da decisão.<br>
+   B) O sentido depende da convenção predominante do domínio, mesmo que o artefato não a declare ao público.<br>
+   C) O sentido deve ser estabelecido por legenda ou rótulo explícito que declare a relação e a direção aplicável.<br>
+   D) O sentido pode ser inferido pela posição das caixas quando a leitura visual parece inequívoca.
 
-3. **Objetiva.** Após converter texto em tabela, uma exceção desapareceu. Isso é:<br>
-   A) economia legítima porque tabela deve ser curta;<br>
-   B) perda a auditar, possivelmente incompatível com o propósito;<br>
-   C) mudança apenas sintática sem efeito;<br>
-   D) prova de que texto era redundante.
+3. **Objetiva.** Uma tabela será usada para decidir se um caso pode seguir sem análise adicional. Na conversão do texto, desapareceu uma exceção que exige essa análise. Como classificar a diferença?<br>
+   A) Perda aceitável, pois uma forma complementar preserva a exceção, ainda que a tabela continue sendo usada isoladamente para decidir.<br>
+   B) Perda incompatível com o propósito, porque a exceção é essencial à decisão apoiada pela tabela.<br>
+   C) Alteração de nível de detalhe justificada, pois tabelas podem omitir condições para manter legibilidade.<br>
+   D) Divergência pendente de avaliação, mesmo que o propósito e a relevância da exceção já estejam declarados.
 
 4. **Dissertativa.** Defina representação e diferencie conteúdo, modelo, notação e convenção.
 
-5. **Análise de linguagem.** Reescreva “quando necessário, encaminhar rapidamente” como texto estruturado, declarando agente, condição, destino, evidência e pendência.
+5. **Análise de linguagem.** Em “quando necessário, encaminhar rapidamente”, separe o conteúdo conhecido das informações ausentes. Produza texto estruturado que registre explicitamente “agente: não informado”, “condição: precisa de esclarecimento”, “destino: não informado” e “prazo: ‘rapidamente’ sem medida”; indique a evidência ainda necessária e formule perguntas de esclarecimento. Não invente respostas.
 
 6. **Conversão.** Converta três regras textuais de classificação em tabela com ID, condição, conclusão, exceção e limite.
 
@@ -432,10 +429,6 @@ Escolha principal e complementar, converta sem inventar, audite perdas, verifiqu
 
 Para aplicar a síntese diante de um artefato novo, use quatro perguntas encadeadas. “O que está sendo representado?” localiza conteúdo, modelo e recorte. “Para quem e para quê?” testa adequação e legibilidade. “Que convenções permitem interpretar cada elemento?” verifica notação, significado, acessibilidade e precisão. “Como sei que nada essencial foi alterado?” conduz à origem, à conversão, à consistência, às perdas e à rastreabilidade.
 
-Se a primeira pergunta não tiver resposta, não escolha a forma ainda. Se a segunda não tiver resposta, não existe critério para declarar uma representação principal. Se a terceira falhar, o leitor dependerá de adivinhação. Se a quarta falhar, aparência e cobertura não bastam para confiar no pacote. Essas perguntas não substituem conhecimento do domínio nem revisão por pessoas responsáveis; elas organizam a inspeção introdutória.
-
-Também é útil formular a conclusão negativa de cada forma. O texto não garante ausência de ambiguidade. A lista não garante ordem. A tabela não garante validade ou completude. O diagrama não garante causalidade. O fluxograma não garante que o procedimento seja algoritmo. A tabela de decisão não garante cobertura formal. O modelo de estado não é registro de execução. O pseudocódigo não é programa nem prova de correção. A matriz de rastreabilidade não garante equivalência semântica.
-
 Uma boa entrega, portanto, não é a que acumula mais artefatos. É a que permite ao público responder à pergunta declarada, localizar a origem, reconhecer limites, comparar versões e perceber o que continua desconhecido. Quando uma forma omite algo necessário a outro uso, a complementar deve torná-lo visível. Quando uma mudança ocorre, os vínculos permitem encontrar os pontos afetados. Quando surge divergência, a fonte e a autoridade declaradas orientam a revisão.
 
 Esse modo de trabalhar prepara a passagem para algoritmos sem antecipá-la. O estudante aprende a não confundir a estrutura visível de um procedimento com suas propriedades. Na aula seguinte, entradas, saídas, passos efetivos e término poderão ser examinados sobre uma base representacional mais clara, sem tratar qualquer sequência de caixas ou linhas recuadas como solução algorítmica.
@@ -447,8 +440,8 @@ Esse modo de trabalhar prepara a passagem para algoritmos sem antecipá-la. O es
 **Notação:** sistema de símbolos e regras de escrita.<br>
 **Convenção:** acordo de interpretação.<br>
 **Símbolo:** forma que recebe significado por notação ou legenda.<br>
-**Sintaxe:** organização formal permitida.<br>
-**Significado:** conteúdo interpretado pela forma.<br>
+**Sintaxe:** regras de formação adotadas por uma notação.<br>
+**Significado:** interpretação atribuída aos elementos e relações da representação.<br>
 **Linguagem natural:** linguagem humana usada para contexto e regras.<br>
 **Texto estruturado:** texto organizado por IDs, títulos e escopos.<br>
 **Lista:** conjunto de itens; não implica ordem.<br>
@@ -465,9 +458,9 @@ Esse modo de trabalhar prepara a passagem para algoritmos sem antecipá-la. O es
 **Evento:** ocorrência capaz de motivar transição.<br>
 **Transição:** relação entre estados sob evento ou condição.<br>
 **Modelo de estado:** representação de estados e transições.<br>
-**Pseudocódigo:** notação textual não executável de procedimento.<br>
-**Principal:** forma prioritária para o uso declarado.<br>
-**Complementar:** forma que cobre limitações da principal.<br>
+**Pseudocódigo:** notação textual não executável para representar procedimento; não é algoritmo nem código.<br>
+**Principal:** forma prioritária para o uso declarado, sem ser fonte universal.<br>
+**Complementar:** forma que cobre uma limitação concreta da principal.<br>
 **Conversão:** reconstrução de significado em outra forma.<br>
 **Consistência interna:** compatibilidade dentro do artefato.<br>
 **Consistência entre representações:** compatibilidade semântica entre formas.<br>
@@ -503,7 +496,7 @@ Pseudocódigo é representação; algoritmo é conteúdo com propriedades espec�
 - Leitura e anotações: 2h10–2h30.
 - Recuperação: 20–30 min.
 - Exercícios essenciais: 1h30–2h.
-- Prática essencial: 3h–4h.
+- Prática essencial: 3h15–4h30.
 - Solução e revisão: 30–45 min.
-- Trilha essencial: aproximadamente 7h30–9h45.
+- Trilha essencial: aproximadamente 7h45–10h15.
 - Percurso completo opcional: 12h–16h, com complementares adicionais, segunda conversão, transferência e auditoria ampliada.

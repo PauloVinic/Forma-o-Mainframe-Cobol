@@ -70,13 +70,13 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 06 — Representação de problemas e soluções
 
-**Estado:** [aula integral desenvolvida](aulas/aula-06-representacao-de-problemas-e-solucoes.md), com [prática associada](praticas/pratica-06-representando-o-mesmo-procedimento.md).
+**Estado:** [aula integral revisada técnica e pedagogicamente](aulas/aula-06-representacao-de-problemas-e-solucoes.md), com [prática associada revisada](praticas/pratica-06-representando-o-mesmo-procedimento.md).
 
 **Finalidade:** selecionar a forma de representação conforme pergunta, público e necessidade de verificação.
 
 **Desenvolvimento:** linguagem natural; listas estruturadas; tabelas; diagramas; fluxogramas; tabelas de decisão; modelos de estado; pseudocódigo; convenções; ambiguidade; consistência; rastreabilidade; conversão e combinação de representações; perdas de informação.
 
-**Prática prevista:** representar o mesmo procedimento em texto estruturado, tabela e diagrama; converter entre duas formas e auditar divergências.
+**Prática prevista:** representar o mesmo procedimento em texto estruturado e uma segunda forma escolhida entre tabela e diagrama; analisar a terceira forma, converter entre as duas produzidas e auditar divergências.
 
 **Cuidado:** não transformar a aula em memorização de símbolos de fluxograma. Prepara algoritmo ao fornecer meios de registrar um procedimento já compreendido.
 
