@@ -56,6 +56,8 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 05 — Padrões e generalização
 
+**Estado:** aula integral desenvolvida em `aulas/aula-05-padroes-e-generalizacao.md`, com prática associada em `praticas/pratica-05-classificando-e-generalizando.md`.
+
 **Finalidade:** usar semelhanças e diferenças para reaproveitar raciocínio sem apagar exceções relevantes.
 
 **Desenvolvimento:** atributo, semelhança, diferença, classificação, classe, regularidade, padrão, caso particular, regra, exceção, exemplo, contraexemplo, generalização e reutilização; padrões em dados e processos; generalização excessiva e correlação superficial.
