@@ -82,7 +82,7 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 07 — O que é um algoritmo
 
-**Estado:** [aula integral desenvolvida](aulas/aula-07-o-que-e-um-algoritmo.md), com [prática associada](praticas/pratica-07-avaliando-e-formulando-algoritmos.md).
+**Estado:** [aula integral revisada técnica e pedagogicamente](aulas/aula-07-o-que-e-um-algoritmo.md), com [prática associada revisada](praticas/pratica-07-avaliando-e-formulando-algoritmos.md).
 
 **Finalidade:** construir definição operacional precisa e distinguir algoritmo de entidades próximas.
 

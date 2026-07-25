@@ -2,15 +2,15 @@
 
 ## Objetivo e modalidades
 
-Avaliar descrições candidatas e formular algoritmo independente de linguagem para validação estrutural de uma transação individual, explicando contrato, efetividade, precisão, término, correção intuitiva, pressupostos e limites.
+Avaliar descrições candidatas e formular algoritmo sem depender de linguagem de programação específica para validação estrutural de uma transação individual, explicando contrato, efetividade, precisão, término, correção intuitiva, pressupostos e limites.
 
-Na trilha essencial, conclua os onze blocos em 3h15–4h. O aprofundamento acrescenta contrato alternativo, não determinismo, heurística, entrada fora do domínio, segunda representação e transferência; não é requisito para avançar.
+Na trilha essencial, percorra os onze blocos com foco em C1, C2, C3, C5 e C7; nos casos T1, T3 e T5; e em três ou quatro passos críticos da auditoria. C4, C6, T2, T4, contrato alternativo, não determinismo, segunda representação e transferência ampliada são opcionais. Tempo essencial: 3h15–4h20.
 
 O caso não detecta fraude, decide bloqueio, prevê risco, escolhe intervenção ou substitui autoridade humana. Cada execução trata uma transação, sem repetição.
 
 ## Bloco 1 — Avaliar descrições candidatas
 
-Avalie sete candidatas:
+Avalie as cinco candidatas essenciais; C4 e C6 são aprofundamento:
 
 - **C1 — intenção vaga:** “analise cuidadosamente e faça o melhor”.
 - **C2 — processo organizacional:** receber, pedir parecer, aguardar aprovação e negociar quando necessário.
@@ -30,9 +30,9 @@ Avalie sete candidatas:
 | C6 |  |  |  |  |  |  |
 | C7 |  |  |  |  |  |  |
 
-Justifique cada célula. Processo útil não vira algoritmo por ser detalhado; pseudocódigo não fornece contrato; heurística pode ser executada algoritmicamente, mas sua garantia é limitada. Em C7, identifique o que pode ser preservado e o que precisa ser revisto.
+Preencha C1, C2, C3, C5 e C7. C4 e C6 são opcionais. Processo útil não vira algoritmo por ser detalhado; pseudocódigo não fornece contrato. Em C6, se realizado, separe a correção do algoritmo que executa a heurística da garantia substantiva que ela não fornece.
 
-Para cada veredito, cite ao menos dois critérios entre classe, entrada, saída, efetividade, precisão e término. “Não gostei” ou “parece algoritmo” não são justificativas. Quando a informação for insuficiente, escreva “não demonstrado” em vez de preencher por suposição.
+Para cada veredito, cite dois critérios. Quando faltar informação, escreva “não demonstrado”.
 
 ## Bloco 2 — Classe e instâncias
 
@@ -71,17 +71,17 @@ Saídas permitidas:
 | classe |  |
 | entrada |  |
 | domínio |  |
-| pré-condições |  |
+| pré-condições | uma única ocorrência com estrutura localizável e inspecionável, ainda que contenha campo ausente ou não interpretável |
 | saídas |  |
 | pós-condições |  |
 | dependências externas |  |
 | limites |  |
 
-Desconhecido deve permanecer diferente de ausente. Valor monetário exige moeda declarada. Defina quais campos são obrigatórios. Fraude, aprovação financeira, bloqueio, segurança e autorização definitiva ficam fora.
+Adote esta regra didática hipotética: campos obrigatórios ausentes ou não interpretáveis e autorização confirmadamente ausente geram inadequação estrutural; autorização desconhecida gera pendência; somente estrutura adequada com autorização confirmada fica apta para análise posterior. Desconhecido não vira ausente. Isso não detecta fraude, não bloqueia, não afirma irregularidade financeira e não decorre da instituição; correção fora do algoritmo pode ocorrer.
 
 Revise a pré-condição: ela descreve entrada admissível ou elimina silenciosamente o caso mais difícil? Revise a pós-condição: ela relaciona entrada e saída ou apenas repete “funciona”?
 
-Faça uma leitura nos dois sentidos. Do contrato para o procedimento, localize onde cada saída e limite será atendido. Do procedimento para o contrato, identifique qualquer dado ou regra usada sem origem. Registre dependência não fornecida em vez de inventá-la.
+Leia nos dois sentidos: localize no procedimento cada saída e limite; no contrato, a origem de cada dado e regra.
 
 ## Bloco 4 — Procedimento em linguagem estruturada
 
@@ -91,9 +91,9 @@ Cada ação deve identificar objeto, operação, resultado observável e referê
 
 1. receber uma transação admissível;
 2. verificar se os campos obrigatórios estão completos e interpretáveis;
-3. se houver campo incompleto, produzir a categoria estrutural correspondente e motivo;
+3. se houver campo ausente ou não interpretável, produzir inadequação estrutural e motivo;
 4. caso contrário, identificar o estado declarado da autorização;
-5. preservar a diferença entre ausente e desconhecida;
+5. se a autorização estiver ausente, produzir inadequação; se desconhecida, produzir pendência;
 6. produzir uma das saídas permitidas e motivo;
 7. encerrar o recorte.
 
@@ -101,7 +101,7 @@ Não transforme “autorização ausente” em fraude ou bloqueio. Se o contrato
 
 ## Bloco 5 — Pseudocódigo
 
-Converta o procedimento para pseudocódigo independente de linguagem, com convenções locais em português. O texto deve declarar início e fim do recorte, receber uma transação e produzir categoria e motivo.
+Converta o procedimento para pseudocódigo sem sintaxe executável específica, com convenções locais em português. O texto deve declarar início e fim do recorte, receber uma transação e produzir categoria e motivo.
 
 Não imite sintaxe real. Não use repetição. Não inclua “resolver”, “validar adequadamente” ou “decidir o melhor”. Mantenha desconhecido explícito.
 
@@ -117,11 +117,11 @@ Audite a conversão:
 
 Pseudocódigo é representação do algoritmo candidato. A forma correta não prova que o conteúdo satisfaz o contrato.
 
-Compare ainda os nomes empregados. “Ausente”, “desconhecida” e “incompleta” não podem virar um único rótulo por economia. Se a notação não tiver maneira clara de preservar a diferença, revise a convenção antes do conteúdo.
+“Ausente”, “desconhecida” e “incompleta” não podem virar um único rótulo.
 
 ## Bloco 6 — Efetividade e precisão
 
-Para cada passo, pergunte se o executor sabe o que consultar, se o resultado é observável, se o termo está definido, se há julgamento oculto, dependência externa ou resultado anterior necessário.
+Na trilha essencial, escolha três ou quatro passos críticos e pergunte se o executor sabe o que consultar, se o resultado é observável, se o termo está definido e se há dependência. Auditar todos os passos é opcional.
 
 | Passo | Operação efetiva? | Ambiguidade | Dependência | Revisão |
 |---|---|---|---|---|
@@ -149,7 +149,7 @@ Não aceite “termina porque tem FIM”, “porque é curto” ou “porque ter
 
 Separe descrição finita e execução finita. O pseudocódigo caber numa página não impede espera sem limite.
 
-Depois do primeiro argumento, procure um caminho que não tenha sido mencionado. Se encontrar condição sem saída ou operação externa sem limite, o argumento revelou uma revisão necessária; não acrescente a palavra FIM como correção.
+Depois, procure condição sem saída ou operação externa sem limite.
 
 ## Bloco 8 — Correção intuitiva
 
@@ -166,26 +166,26 @@ Explique por que cada grupo chega à categoria e ao motivo compatíveis. Preserv
 
 Isso é argumento intuitivo, não prova formal. Os grupos ajudam a examinar cobertura conceitual, mas exemplos não substituem o argumento sobre toda entrada admissível.
 
-Confirme também que a saída contém motivo. Um procedimento que escolhe categoria correta e perde a justificativa viola a pós-condição adotada. Se dois grupos chegam à mesma categoria por motivos diferentes, preserve a diferença quando ela for necessária à análise posterior.
+Confirme que toda saída contém motivo; categoria correta sem justificativa viola a pós-condição.
 
 ## Bloco 9 — Casos de exame
 
 | Caso | Campos | Valor/moeda | Autorização | Pertence ao domínio? |
 |---|---|---|---|---|
 | T1 | completos | 250,00 BRL | confirmada |  |
-| T2 | conta destino ausente | 90,00 BRL | confirmada |  |
+| T2 (opcional) | conta destino ausente | 90,00 BRL | confirmada | sim; inadequada |
 | T3 | completos | 300,00 BRL | desconhecida |  |
-| T4 | completos | 100 sem moeda | ausente |  |
+| T4 (opcional) | completos | 100 sem moeda | ausente | sim; inadequada |
 
 Registre saída, motivo, lacuna e efeito sobre o algoritmo. Não faça rastreamento passo a passo de estados.
 
-T4 exige decisão de contrato: valor sem moeda é entrada admitida que produz pendência ou viola pré-condição? Justifique sem excluir silenciosamente. Os casos examinam o procedimento; não provam correção.
+T4 é admissível porque a ocorrência é inspecionável, mas estruturalmente inadequada pela moeda ausente; a autorização ausente fornece outro motivo estrutural. Os casos examinam o procedimento; não provam correção.
 
-Não altere o algoritmo entre T1 e T4. Registre primeiro os efeitos da versão vigente. Caso uma lacuna apareça, leve-a ao Bloco 10 e preserve a evidência que motivou a mudança.
+Não altere o algoritmo durante o exame; leve lacunas ao Bloco 10.
 
 ## Bloco 10 — Contraexemplo e revisão
 
-Introduza T5: todos os campos estão presentes, mas o valor é textual e não interpretável. Um algoritmo que verifica apenas presença pode produzir “apta”, contrariando a pós-condição estrutural.
+Introduza T5, caso essencial: todos os campos são localizáveis, mas o valor é textual e não interpretável. Ele pertence ao domínio; um algoritmo que verifica apenas presença pode produzir “apta”. Depois da revisão, T5 produz inadequação estrutural. Uma estrutura totalmente corrompida, que não permita localizar a ocorrência, ficaria fora do domínio.
 
 | Item | Registro |
 |---|---|
@@ -223,19 +223,19 @@ Declare quais elementos do método foram transferidos: classe, contrato, efetivi
 
 ## Entrega, solução comentada e autocorreção
 
-Entregue avaliação dos sete candidatos, classe e instâncias, contrato, procedimento, pseudocódigo, análise de efetividade, argumentos de término e correção intuitiva, quatro casos, revisão, ligação com P3 e autoavaliação.
+Entregue avaliação dos cinco candidatos essenciais, classe e instâncias, contrato, procedimento, pseudocódigo, auditoria de três ou quatro passos, argumentos de término e correção intuitiva, T1, T3 e T5, revisão, ligação breve com P3 e autoavaliação.
 
 ### Solução comentada — consulte somente depois da tentativa
 
 Não existe redação única. C1 é intenção; C2 é processo aberto; C3 tem forma sem contrato; C4 não produz saída; C5 não garante término; C6 é heurística vaga; C7 é quase adequada, mas perde diferença semântica essencial.
 
-Contrato parcial possível: domínio de um registro individual legível com vocabulário declarado; saída estrutural com motivo; limite sem decisão financeira. Campos incompletos podem produzir “inválida no recorte”; autorização desconhecida, “pendente”; dados completos e confirmação, “apta para análise posterior”. A autorização ausente exige formulação coerente com a fonte e não autoriza inferir fraude.
+Contrato possível: domínio de uma ocorrência individual inspecionável, inclusive com campo ausente ou não interpretável; saída estrutural com motivo; limite sem decisão financeira. Campo obrigatório ausente ou não interpretável e autorização ausente produzem inadequação; autorização desconhecida, pendência; estrutura adequada e confirmação, aptidão para análise posterior.
 
 Um passo exemplar é “verificar se identificador, valor, moeda e contas estão presentes e interpretáveis conforme definições do contrato”. “Verificar se está tudo certo” permanece vago.
 
 O término decorre de uma unidade por execução, verificações fixas e caminhos que produzem saída sem esperar. T5 mostra que presença não implica interpretabilidade; revise definição e passo. Alternativas são aceitas se preservarem contrato, desconhecidos e limites.
 
-Uma solução não deve preencher lacunas com políticas novas. Se o contrato não disser como tratar autorização ausente, a resposta adequada pode ser registrar pendência na versão inicial e formular pergunta, não criar rejeição automática. Se a equipe decidir depois uma regra estrutural autorizada, identifique a nova fonte e a nova versão.
+Essa é uma regra hipotética fornecida pelo exercício, não política inferida da instituição. Inadequação não significa fraude, bloqueio ou irregularidade, e uma correção posterior pode ocorrer fora do algoritmo.
 
 Nos casos de exame, T1 pode sustentar “apta para análise posterior” sem significar aprovação. T2 evidencia incompletude. T3 preserva desconhecido. T4 e T5 examinam a diferença entre presença, moeda declarada e interpretabilidade. Esses resultados ajudam a revisar, mas não constituem prova.
 
@@ -266,12 +266,12 @@ O essencial termina quando nenhum critério está em “precisa de revisão”.
 
 ## Carga
 
-- Avaliação de candidatos e classe: 35–45 min.
-- Contrato e procedimento: 50–65 min.
-- Pseudocódigo e efetividade: 45–55 min.
-- Término e correção intuitiva: 35–45 min.
-- Casos, revisão, P3 e autoavaliação: 30–50 min.
-- Prática essencial: 3h15–4h.
-- Aula, exercícios, prática e revisão: aproximadamente 7h50–10h.
+- Preparação, candidatos e classe: 30–40 min.
+- Contrato e construção: 55–70 min.
+- Pseudocódigo, auditoria e justificativas: 45–60 min.
+- Término, correção, casos e revisão: 45–60 min.
+- Solução comentada e autocorreção: 20–30 min.
+- Prática essencial: 3h15–4h20.
+- Aula, exercícios essenciais, prática e revisão: aproximadamente 7h30–9h45.
 - Aprofundamento opcional: 3h–5h adicionais.
-- Percurso completo opcional: 11h30–15h.
+- Percurso completo opcional: 10h30–14h45.

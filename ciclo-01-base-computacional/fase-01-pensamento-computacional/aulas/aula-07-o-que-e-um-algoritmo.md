@@ -91,13 +91,13 @@ Uma pós-condição precisa ser verificável e relacionar resultado ao contrato.
 |---|---|
 | classe | validação estrutural de um registro por execução |
 | entrada | identificador, valor, moeda, contas, estado dos campos e autorização |
-| domínio | um registro legível, com estados pertencentes ao vocabulário declarado |
-| pré-condição | unidade e codificação conceitual atendem ao domínio |
-| saída | categoria estrutural e motivo |
-| pós-condição | categoria única e motivo correspondem às condições declaradas |
+| domínio | uma ocorrência individual cuja estrutura possa ser localizada e inspecionada, ainda que contenha campo ausente ou valor não interpretável |
+| pré-condição | há uma única ocorrência e seus componentes podem ser inspecionados |
+| saída | inadequação estrutural, pendência de evidência ou aptidão para análise posterior, sempre com motivo |
+| pós-condição | campo obrigatório ausente ou não interpretável gera inadequação; autorização desconhecida gera pendência; somente estrutura adequada com autorização confirmada gera aptidão |
 | limites | não decide fraude, bloqueio, risco ou autorização definitiva |
 
-Isso é um contrato didático, não contrato técnico de software. Ele separa o que deve ser alcançado de como o procedimento o alcança.
+Isso é um contrato didático hipotético, não política bancária nem contrato técnico de software. Nele, autorização confirmada com os demais dados adequados produz aptidão para análise posterior; autorização desconhecida produz pendência de informação; ausência confirmada de autorização e campo obrigatório ausente ou não interpretável produzem inadequação estrutural. Nenhuma categoria significa fraude, bloqueio ou irregularidade financeira. A instituição não permite inferir outra regra, e uma correção posterior fora do algoritmo pode ocorrer.
 
 ### Especificação não é procedimento
 
@@ -112,6 +112,8 @@ Considere “produzir categoria e motivo”. Se o procedimento produz apenas cat
 ### Entradas fora do domínio
 
 Há três tratamentos básicos nesta etapa. Primeiro, declarar o caso fora do domínio e encaminhá-lo a outro contrato, sem fingir que foi resolvido. Segundo, ampliar o domínio e acrescentar saída explícita para a situação. Terceiro, reconhecer que a própria classe foi mal formulada e voltar ao problema.
+
+Não confunda três situações. Um lote com várias transações ou uma estrutura impossível de inspecionar está fora deste domínio. Uma ocorrência individual inspecionável com moeda ausente ou valor textual não interpretável é admissível, mas estruturalmente inadequada. Uma ocorrência admissível com todos os campos interpretáveis é estruturalmente adequada; sua evidência ainda pode estar confirmada ou desconhecida.
 
 Nenhum tratamento deve ser automático. Uma imagem de documento pode estar legitimamente fora de um algoritmo que recebe campos estruturados; isso não significa que a necessidade da pessoa desapareceu. O sistema mais amplo precisa saber quem ou o que transforma a imagem em entrada admissível, com que garantias e que ocorre quando essa transformação falha.
 
@@ -131,7 +133,7 @@ Precisão não é quantidade de palavras. Um procedimento longo pode repetir int
 
 ### Executor abstrato e operações básicas
 
-Independência de linguagem não significa independência de qualquer executor. A descrição assume alguém ou algum mecanismo capaz de interpretar operações básicas. O nível precisa ser declarado. “Comparar o estado recebido com três rótulos permitidos” pode ser básico nesta aula; “interpretar qualquer texto jurídico” não pode ser tratado da mesma maneira.
+Independência de uma linguagem de programação específica não significa independência de qualquer executor. A descrição assume alguém ou algum mecanismo capaz de interpretar operações básicas. O nível precisa ser declarado. “Comparar o estado recebido com três rótulos permitidos” pode ser básico nesta aula; “interpretar qualquer texto jurídico” não pode ser tratado da mesma maneira.
 
 Um passo efetivo possui conclusão reconhecível. “Consultar o estado já contido no registro” termina quando o valor é lido. “Obter confirmação da autoridade” depende de ação externa e talvez não termine. O procedimento pode produzir pendência em vez de permanecer aguardando; a organização pode cuidar da obtenção em processo separado.
 
@@ -183,25 +185,23 @@ Descrição finita e término também não devem ser confundidos com limite de t
 
 Listas clássicas de características de algoritmos ajudam a organizar o tema, mas variam em terminologia e alcance. Algumas destacam finitude, definição, entrada, saída e efetividade; outras formulam algoritmos em modelos mais amplos. O curso não transforma uma lista histórica em consenso universal.
 
-Nossa definição inclui término porque o objeto inicial é algoritmo terminante. Ela inclui independência de linguagem para proteger a progressão antes de implementação. Inclui classe e especificação para evitar que uma sequência que funcionou num exemplo seja considerada suficiente. Essas escolhas são pedagógicas e avaliáveis, não tentativa de encerrar teoria da computação.
+Nossa definição inclui término porque o objeto inicial é algoritmo terminante. Ela evita dependência de linguagem de programação específica para proteger a progressão antes da implementação. Inclui classe e especificação para evitar que uma sequência que funcionou num exemplo seja considerada suficiente. Essas escolhas são pedagógicas e avaliáveis, não tentativa de encerrar teoria da computação.
 
 ## Definição operacional de algoritmo
 
 Adotaremos no curso:
 
-> **Algoritmo é uma descrição finita, precisa e independente de linguagem de um procedimento efetivo que, para cada instância admissível de uma classe declarada de problemas, transforma entradas em saídas que satisfazem a especificação e termina após um número finito de passos.**
+> **Algoritmo é um procedimento efetivo que, para cada instância admissível de uma classe declarada de problemas, transforma entradas em saídas que satisfazem a especificação e termina após um número finito de passos; esse procedimento admite descrição finita e precisa.**
 
 É uma definição operacional para o estudo inicial de algoritmos terminantes, compatível com tratamentos clássicos, mas não reivindicada como única definição possível em toda a Computação.
 
-**Descrição finita** qualifica o artefato. **Procedimento** indica ações organizadas. **Efetivo** exige passos realizáveis. **Classe** delimita o tipo de problema; **instância**, o caso concreto. **Entrada**, **domínio** e **saída** estabelecem o contrato. **Precisão** reduz interpretações incompatíveis. **Transformar** liga estado inicial e resultado sem ainda rastrear estados. **Especificação** diz o que deve ser verdadeiro. **Término** vale para todas as entradas admitidas. **Independência de linguagem** separa o algoritmo de uma implementação.
+O algoritmo é o procedimento abstrato; texto, fluxograma e pseudocódigo são descrições ou representações dele. **Efetivo** exige passos realizáveis. **Classe** delimita o tipo de problema; **instância**, o caso concreto. **Entrada**, **domínio** e **saída** estabelecem o contrato. **Precisão** reduz interpretações incompatíveis. **Especificação** diz o que deve ser verdadeiro. **Término** vale para todas as entradas admitidas. O algoritmo independe de uma linguagem de programação específica e de sua sintaxe executável, não de toda linguagem, vocabulário, representação ou executor.
 
 Uma fórmula isolada pode participar de algoritmo, mas não declara necessariamente entrada, domínio, procedimento e término. Uma lista de tarefas pode ser procedimento, mas depender de julgamentos. Uma receita é analogia limitada: ingredientes e resultado ajudam a pensar em entrada e saída, porém expressões como “a gosto” e condições físicas tácitas mostram por que ela não serve como definição.
 
 ### Como examinar um candidato
 
 Ao receber uma descrição, não comece procurando palavras como “SE”, “INÍCIO” ou “FIM”. Pergunte em ordem: que classe afirma resolver; quais instâncias admite; que entrada recebe; que saída promete; que pré e pós-condições compõem o contrato; que operações realiza; que dependências usa; por que termina; e por que a saída satisfaz a especificação.
-
-Uma resposta ausente não condena automaticamente a ideia substantiva, mas impede aprová-la como algoritmo adequado. O candidato pode ser intenção, rascunho, processo, heurística ou representação incompleta. O diagnóstico deve indicar qual informação falta e que tipo de revisão é necessário.
 
 Examine também o sentido inverso. Cada passo usa somente informações declaradas? Cada saída está autorizada? Existe passo sem função no contrato? Alguma condição admissível fica sem caminho? O procedimento acrescenta decisão que deveria permanecer humana? Essa leitura encontra excesso, não apenas omissão.
 
@@ -217,7 +217,7 @@ O argumento conecta grupos de entrada às saídas. Se campos obrigatórios estã
 
 Um caso bem-sucedido mostra possibilidade, não universalidade. Muitos casos favoráveis continuam sem provar correção geral. Um contraexemplo é instância admissível para a qual o procedimento não termina ou produz saída incompatível com a pós-condição.
 
-Considere valor presente sem moeda. Se o contrato exige moeda, o caso pode estar fora do domínio; se o objetivo original exigia classificar esse registro, a pré-condição talvez seja excessivamente restrita. Outra opção é admitir o caso e produzir “pendente de informação”. A revisão pode alterar contrato, passos ou ambos; deve preservar versões.
+Considere valor presente sem moeda. No contrato adotado, a ocorrência permanece admissível porque sua estrutura é inspecionável, mas recebe “inadequação estrutural”. Uma estrutura totalmente corrompida, que nem permita localizar a ocorrência, fica fora do domínio. A revisão pode alterar contrato, passos ou ambos; deve preservar versões.
 
 Correção difere de eficiência. Um algoritmo pode estar correto e ser lento; pode ser rápido e errado. Quantidade de passos só aparece aqui para sustentar término, não para comparar crescimento.
 
@@ -225,15 +225,11 @@ Correção difere de eficiência. Um algoritmo pode estar correto e ser lento; p
 
 Um argumento útil pode seguir quatro movimentos. Primeiro, recuperar a pós-condição e os limites. Segundo, dividir o domínio em grupos relevantes definidos pelas condições já presentes no procedimento. Terceiro, mostrar que cada grupo chega a uma saída permitida com motivo compatível. Quarto, confirmar que nenhum passo produz conclusão além do contrato.
 
-Isso não é tabela de decisão completa. Os grupos podem ainda precisar de refinamento na Aula 09. Também não é prova formal: não introduz invariantes, indução ou lógica detalhada. É uma explicação auditável, mais forte que “parece correto” e mais honesta que chamar poucos exemplos de demonstração.
-
 Se dois grupos se sobrepõem, o argumento deve explicar a prioridade ou reconhecer lacuna. Se existe entrada admissível que não pertence a nenhum grupo, há saída não especificada. Se um grupo contém estado desconhecido e o procedimento o trata como ausência, a incompatibilidade é semântica, não apenas textual.
 
-O término integra correção total no recorte adotado. Um procedimento que sempre produz resultado correto quando termina, mas pode não terminar para entrada admissível, ainda não satisfaz nossa definição. Em tratamento mais avançado, outras distinções serão possíveis; nesta aula, mantemos a exigência explícita.
+Chamaremos, por convenção introdutória desta aula, de **correção total** a combinação de término para toda entrada admissível e satisfação da pós-condição. Não faremos prova formal, apenas argumento intuitivo sobre todo o domínio. Um procedimento correto quando termina, mas que pode não terminar, não satisfaz nossa definição.
 
 ### Casos, contraexemplos e revisão
-
-Casos concretos têm três funções legítimas aqui: esclarecer como termos do contrato se aplicam, revelar ambiguidade e procurar contraexemplo. Não estamos projetando conjunto de testes. Selecionar sistematicamente casos normais, limites e inválidos, executar e medir cobertura pertence à Aula 12.
 
 Contraexemplo precisa pertencer ao domínio vigente. Se não pertence, pode revelar que a classe é estreita demais, mas não contradiz diretamente a garantia. Por isso a revisão começa confirmando versão do contrato, admissibilidade da instância e saída esperada.
 
@@ -243,7 +239,7 @@ Preservar versão inicial impede recontar a história como se a lacuna nunca tiv
 
 Algoritmo determinístico determina, para a mesma entrada e condições declaradas, o mesmo próximo passo e resultado. Isso facilita previsão, mas não é requisito universal de toda formulação de algoritmo.
 
-Em introdução, não determinismo significa que a descrição admite mais de uma escolha ou caminho permitido de modo preciso. Não é ambiguidade. “Escolha qualquer categoria que parecer boa” é ambíguo; “escolha uma das duas alternativas declaradas, ambas autorizadas, e produza resultado que satisfaça a pós-condição” descreve liberdade controlada. Não aprofundaremos modelos formais.
+Por convenção introdutória, não determinismo significa que a descrição admite mais de uma escolha ou caminho permitido de modo preciso e **todas** as escolhas autorizadas preservam a pós-condição. Não é teoria universal de não determinismo, ambiguidade, dado desconhecido nem aleatoriedade. A prática principal será determinística; este ponto é opcional.
 
 Heurística é estratégia orientadora que busca solução útil sem garantir, nas condições declaradas, todas as propriedades exigidas de um algoritmo correto. Ela pode ser expressa por algoritmo. Logo, heurística e algoritmo não são opostos absolutos: um algoritmo pode implementar uma heurística, mas sua garantia é sobre executar a estratégia, não necessariamente encontrar resultado ótimo ou correto para o problema amplo.
 
@@ -252,8 +248,6 @@ Heurística é estratégia orientadora que busca solução útil sem garantir, n
 ### Não determinismo não é aleatoriedade obrigatória
 
 Não determinismo, aleatoriedade e concorrência não são sinônimos. Uma escolha não determinística em modelo abstrato declara alternativas possíveis sem necessariamente sortear uma delas. Um algoritmo aleatorizado usa fonte de aleatoriedade segundo regras. Processos concorrentes tratam atividades que podem avançar em ordens diferentes. Esses assuntos ficam para aprofundamento futuro.
-
-O ponto necessário agora é menor: precisão não exige sempre um único caminho. Exige que as escolhas permitidas, as condições e a garantia estejam claras. Se diferentes escolhas podem produzir saída proibida, o candidato não satisfaz a pós-condição.
 
 ### Pressupostos e limites
 
@@ -296,8 +290,6 @@ Esse formalismo tem limites. Entradas corporativas podem conter desconhecidos, v
 | procedimento genérico | orientação organizada | pode ser vago ou não terminante |
 | heurística | estratégia sem garantia completa | pode ser implementada algoritmicamente |
 
-Algoritmo também não é o problema: o problema declara transformação; o algoritmo propõe como realizá-la. Nem todo programa corresponde a um único algoritmo, e o mesmo algoritmo pode possuir várias implementações.
-
 ## Caso progressivo do estoque e início do P3
 
 O P2 terminou com ocorrências, estados informacionais, classes, regras, representações e limites. Para iniciar P3, definimos uma classe pequena: preparar **uma ocorrência não atendida por execução** para análise posterior.
@@ -307,38 +299,38 @@ Contrato inicial:
 | Elemento | Declaração |
 |---|---|
 | entrada | identificador, centro, produto, histórico e evidência registrada |
-| domínio | uma ocorrência legível; histórico completo, incompleto ou desconhecido |
-| saída | pronta para análise ou pendente de informação, com motivo |
-| pré-condição | identificador, centro e produto estão interpretáveis |
-| pós-condição | desconhecido não vira incompleto; saída e motivo refletem evidência |
+| domínio | uma ocorrência individual cuja estrutura seja localizável e inspecionável |
+| saída | inadequação estrutural, pendência de evidência ou pronta para análise, com motivo |
+| pré-condição | há uma única ocorrência inspecionável, mesmo que algum campo esteja ausente ou não interpretável |
+| pós-condição | campo obrigatório ausente ou não interpretável gera inadequação; desconhecido permanece desconhecido; evidência insuficiente gera pendência; somente estrutura adequada com evidência suficiente fica pronta |
 | limite | não afirma causa, não escolhe intervenção, não substitui autoridade |
 
 Procedimento candidato em linguagem estruturada:
 
 1. receber uma ocorrência admissível;
-2. identificar o estado informado do histórico;
-3. se o histórico estiver desconhecido, produzir pendência com motivo;
-4. caso contrário, verificar se a evidência exigida pelo recorte está registrada;
-5. se faltar evidência, produzir pendência com motivo;
+2. verificar campos obrigatórios e interpretabilidade;
+3. se houver inadequação estrutural, produzir essa categoria e motivo;
+4. caso contrário, identificar o estado informado do histórico e a evidência;
+5. se houver desconhecido ou evidência insuficiente, produzir pendência com motivo;
 6. caso contrário, produzir “pronta para análise posterior” com referência à evidência;
-7. encerrar o recorte.
+7. encerrar.
 
-Representação em pseudocódigo independente de linguagem:
+Representação em pseudocódigo, sem sintaxe de uma linguagem de programação específica:
 
 > INICIAR preparação de uma ocorrência<br>
 > RECEBER a ocorrência admissível<br>
-> IDENTIFICAR o estado informado do histórico<br>
-> SE o histórico estiver desconhecido<br>
-> &nbsp;&nbsp;PRODUZIR pendência e motivo<br>
+> VERIFICAR campos obrigatórios e interpretabilidade<br>
+> SE houver inadequação estrutural<br>
+> &nbsp;&nbsp;PRODUZIR inadequação e motivo<br>
 > CASO CONTRÁRIO<br>
-> &nbsp;&nbsp;VERIFICAR a evidência exigida pelo contrato<br>
-> &nbsp;&nbsp;SE a evidência estiver ausente<br>
+> &nbsp;&nbsp;IDENTIFICAR histórico e evidência<br>
+> &nbsp;&nbsp;SE houver desconhecido ou evidência insuficiente<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;PRODUZIR pendência e motivo<br>
 > &nbsp;&nbsp;CASO CONTRÁRIO<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;PRODUZIR preparação para análise e referência<br>
 > ENCERRAR o recorte
 
-Há poucas condições simples, sem lógica completa. Cada execução trata uma ocorrência e chega a uma das saídas após verificações limitadas. O procedimento não classifica causa, não encaminha automaticamente e não atualiza estoque.
+Há poucas condições simples, sem lógica completa. Cada execução trata uma ocorrência e chega a uma das saídas após verificações limitadas. Toda saída traz motivo. O procedimento não classifica causa, não prescreve intervenção, não encaminha automaticamente e não atualiza estoque.
 
 O argumento intuitivo diz: todos os estados admitidos do histórico são reconhecidos; desconhecido permanece explícito; ausência de evidência gera pendência; somente ocorrência com informações exigidas recebe indicação de preparação; o limite impede converter preparação em decisão. Na Aula 08, uma ocorrência será escolhida para registrar o estado antes e depois de cada passo.
 
@@ -356,28 +348,28 @@ Contraexemplo: data aparece como “em breve”. O campo está presente, mas nã
 
 ### Exercícios essenciais
 
-1. **Objetiva.** Qual candidata satisfaz melhor a definição operacional? A) lista executável para um exemplo; B) procedimento preciso para toda entrada admissível, com saída e término; C) código que executou uma vez; D) processo detalhado com espera externa.
-2. **Objetiva.** Qual afirmação sobre pré-condição é correta? A) é o primeiro passo; B) pode excluir qualquer caso difícil; C) declara condição anterior que delimita entrada admissível e deve ser visível; D) garante a pós-condição sozinha.
-3. **Objetiva.** Um algoritmo admite escolher entre duas alternativas explicitamente permitidas, ambas satisfazendo a pós-condição. Isso é: A) necessariamente ambiguidade; B) não determinismo introdutório preciso; C) erro de sintaxe; D) heurística não representável.
+1. **Objetiva.** Qual afirmação distingue algoritmo de representação? A) algoritmo é necessariamente pseudocódigo; B) algoritmo é o procedimento abstrato, que pode ter descrições distintas; C) trocar notação sempre troca algoritmo; D) código e algoritmo são sinônimos.
+2. **Objetiva.** Um registro individual tem valor textual não interpretável. Sua estrutura permite localizar os campos. Neste contrato, ele: A) fica necessariamente fora do domínio; B) é admissível e estruturalmente inadequado; C) fica apto porque o campo está presente; D) prova fraude.
+3. **Objetiva.** Qual regra pertence ao contrato didático? A) autorização desconhecida prova ausência; B) autorização ausente prova fraude; C) autorização desconhecida gera pendência; D) dados adequados dispensam motivo.
 4. **Dissertativa.** Defina algoritmo e explique por que a definição é operacional e delimitada a algoritmos terminantes.
 5. **Classe e instância.** Para validação cadastral, declare classe, duas instâncias e um caso fora do domínio.
-6. **Contrato.** Preencha classe, entrada, domínio, pré-condição, saída, pós-condição e limite para converter uma medida declarada entre duas unidades fornecidas.
+6. **Contrato.** Esboce entrada, saída e limite para converter uma medida entre unidades fornecidas.
 7. **Efetividade.** Analise “descubra a melhor alternativa” e proponha operação examinável ou dependência externa.
 8. **Candidata.** Um fluxograma tem início e fim, mas contém “aguardar aprovação”. Avalie término.
 9. **Candidata.** Pseudocódigo recebe “dados”, executa “resolver” e imprime “ok”. Localize quatro lacunas.
 10. **Ordem.** Em procedimento com validação de formato e classificação, justifique que dependência existe sem rastrear valores.
-11. **Término.** Escreva argumento para procedimento de uma instância com cinco verificações limitadas.
-12. **Correção intuitiva.** Relacione três grupos de entrada às saídas e às pós-condições.
-13. **Entidades próximas.** Diferencie algoritmo, pseudocódigo, código, programa e implementação.
-14. **Contraexemplo e revisão.** Use “data: em breve” contra o algoritmo de agendamento e preserve duas versões.
+11. **Contraexemplo e revisão.** Use “data: em breve” contra o algoritmo de agendamento e preserve duas versões.
 
 ### Aprofundamento opcional
 
-15. **Relação de especificação.** Modele pares entrada–saída permitidos e explique por que relação não é algoritmo.
-16. **Heurística.** Mostre como algoritmo pode implementar heurística sem garantir resultado ótimo.
-17. **Não determinismo.** Diferencie escolha permitida, ambiguidade e dado desconhecido.
-18. **Procedimento contínuo.** Explique por que monitoramento pode ser útil sem se encaixar no recorte terminante.
-19. **Transferência.** Produza contrato alternativo para cadastro, duas representações e auditoria de equivalência.
+12. **Contrato completo.** Preencha os sete elementos do contrato de conversão.
+13. **Término e correção.** Produza argumentos sobre todo o domínio para cinco verificações limitadas.
+14. **Entidades próximas.** Diferencie algoritmo, pseudocódigo, código, programa e implementação.
+15. **Relação de especificação.** Modele pares permitidos e explique por que relação não é algoritmo.
+16. **Heurística.** Separe a correção do algoritmo executor da garantia substantiva da heurística.
+17. **Não determinismo.** Diferencie escolha permitida, ambiguidade, desconhecido e aleatoriedade.
+18. **Procedimento contínuo.** Explique o limite do recorte terminante.
+19. **Transferência.** Produza contrato alternativo, duas representações e auditoria de equivalência.
 
 ### Recuperação ativa
 
@@ -398,14 +390,15 @@ Quem definiu as entradas admissíveis? Que pessoas ou casos foram excluídos? H�
 
 ### Síntese e mini glossário
 
-Problema declara transformação; classe reúne instâncias; instância é caso. Entrada, domínio, saída, pré e pós-condição formam contrato. Algoritmo é procedimento efetivo, preciso, terminante e independente de linguagem que satisfaz especificação no domínio.
+Problema declara transformação; classe reúne instâncias; instância é caso. Entrada, domínio, saída, pré e pós-condição formam contrato. Algoritmo é procedimento abstrato efetivo, descritível com precisão e finitude, que termina e satisfaz a especificação no domínio.
 
 **Problema:** transformação pretendida.<br>
 **Classe:** conjunto de instâncias com contrato comum.<br>
 **Instância:** caso concreto.<br>
 **Entrada:** informação recebida.<br>
 **Domínio:** entradas admissíveis.<br>
-**Entrada inválida:** caso que viola o domínio declarado.<br>
+**Fora do domínio:** caso não admitido pelo contrato.<br>
+**Inadequação estrutural:** entrada admissível com campo obrigatório ausente ou não interpretável.<br>
 **Saída:** resultado observável.<br>
 **Pré-condição:** propriedade anterior exigida pelo domínio.<br>
 **Pós-condição:** propriedade exigida do resultado.<br>
@@ -417,15 +410,15 @@ Problema declara transformação; classe reúne instâncias; instância é caso.
 **Descrição finita:** artefato com extensão finita.<br>
 **Término:** alcance de saída em passos finitos para toda entrada admissível.<br>
 **Correção intuitiva:** argumento estruturado, não prova formal.<br>
-**Algoritmo:** procedimento que satisfaz a definição operacional.<br>
+**Algoritmo:** procedimento abstrato efetivo que satisfaz a especificação e termina no domínio.<br>
 **Determinístico:** fixa próximo passo e resultado nas condições.<br>
 **Não determinismo:** escolha precisa entre alternativas permitidas.<br>
 **Representação:** forma examinável do conteúdo.<br>
-**Pseudocódigo:** notação textual independente.<br>
+**Pseudocódigo:** notação textual não vinculada à sintaxe executável específica.<br>
 **Código:** texto em linguagem formal.<br>
 **Programa:** realização tratável por ambiente computacional.<br>
 **Implementação:** concretização técnica.<br>
-**Heurística:** estratégia sem garantia completa do problema amplo.<br>
+**Heurística:** estratégia cuja execução algorítmica não garante a propriedade substantiva ampla.<br>
 **Processo organizacional:** coordenação de atividades, pessoas e eventos.<br>
 **Pressuposto:** condição aceita e declarada.<br>
 **Limite:** fronteira do que se pode concluir ou fazer.<br>
@@ -459,7 +452,7 @@ Não fizemos rastreamento completo, atribuição, variável ou invariante. Esses
 - Leitura e anotações: 2h15–2h45.
 - Recuperação ativa: 20–30 min.
 - Exercícios essenciais: 1h30–2h.
-- Prática essencial: 3h15–4h.
+- Prática essencial: 3h15–4h20.
 - Solução, revisão e autoavaliação: 30–45 min.
-- Trilha essencial: aproximadamente 7h50–10h.
-- Percurso completo opcional: 11h30–15h, com exercícios adicionais, não determinismo, contrato alternativo e transferência.
+- Trilha essencial: aproximadamente 7h30–9h45.
+- Percurso completo opcional: 10h30–14h45, com exercícios adicionais, não determinismo, contrato alternativo e transferência.

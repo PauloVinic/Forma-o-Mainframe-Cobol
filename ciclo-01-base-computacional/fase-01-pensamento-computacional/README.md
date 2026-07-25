@@ -8,7 +8,7 @@ Pensamento computacional não é sinônimo de programação nem uma receita úni
 
 ## Estado da fase
 
-O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio. As **Aulas 01 a 06** e suas práticas foram desenvolvidas e revisadas técnica e pedagogicamente; a [Aula 07 — O que é um algoritmo](aulas/aula-07-o-que-e-um-algoritmo.md) e sua [prática](praticas/pratica-07-avaliando-e-formulando-algoritmos.md) foram desenvolvidas integralmente; as Aulas 08 a 14 permanecem apenas planejadas.
+O planejamento completo da fase está disponível. As 14 aulas estão definidas em finalidade, escopo, progressão, práticas, competências e evidências de domínio. As **Aulas 01 a 07** e suas práticas foram desenvolvidas e revisadas técnica e pedagogicamente, incluindo a [Aula 07 — O que é um algoritmo](aulas/aula-07-o-que-e-um-algoritmo.md) e sua [prática](praticas/pratica-07-avaliando-e-formulando-algoritmos.md); as Aulas 08 a 14 permanecem apenas planejadas.
 
 ## Resultados esperados
 
