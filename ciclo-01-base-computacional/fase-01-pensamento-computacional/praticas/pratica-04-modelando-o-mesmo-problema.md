@@ -27,7 +27,7 @@ Você pode criar casos para testar o modelo, desde que os marque como **hipotét
 
 ### Modalidades e tempo
 
-Na **trilha essencial**, realize todos os nove blocos, consulte a solução somente depois da tentativa e revise uma escolha em cada modelo. Tempo estimado: **3h15 a 4h20**.
+Na **trilha essencial**, percorra os nove blocos, mas use a entrega reduzida indicada em cada um: quatro itens na auditoria, dois casos críticos e verificação matemática curta. Consulte a solução somente depois da tentativa e revise uma escolha em cada modelo. Tempo estimado: **2h45 a 3h45**.
 
 No **aprofundamento opcional**, acrescente um modelo de auditoria ou terceiro público, relações matemáticas ampliadas, mudança de fronteira, duas revisões e análise adicional de vieses. Tempo adicional: **2h a 3h**.
 
@@ -62,7 +62,7 @@ Verifique se a pergunta operacional exige ocorrência individual e se a gerencia
 
 ## Bloco 3 — Modelo operacional
 
-Escolha de seis a oito objetos ou elementos. Para cada um, registre atributos essenciais, relações, evidências e motivo. Inclua ocorrências individuais, exceções, condições relevantes, omissões e pressupostos. Não crie fluxo ou sequência de execução.
+Escolha de seis a oito objetos ou elementos. Para cada um, registre atributos essenciais, relações, evidências e motivo. Inclua ocorrências individuais, exceções, condições relevantes, omissões e pressupostos. Diferencie atividade, registro e resultado quando palavras como análise ou decisão aparecerem. Não crie fluxo ou sequência de execução.
 
 | Objeto ou elemento | Atributos ou condições | Relações necessárias | Evidência | Motivo |
 |---|---|---|---|---|
@@ -120,7 +120,7 @@ Explique em 120 a 180 palavras:
 
 ## Bloco 6 — Auditoria de omissões
 
-Classifique pelo menos oito itens. Use: **incluído**, **omitido deliberadamente**, **desconhecido**, **fora da fronteira**, **adiado**, **agregado** ou **omitido indevidamente**.
+Na trilha essencial, classifique quatro itens obrigatórios: conteúdo dos históricos incompletos, ocorrência individual na visão gerencial, definição de disponibilidade e uma proteção entre custo, perdas, divergência ou transferência. No aprofundamento opcional, complete pelo menos oito itens. Use: **incluído**, **omitido deliberadamente**, **desconhecido**, **fora da fronteira**, **adiado**, **agregado** ou **omitido indevidamente**.
 
 | Item | Modelo | Classificação | Justificativa | Risco | Condição de revisão |
 |---|---|---|---|---|---|
@@ -133,13 +133,13 @@ Classifique pelo menos oito itens. Use: **incluído**, **omitido deliberadamente
 |  |  |  |  |  |  |
 |  |  |  |  |  |  |
 
-Inclua obrigatoriamente: conteúdo dos 29 históricos incompletos; produtos fora dos três críticos; ocorrência individual na visão gerencial; taxa geral na visão operacional; definição de disponibilidade; custo; condição física; e uma categoria escolhida por você.
+Para completar oito itens no aprofundamento, acrescente produtos fora dos três críticos, taxa geral na visão operacional, condição física e uma categoria escolhida por você.
 
 Se algo for desconhecido, não invente valor. Se estiver fora da fronteira, explique por que ainda pode motivar revisão. Se estiver agregado, declare como desagregar.
 
 ## Bloco 7 — Casos de teste conceitual
 
-Os seis casos abaixo são **hipotéticos**. Eles não acrescentam fatos ao projeto. Para cada um, indique qual modelo revela, qual pode esconder, que risco surge e qual revisão é necessária.
+Os seis casos abaixo são **hipotéticos**. Eles não acrescentam fatos ao projeto. Na trilha essencial, analise “ocorrência grave em grupo pequeno” e escolha um entre “definição divergente entre centros” e “taxa reduzida pela exclusão de casos”. Os demais pertencem ao aprofundamento opcional. Para cada caso realizado, indique qual modelo revela, qual pode esconder, que risco surge e qual revisão é necessária.
 
 | Caso hipotético | Modelo que revela | Modelo que pode esconder | Risco | Revisão |
 |---|---|---|---|---|
@@ -154,11 +154,13 @@ Não basta dizer “o operacional mostra detalhe”. Nomeie o atributo, proteç�
 
 ## Bloco 8 — Matemática introdutória
 
-1. Defina um conjunto `U` com oito aspectos possíveis dentro de sua fronteira e um conjunto `S` com os aspectos selecionados por um modelo. Registre `S ⊆ U` e justifique duas exclusões.
-2. Considere produtos `P = {P1, P2, P3}` e centros `C = {A, B}`. Escreva uma relação `R ⊆ P × C` com pares pertinentes ao seu modelo. A relação precisa representar associação, não causa.
-3. Proponha uma função `f: O → C`, em que `O` é um conjunto de ocorrências admissíveis. Explique por que cada ocorrência recebe exatamente um centro no modelo.
-4. Dê exemplo de relação que não seja função, como produto associado a mais de um centro ou solicitação associada a vários documentos.
-5. Declare domínio, codomínio, dados que podem impedir a aplicação e domínio de validade. Não faça prova formal.
+Na trilha essencial, verifique uma seleção `S ⊆ U`, identifique uma relação que não estabelece causa e explique por que ocorrências sem centro identificado devem permanecer visíveis. A construção completa abaixo é aprofundamento opcional:
+
+1. Defina um conjunto `U` com oito aspectos possíveis e um conjunto selecionado `S ⊆ U`; justifique duas exclusões.
+2. Com `P = {P1, P2, P3}` e `C = {A, B}`, escreva `R ⊆ P × C`. A relação representa associação, não causa, e produto relacionado a vários centros não define função de `P` para `C`.
+3. Seja `O` o conjunto de ocorrências e `O_identificadas ⊆ O` o subconjunto com centro conhecido. Proponha `f: O_identificadas → C`, explicando a saída única por entrada.
+4. Registre `O \ O_identificadas` como ocorrências não classificadas ou pendentes, com quantidade e motivo. Explique por que resultados do subconjunto não se estendem silenciosamente a `O`.
+5. Declare domínio, codomínio, domínio de validade e o efeito de dados incompletos. Como alternativa controlada, avalie `f: O → C ∪ {não identificado}`, esclarecendo que a categoria não é um centro real. Não faça prova formal.
 
 ## Bloco 9 — Revisão
 
@@ -178,13 +180,13 @@ Entregue:
 - reconstrução breve do todo;
 - dois modelos completos;
 - quadro comparativo e explicação de rastreabilidade;
-- auditoria de ao menos oito itens;
-- análise dos seis casos hipotéticos;
-- atividade matemática;
+- auditoria dos quatro itens essenciais;
+- análise de dois casos hipotéticos essenciais;
+- verificação matemática curta;
 - uma revisão em cada modelo;
 - autoavaliação pela rubrica.
 
-No aprofundamento opcional, acrescente somente o que escolheu: terceiro modelo, matemática ampliada, mudança de fronteira ou segunda rodada de revisões.
+No aprofundamento opcional, complete oito itens de auditoria, os seis casos e a matemática formalizada; acrescente, se desejar, terceiro modelo, mudança de fronteira ou segunda rodada de revisões.
 
 ## Solução comentada — consulte somente depois da tentativa
 
@@ -192,13 +194,13 @@ Não existe uma única seleção correta. As possibilidades abaixo demonstram cr
 
 ### Reconstrução possível
 
-O problema envolve 192 linhas não atendidas entre 2.400, em dois centros e três produtos críticos. As taxas conhecidas são 6%, 10,8% e 8% no conjunto, mas 29 históricos estão incompletos e as causas não foram estabelecidas. O objetivo anterior é reduzir ocorrências sob critérios ainda em validação; a meta inferior a 3% continua candidata. Custo, perdas, divergência e transferência precisam ser protegidos. Esta prática não escolhe solução: organiza dois recortes do mesmo caso para investigar ocorrências e acompanhar magnitude, tornando seleções, omissões e limites examináveis.
+Há 192 linhas não atendidas entre 2.400, em dois centros e três produtos, com taxas de 6%, 10,8% e 8%. Os 29 históricos incompletos e as causas permanecem desconhecidos; a meta inferior a 3% é candidata, sob proteções de custo, perdas, divergência e transferência. A prática não escolhe solução: organiza recortes para investigar ocorrências e acompanhar magnitude.
 
 ### Seleções possíveis
 
-No operacional, linha, produto, centro, momento, posição registrada, movimento, condição física, separação, decisão, evidência e ação posterior são candidatos. Não é obrigatório tratá-los como dez objetos: alguns podem ser atributos ou condições, desde que o significado e as relações permaneçam claros.
+No operacional, linha, produto, centro, momento, posição, movimento, condição, separação, decisão, evidência e ação posterior são candidatos. Podem ser objetos, atributos, atividades, registros ou resultados conforme perspectiva explícita.
 
-No gerencial, taxa geral, taxa por centro, dimensão produto/ciclo, históricos incompletos e proteções de custo, perdas, divergência e transferência podem compor o modelo. “Tendência” exige mais de um ciclo comparável; se essa evidência não estiver fornecida, registre a dimensão planejada, não invente direção.
+No gerencial, taxas, produto/ciclo, históricos incompletos e proteções podem compor o modelo. “Tendência” exige ciclos comparáveis; sem eles, registre dimensão planejada, não direção inventada.
 
 Uma comparação possível:
 
@@ -211,21 +213,21 @@ Uma comparação possível:
 
 ### Omissões e caso crítico
 
-Os 29 históricos incompletos são **desconhecidos**, não omitidos deliberadamente. Produtos fora dos três críticos estão **fora da fronteira** declarada, mas podem exigir ampliação se houver deslocamento do problema. Ocorrências individuais ficam **agregadas** na visão gerencial; o controle adequado é manter caminho de desagregação.
+Os históricos incompletos são **desconhecidos**, não omitidos. Produtos fora dos três críticos estão **fora da fronteira**, que pode ser revista. Ocorrências ficam **agregadas** no gerencial e exigem caminho de desagregação.
 
-Considere o caso hipotético de uma ocorrência de pequeno grupo e grande perda. O operacional pode revelá-la por identificação e impacto; a taxa geral pode escondê-la. A revisão gerencial inclui proteção de impacto ou sinal de exceção, sem transformar todo detalhe em indicador principal. A revisão operacional define como comunicar a exceção.
+Uma ocorrência de pequeno grupo e grande perda pode aparecer no operacional e sumir na taxa. A revisão gerencial protege impacto ou sinaliza exceção; a operacional define sua comunicação.
 
-Definições divergentes entre centros impedem comparação direta, mesmo que os cálculos estejam corretos. Uma solução plausível é declarar cada definição, verificar equivalência e limitar a comparação até que a base seja compatível. Alternativamente, apresentar resultados separados pode ser mais honesto.
+Definições divergentes impedem comparação direta apesar de cálculos corretos. Declare-as, verifique equivalência e limite a comparação ou apresente resultados separados.
 
 ### Matemática possível
 
 Se `U = {produto, centro, momento, posição, movimento, condição, custo, decisão}` e `S = {produto, centro, momento, custo}`, então `S ⊆ U`. A relação produto–centro pode incluir `(P1, A)`, `(P1, B)` e outros pares observados. Ela não é necessariamente função de produto para centro porque um produto pode relacionar-se a ambos.
 
-Uma função ocorrência–centro é aceitável se cada ocorrência admissível pertence a exatamente um centro no recorte. Seu domínio exclui ocorrências sem identificação suficiente, que devem ser registradas como lacuna, não apagadas. A função não afirma causa nem execução computacional.
+Uma função ocorrência–centro pode usar `f: O_identificadas → C`, com `O_identificadas ⊆ O`, se cada ocorrência do domínio recebe exatamente um centro. A escolha restringe o domínio: `O \ O_identificadas` precisa permanecer como conjunto explícito de ocorrências não classificadas ou pendentes, com quantidade e motivo. Conclusões sobre `O_identificadas` não se estendem automaticamente a toda a população `O`. Como alternativa, `f: O → C ∪ {não identificado}` preserva todos os casos, desde que a categoria represente qualidade do dado e não um centro real. A função não afirma causa nem execução computacional.
 
 ### Revisões possíveis
 
-No operacional, separar “sem movimento” de “histórico incompleto” evita concluir ausência com base em desconhecimento. No gerencial, exibir incompletude e proteger a desagregação reduz confiança indevida. Outra revisão válida é incluir impacto além da frequência ou alterar a fronteira após detectar produto fora do recorte. Defenda sua alternativa pelo propósito e pelo risco.
+Separar “sem movimento” de “histórico incompleto” evita concluir ausência. Exibir incompletude, permitir desagregação, incluir impacto ou rever fronteira são revisões possíveis, justificadas por propósito e risco.
 
 ## Critérios de autocorreção
 
@@ -250,4 +252,6 @@ Considere o essencial concluído quando nenhum critério estiver em “precisa d
 
 ## Carga integrada
 
-A aula, os exercícios essenciais, esta prática, a solução comentada e a revisão formam uma trilha de aproximadamente **7h30 a 10h**. Exercícios adicionais, terceiro modelo, matemática ampliada e prática aprofundada elevam a carga completa para cerca de **11h30 a 15h**. O aprofundamento é opcional e não condiciona o avanço à Aula 05.
+Aula e anotações demandam cerca de **2h a 2h30**; recuperação ativa, **20 a 30 min**; exercícios essenciais, **1h30 a 2h**; prática essencial, **2h45 a 3h45**; consulta da solução, revisão e autoavaliação, **30 a 45 min**. A trilha essencial completa fica em aproximadamente **7h05 a 9h30**.
+
+Exercícios adicionais, auditoria de oito itens, seis casos, matemática completa e eventual terceiro modelo elevam a carga completa para cerca de **10h30 a 14h**. O aprofundamento é opcional e não condiciona o avanço à Aula 05.

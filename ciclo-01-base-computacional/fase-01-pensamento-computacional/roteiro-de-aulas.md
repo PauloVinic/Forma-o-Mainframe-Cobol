@@ -42,7 +42,7 @@ Este roteiro define as 14 aulas da fase. Ele delimita finalidade, conceitos, pr�
 
 ## Aula 04 — Abstração e modelos
 
-**Estado:** aula integral desenvolvida em `aulas/aula-04-abstracao-e-modelos.md`, com prática associada em `praticas/pratica-04-modelando-o-mesmo-problema.md`.
+**Estado:** aula integral revisada técnica e pedagogicamente em `aulas/aula-04-abstracao-e-modelos.md`, com prática associada revisada em `praticas/pratica-04-modelando-o-mesmo-problema.md`.
 
 **Finalidade:** selecionar detalhes relevantes para uma pergunta sem ensinar vagueza como simplificação.
 

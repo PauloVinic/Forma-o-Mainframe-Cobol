@@ -17,13 +17,13 @@
 
 Ao concluir esta aula, o aluno deverá conseguir definir operacionalmente abstração e modelo; distinguir abstração de vagueza e modelo de realidade, dado e representação; declarar propósito, pergunta, público, perspectiva, fronteira e nível de detalhe; selecionar objetos, atributos, condições e relações relevantes; justificar e classificar omissões; construir dois modelos textuais ou tabulares simples do mesmo caso; comparar perdas, vieses, riscos e domínios de validade; confrontar os modelos com evidências e revisá-los.
 
-Esses desempenhos são observáveis. Não basta afirmar que um modelo “está simples” ou “tem os dados importantes”. É preciso explicar importante para quê, para quem e em qual decisão; mostrar o que ficou de fora; e reconhecer quando o recorte deixa de servir.
+Não basta afirmar que um modelo “está simples” ou “tem os dados importantes”. É preciso explicar para quê, para quem e em qual decisão; mostrar o que ficou de fora; e reconhecer quando o recorte deixa de servir.
 
 ### O problema que a aula resolve
 
-A Aula 03 produziu partes, dependências, interfaces e três decomposições do problema de estoque. Isso aumentou a capacidade de análise, mas também aumentou a quantidade de elementos visíveis. Tentar mostrar simultaneamente toda ocorrência, produto, centro, registro, movimento, regra, pessoa afetada, indicador e incerteza pode gerar excesso de detalhe, confusão, informação sem função e perda da pergunta principal.
+A Aula 03 produziu partes, dependências, interfaces e três decomposições do estoque. Tentar mostrar simultaneamente toda ocorrência, produto, centro, registro, movimento, regra, pessoa afetada, indicador e incerteza pode gerar excesso de detalhe e perda da pergunta principal.
 
-O problema oposto é igualmente sério. Uma descrição curta pode agregar demais, apagar uma exceção crítica, suprimir divergências entre centros ou oferecer falsa simplicidade. Reduzir 2.400 linhas a uma taxa ajuda algumas perguntas, mas pode esconder uma ocorrência de baixo volume e alto impacto. Nenhum extremo é resolvido contando palavras ou colunas.
+O oposto também é sério: uma descrição curta pode apagar exceção crítica ou divergências. Reduzir 2.400 linhas a uma taxa ajuda algumas perguntas, mas pode esconder ocorrência de baixo volume e alto impacto.
 
 Precisamos decidir quais aspectos observar em função de uma pergunta. Essa decisão é a abstração. Precisamos organizar os aspectos selecionados, suas relações e pressupostos em uma construção examinável. Essa construção é o modelo.
 
@@ -37,21 +37,21 @@ Essa sequência não é rígida. Construir um modelo pode revelar uma parte ause
 
 O caso consolidado possui dois centros, três produtos críticos e 2.400 linhas examinadas. Destas, 192 não foram atendidas: taxa geral de 8%. As taxas por centro são 6% e 10,8%. Há 29 históricos incompletos. As causas ainda não foram estabelecidas, a meta inferior a 3% é candidata e qualquer ação precisa proteger custo, perdas, divergência e transferências. Soluções ainda não foram escolhidas.
 
-Uma equipe operacional recebe o pedido de investigar por que determinadas linhas não foram atendidas. Para cada ocorrência, pode precisar de produto, centro, momento, posição registrada, movimentos, condição física, separação, divergência, decisão e ação posterior. Sua unidade de análise é a linha ou ocorrência. Uma média geral não explica uma ocorrência.
+Uma equipe operacional recebe o pedido de caracterizar as linhas não atendidas e examinar hipóteses sobre o ocorrido. Para cada ocorrência, pode precisar de produto, centro, momento, posição registrada, movimentos, condição física, separação, divergência, decisão e ação posterior. Sua unidade de análise é a linha ou ocorrência. Uma média geral não caracteriza uma ocorrência nem determina sua causa.
 
-A gestão recebe outro pedido: acompanhar taxa por centro e por ciclo, produtos mais afetados, custo, perdas, meta candidata e critérios de proteção. Sua unidade tende a ser um conjunto de linhas em período declarado. Examinar 2.400 histórias completas em cada reunião dificultaria perceber diferenças globais.
+A gestão precisa acompanhar taxas, produtos afetados, custo, perdas, meta candidata e proteções. Sua unidade é um conjunto de linhas em período declarado; examinar 2.400 histórias completas dificultaria perceber diferenças globais.
 
-Os dois pedidos tratam do mesmo problema, mas não exigem os mesmos detalhes. O modelo operacional pode tornar investigações possíveis e ainda dificultar a visão global. O modelo gerencial pode tornar diferenças comparáveis e ainda esconder uma ocorrência crítica. Nenhum é automaticamente superior, mais verdadeiro ou mais objetivo. Ambos selecionam, perdem informação e precisam declarar limites.
+Os pedidos tratam do mesmo problema com detalhes diferentes. O operacional favorece investigação, mas dificulta visão global; o gerencial favorece comparação, mas pode esconder ocorrência crítica. Nenhum é superior ou mais verdadeiro. Ambos selecionam, perdem informação e declaram limites.
 
 ## Abstração: seleção intencional e omissão controlada
 
 ### Definição operacional
 
-Nesta formação, adotaremos:
+Adotaremos:
 
 > **Abstração é a seleção intencional de aspectos relevantes de um objeto, problema ou sistema para uma pergunta e um propósito declarados, em determinado nível, com omissão controlada dos demais aspectos e explicitação dos limites produzidos.**
 
-Seleção significa que nem tudo entra. Intenção significa que a escolha pode ser explicada e revista. Relevância não é propriedade absoluta do detalhe: ela surge da relação entre objeto, pergunta, público e uso. Propósito informa o que se pretende fazer. O nível estabelece a resolução adotada. Omissão controlada exige saber, tanto quanto possível, o que foi excluído e com que risco. Limite registra onde a seleção deixa de sustentar a conclusão ou decisão.
+Seleção significa que nem tudo entra; intenção, que a escolha pode ser explicada e revista. Relevância surge da relação entre objeto, pergunta, público e uso. Propósito informa a finalidade; nível, a resolução. Omissão controlada exige conhecer exclusão e risco. Limite registra onde a seleção deixa de sustentar conclusão ou decisão.
 
 Abstrair não é conhecer menos por descuido. Um detalhe pode ser dispensável para comparar taxas e indispensável para investigar uma perda. A cor de uma embalagem talvez não importe para a taxa de atendimento; sua identificação visual pode importar quando embalagens semelhantes induzem separação incorreta. A relevância muda com a pergunta.
 
@@ -59,14 +59,7 @@ Abstrair não é conhecer menos por descuido. Um detalhe pode ser dispensável p
 
 “O estoque estava errado” é vago se não distingue quantidade física, saldo registrado, disponibilidade, reserva ou projeção. A vagueza deixa interpretações concorrentes sem controle. Um modelo abstrato pode usar “disponibilidade”, desde que declare o significado adotado, os componentes considerados, o momento de referência e as situações em que esse conceito não basta.
 
-Compare quatro situações:
-
-- **omissão justificada:** o modelo gerencial exclui a sequência de movimentos individuais, mas preserva ligação para consulta quando uma taxa aciona investigação;
-- **omissão não percebida:** ninguém notou que abandonos foram retirados do total de atendimentos;
-- **termo genérico controlado:** “ocorrência” é definido como linha válida não atendida no período;
-- **ambiguidade:** “caso resolvido” pode significar resposta enviada, problema corrigido ou cliente satisfeito.
-
-Decidir não detalhar é legítimo quando a decisão, seu motivo e sua consequência ficam visíveis. Não saber que havia algo a detalhar é outra condição. Falta de evidência também não vira abstração apenas porque foi escrita de modo curto.
+Excluir movimentos individuais com motivo e ligação para consulta é omissão justificada. Não perceber que abandonos saíram do total é omissão não controlada. “Ocorrência” pode ser termo genérico controlado se definido como linha válida não atendida no período; “caso resolvido” é ambíguo se puder significar resposta enviada, correção ou satisfação. Decidir não detalhar é legítimo quando motivo e consequência ficam visíveis; falta de evidência não vira abstração por ser descrita brevemente.
 
 ### Abstração não é simplesmente resumir
 
@@ -82,7 +75,7 @@ Adotaremos:
 
 > **Modelo é uma construção deliberada que organiza aspectos selecionados e relações de um objeto de interesse para descrever, explicar, comparar, monitorar, prever com ressalvas, comunicar ou apoiar uma decisão, dentro de propósito, fronteira, público e condições de validade declarados.**
 
-Um modelo não é a realidade. Ele não é uma cópia completa, descrição neutra, verdade definitiva ou prova automática de uma hipótese. Pode combinar dados, relações e pressupostos; pode ser útil mesmo incompleto; pode estar correto quanto aos cálculos e inadequado à decisão; pode perder validade quando o contexto muda.
+Um modelo não é realidade, cópia completa, descrição neutra, verdade ou prova de hipótese. Pode combinar dados, relações e pressupostos, ser útil mesmo incompleto, ter cálculos corretos e ser inadequado à decisão ou perder validade quando o contexto muda.
 
 O modelo também não substitui conhecimento do domínio. Se “linha não atendida” tem definições divergentes entre centros, uma taxa calculada com precisão continua semanticamente frágil. O modelo precisa declarar a convenção e confrontá-la com pessoas, registros e ocorrências.
 
@@ -92,13 +85,13 @@ O **objeto de interesse** é aquilo observado, analisado ou imaginado: aqui, o a
 
 O **modelo** organiza seletivamente aspectos e relações para uma finalidade. A **representação do modelo** é a forma material pela qual ele pode ser examinado: texto, tabela, e futuramente diagrama, equação ou outra notação. Modelo e representação não são idênticos. O mesmo modelo pode ser expresso por texto e tabela; uma tabela bem formatada pode conter dados sem declarar propósito, população ou relações e, por isso, não constituir um modelo adequado.
 
-Uma planilha pode conter registros, realizar cálculos e materializar parte de um modelo. Sua existência não demonstra que a pergunta foi formulada, que a população está correta ou que omissões foram auditadas. Aparência e precisão numérica não resolvem validade.
+Uma planilha pode conter registros, realizar cálculos e materializar parte de um modelo. Sua existência não demonstra que a pergunta foi formulada, que a população está correta ou que omissões foram auditadas. Aparência e precisão numérica não demonstram adequação, coerência interna nem sustentação empírica.
 
 ### Modelo não é especificação, algoritmo ou implementação
 
-Uma especificação é um artefato que pode definir requisitos detalhados e verificáveis para algo. Um algoritmo define um procedimento. Uma implementação materializa decisões em meio executável. Nesta aula, os modelos são exploratórios, descritivos, analíticos ou orientados à decisão. Eles não definem sistema a construir, módulos, serviços, contratos técnicos ou processamento passo a passo.
+Uma especificação pode definir requisitos detalhados e verificáveis; algoritmo define procedimento; implementação materializa decisões em meio executável. Os modelos desta aula são exploratórios, descritivos, analíticos ou orientados à decisão. Não definem sistema, módulos, serviços, contratos técnicos ou processamento passo a passo.
 
-Um modelo pode informar uma especificação futura, mas não a substitui. Pode indicar relações sem dizer como processá-las. Pode orientar investigação sem provar causa. Esta fronteira impede que uma tabela de elementos seja tratada como arquitetura ou programa.
+Um modelo pode informar especificação futura, indicar relações e orientar investigação, mas não a substitui, não diz necessariamente como processar nem prova causa.
 
 ## Propósito, pergunta, público e perspectiva
 
@@ -106,19 +99,19 @@ Um modelo pode informar uma especificação futura, mas não a substitui. Pode i
 
 Antes de construir, registre: para quê; que pergunta; para quem; que decisão será apoiada; qual horizonte; e quem responde pelas consequências. Essas declarações não precisam surgir perfeitamente na primeira tentativa, mas precisam existir para que a seleção possa ser avaliada.
 
-Propósitos possíveis incluem descrever uma situação, investigar explicações, comparar centros, monitorar mudança, comunicar risco e apoiar decisão. Prever também é possível, mas exige evidência e condições que esta aula não desenvolve. A lista não é taxonomia rígida: um modelo pode combinar finalidades, desde que não esconda tensões.
+Propósitos incluem descrever, investigar hipóteses, comparar, monitorar, comunicar risco e decidir. Prever exige evidências não desenvolvidas aqui. Um modelo pode combinar finalidades, desde que explicite tensões.
 
-Perguntas produzem seleções diferentes: “quais ocorrências precisam de investigação?” exige acesso individual; “em qual centro a taxa foi maior?” exige população e agrupamento comparáveis; “onde surgem divergências?” exige confrontar posições; “quem pode autorizar uma decisão?” exige relações de responsabilidade. Dados corretos que não respondem à pergunta podem ser irrelevantes ao modelo.
+Perguntas produzem seleções diferentes: investigar ocorrências exige acesso individual; comparar taxas exige populações equivalentes; localizar divergências exige confrontar posições; examinar autorização exige responsabilidades. Dados corretos que não respondem à pergunta podem ser irrelevantes.
 
 ### Público e responsabilidade
 
 Público é quem precisa interpretar ou usar o modelo. Pode incluir operador, analista, gestor, auditor, responsável técnico e pessoa afetada. Não se deve presumir que gestor sempre quer pouco detalhe ou que operador nunca precisa de visão agregada. O conteúdo depende da responsabilidade concreta.
 
-Pessoas afetadas não são apenas “usuárias” do artefato. Um modelo de distribuição de recursos pode mudar prioridade, acesso e tratamento mesmo quando as pessoas não consultam a tabela. Sua experiência pode revelar atributos omitidos, categorias inadequadas ou consequências que o público principal não vê.
+Pessoas afetadas não são apenas “usuárias”. Um modelo pode mudar prioridade e acesso mesmo quando elas não consultam o artefato; sua experiência pode revelar omissões e consequências invisíveis ao público principal.
 
 ### Perspectiva
 
-Perspectiva é o ponto de vista ou conjunto de preocupações privilegiado. O modelo operacional privilegia investigação de ocorrências; o gerencial privilegia comparação e proteção global. Perspectiva não invalida automaticamente o modelo, mas não deve ser escondida. Quem define a fronteira e as categorias exerce poder sobre o que se torna visível.
+Perspectiva é o conjunto de preocupações privilegiado. O modelo operacional privilegia ocorrências; o gerencial, comparação e proteção global. Isso não invalida o modelo, mas precisa ser explícito: definir fronteiras e categorias determina o que se torna visível.
 
 Dois modelos podem ser simultaneamente adequados porque respondem a perguntas diferentes. Eles deixam de ser adequados quando são usados fora dessas perguntas ou quando perdas relevantes não são compensadas por rastreabilidade, desagregação ou outro controle.
 
@@ -134,7 +127,7 @@ O problema de estoque inclui atendimento, custos, perdas, divergências e transf
 
 Uma visão agregada reúne ocorrências em indicadores. Uma intermediária preserva grupos, como centro e produto. Uma detalhada preserva a ocorrência individual e seus atributos. Nível não é sinônimo de importância ou verdade. O agregado revela proporções; o detalhe revela trajetórias e exceções.
 
-Detalhe excessivo pode esconder relações globais. Agregação pode esconder subgrupos, mudança de definição e impacto raro. Modelos podem permitir passagem entre níveis, mas não precisam representar tudo ao mesmo tempo. A ligação entre taxa e ocorrência é mais importante que uma tabela gigantesca sem caminho de investigação.
+Detalhe excessivo pode esconder relações globais; agregação pode esconder subgrupos, definições e impacto raro. Modelos podem permitir passagem entre níveis sem representar tudo simultaneamente. Ligar taxa a ocorrência importa mais que uma tabela sem caminho de investigação.
 
 ### Classificar omissões
 
@@ -163,9 +156,9 @@ Limite é uma condição em que o modelo não responde, perde precisão relevant
 
 ### Objetos ou entidades de interesse
 
-Objeto de interesse é algo cuja identidade ou condição importa à pergunta. “Entidade” será usada aqui em sentido analítico, não como termo de modelagem de banco de dados. Linha de solicitação, produto, centro, posição registrada, movimento, decisão e evidência podem ser objetos conforme o recorte.
+Objeto de interesse é algo cuja identidade ou condição importa à pergunta. “Entidade” será usada aqui em sentido analítico, não como termo de modelagem de banco de dados. Linha de solicitação, produto e centro podem ser objetos conforme o recorte. Outros substantivos exigem precisão: movimento pode ser evento ou seu registro; análise é atividade, seu registro é informação persistida e sua conclusão é resultado; o ato de decidir é atividade ou evento, enquanto a decisão registrada pode ser resultado ou objeto documental. Evidência é material usado para sustentar ou enfraquecer uma afirmação, não sinônimo automático de objeto.
 
-Nem todo substantivo precisa virar objeto. Se a pergunta gerencial trata taxas por centro, a ocorrência individual pode continuar acessível sem aparecer como unidade principal. Selecionar objetos significa explicar por que a identidade de cada tipo importa.
+Nem todo substantivo precisa virar objeto. Atividade, registro e resultado podem receber tratamento diferente conforme a perspectiva, que precisa ser declarada. Se a pergunta gerencial trata taxas por centro, a ocorrência individual pode continuar acessível sem aparecer como unidade principal. Selecionar objetos significa explicar por que a identidade de cada tipo importa.
 
 ### Atributos e condições relevantes
 
@@ -183,17 +176,11 @@ Uma relação pode ser importante mesmo sem atributo numérico. Responsabilidade
 
 ### Avaliar adequação ao propósito
 
-Um modelo adequado responde à pergunta para o público no domínio declarado, usa evidência compatível, torna pressupostos e omissões examináveis e não sustenta conclusões além de seus limites. A avaliação pode perguntar:
+Um modelo é **adequado** quando serve à pergunta, ao público e à decisão declarados. Possui **coerência interna** quando definições, elementos, relações e cálculos são compatíveis entre si. Possui **sustentação empírica** na medida em que suas afirmações são compatíveis com as evidências disponíveis. Seu **domínio de validade** delimita população, período, definições e condições em que esse uso é sustentado. Nenhuma dessas propriedades significa verdade universal ou completude.
 
-1. A unidade de análise corresponde à pergunta?
-2. População, período e fronteira estão claros?
-3. Objetos, atributos e relações selecionados são suficientes?
-4. Há informação incluída sem função?
-5. Omissões e desconhecidos estão separados?
-6. É possível retornar do agregado à evidência?
-7. Que decisão o modelo não deve apoiar?
+Um modelo adequado usa evidência compatível, expõe pressupostos e omissões e respeita limites. Avalie se unidade corresponde à pergunta; população, período e fronteira estão claros; elementos e relações bastam; informação incluída tem função; desconhecidos estão separados de omissões; o agregado retorna à evidência; e decisões não apoiadas são explícitas.
 
-Modelo visualmente claro pode ser inválido. Modelo complexo pode ser desnecessário. Adequação não é beleza, volume nem precisão decimal.
+Modelo visualmente claro pode ser inadequado, internamente incoerente ou pouco sustentado pelas evidências. Modelo complexo pode ser desnecessário. Adequação não é beleza, volume nem precisão decimal.
 
 ### Perda de informação e falsa precisão
 
@@ -209,7 +196,7 @@ Uma exceção crítica é um caso pouco frequente cujo impacto não pode ser tra
 
 ### Confrontar com evidências e revisar
 
-O modelo deve ser comparado com registros, ocorrências, pessoas e resultados. Procure casos que ele explica mal, não apenas exemplos favoráveis. Um caso que contradiz uma afirmação ampla funciona como contraexemplo ao uso pretendido, sem que esta aula ensine generalização sistemática.
+O modelo deve ser comparado com registros, ocorrências, pessoas e resultados. Procure casos que ele caracteriza mal ou que enfraquecem as hipóteses examinadas, não apenas exemplos favoráveis. Um caso que contradiz uma afirmação ampla funciona como contraexemplo ao uso pretendido, sem que esta aula ensine generalização sistemática.
 
 Revisar não significa admitir que o modelo nunca serviu. Contexto, evidência e perguntas mudam. A revisão pode alterar fronteira, definição, nível, atributo, relação, proteção ou condição de validade. Registre a versão, o motivo e o efeito: isso produz rastreabilidade.
 
@@ -223,7 +210,7 @@ Seja `U` o conjunto de aspectos possíveis dentro do recorte e `S` o conjunto se
 
 `U` não é toda a realidade; depende da fronteira. `S` depende do propósito. Estar em `S` não prova relevância, e ficar fora de `S` não significa inexistência. A notação torna a seleção explícita, mas a justificativa continua necessária.
 
-Se `U = {produto, centro, momento, posição registrada, condição física, custo, cor da embalagem}` e o modelo gerencial escolhe `S = {produto, centro, momento, custo}`, a relação de subconjunto está correta. Ainda precisamos perguntar se posição e condição poderiam ocultar risco.
+Se `U = {produto, centro, momento, posição registrada, condição física, custo, cor}` e `S = {produto, centro, momento, custo}`, então `S ⊆ U`. Ainda é preciso avaliar se excluir posição e condição oculta risco.
 
 ### Relações e produto cartesiano
 
@@ -239,7 +226,13 @@ Função é uma relação particular na qual cada entrada admissível do domíni
 
 `f: X → Y`
 
-Se cada ocorrência válida está associada a exatamente um centro no recorte, podemos modelar `centro: OcorrênciasVálidas → Centros`. O domínio são as ocorrências válidas; o codomínio, os centros considerados. Dados incompletos podem impedir aplicar a associação a uma ocorrência.
+Restringir o domínio é uma decisão de modelagem, não uma forma de fazer casos problemáticos desaparecerem. Seja `O` o conjunto de ocorrências do recorte e `O_identificadas ⊆ O` o subconjunto para o qual o centro pode ser associado. Podemos usar:
+
+`centro: O_identificadas → Centros`
+
+Cada entrada desse domínio recebe exatamente um centro, e o codomínio contém os centros considerados. As ocorrências em `O \ O_identificadas` permanecem registradas como não classificadas ou pendentes, com quantidade e motivo visíveis. Resultados calculados apenas sobre `O_identificadas` não podem ser generalizados silenciosamente para todo `O`.
+
+Quando for coerente com o propósito, outra construção introdutória seria `centro: O → Centros ∪ {não identificado}`. “Não identificado” registra qualidade insuficiente do dado; não é um centro real. Em ambas as abordagens, ausência de identificação não significa inexistência da ocorrência.
 
 Nem toda relação é função. Um produto pode aparecer em vários centros; uma solicitação pode possuir vários documentos. Uma função matemática não prova determinismo, processamento real ou causalidade. Ela apenas declara uma correspondência no modelo. Não estudaremos aqui composição, injetividade, sobrejetividade ou prova.
 
@@ -247,7 +240,7 @@ Nem toda relação é função. Um produto pode aparecer em vários centros; uma
 
 ### Modelo operacional
 
-**Propósito:** investigar ocorrências não atendidas. **Pergunta:** que evidências e divergências ajudam a explicar cada ocorrência e orientar ação posterior? **Público:** equipe operacional e analistas responsáveis. **Fronteira:** 192 linhas não atendidas, nos dois centros, três produtos e ciclo observado. **Nível:** ocorrência individual. **Limite:** não estima sozinho tendência nem estabelece causa.
+**Propósito:** caracterizar ocorrências não atendidas e orientar investigação. **Pergunta:** que registros, condições, relações e divergências caracterizam cada ocorrência e permitem examinar hipóteses ou encaminhar investigação? **Público:** equipe operacional e analistas responsáveis. **Fronteira:** 192 linhas não atendidas, nos dois centros, três produtos e ciclo observado. **Nível:** ocorrência individual. **Limite:** não estima sozinho tendência nem estabelece causa.
 
 | Elemento | Aspectos selecionados | Motivo | Omissões declaradas |
 |---|---|---|---|
@@ -256,9 +249,9 @@ Nem toda relação é função. Um produto pode aparecer em vários centros; uma
 | movimento | ocorrência, referência e evidência disponível | apoia reconstrução analítica | 29 históricos são incompletos |
 | condição física | condição observada e evidência | revela divergência possível | não inferida quando desconhecida |
 | separação | condição registrada | localiza ponto de investigação | não cria sequência de execução |
-| decisão e ação | decisão, responsável, fundamento e ação posterior | preserva responsabilidade e retorno | não especifica solução técnica |
+| decisão e ação | ato de decidir, decisão registrada, responsável, fundamento e ação posterior | distingue atividade, resultado registrado, responsabilidade e retorno | não especifica solução técnica |
 
-Relações preservadas incluem linha–produto, linha–centro, linha–posição, linha–movimentos, decisão–responsável e ocorrência–ação. O modelo omite indicadores agregados da visão principal, custos consolidados e produtos fora do recorte. Seus pressupostos incluem identificação consistente de linha e momento de referência comparável.
+Relações preservadas incluem linha–produto, linha–centro, linha–posição, linha–registros de movimentos, decisão registrada–responsável e ocorrência–ação. Elas ajudam a reconstruir registros e localizar divergências; não confirmam causa. O modelo omite indicadores agregados da visão principal, custos consolidados e produtos fora do recorte. Seus pressupostos incluem identificação consistente de linha e momento de referência comparável.
 
 ### Modelo gerencial
 
@@ -314,41 +307,39 @@ Antes de seguir, responda:
 
 ### Análise comentada
 
-O propósito provável é monitorar eficiência, mas isso precisa ser confirmado; atendimento, gestão e pessoas afetadas podem formular perguntas diferentes. Foram selecionados tempo médio e proporção de resoluções. Distribuição dos tempos, abandonos, retornos, período, população e definição de resolução estão ausentes.
+O propósito provável é monitorar eficiência, mas precisa ser confirmado. Foram selecionados tempo médio e resolução; distribuição, abandonos, retornos, período, população e definição estão ausentes. Excluir abandonos pode melhorar artificialmente os números, e “resolvido” pode significar encerramento, resposta ou solução efetiva.
 
-Excluir abandonos pode reduzir artificialmente o tempo e melhorar a taxa. A média pode esconder poucos casos muito longos. “Resolvido” pressupõe critério compartilhado, embora possa significar encerrado pelo atendente, resposta enviada ou problema efetivamente resolvido.
-
-Uma revisão mínima declara pergunta, público, período, população, regra de inclusão, definição de resolução e limite da média; inclui abandono como indicador ou explica a exclusão; e permite examinar grupos relevantes. Isso não prova que o atendimento melhorou, apenas torna o modelo auditável.
+Uma revisão mínima declara pergunta, público, período, população, inclusão, definição e limite da média; trata abandonos e permite examinar grupos. Isso torna o modelo auditável, não prova melhora.
 
 ## Atividades, síntese e domínio
 
 ### Confusões recorrentes
 
-Abstração não é ser vago nem remover detalhes até tudo parecer simples. Modelo não é realidade, cópia completa, verdade definitiva, algoritmo ou implementação. Um modelo completo não é sempre melhor; completude absoluta é inalcançável e pode destruir foco. Um modelo único não serve automaticamente a todos, e público altera conteúdo sem autorizar estereótipos.
+Abstração não é vagueza nem remoção indiscriminada de detalhes. Modelo não é realidade, verdade, algoritmo ou implementação; maior volume não garante adequação, e um modelo não serve automaticamente a todos.
 
-Dado disponível não precisa entrar se não serve ao propósito; dado ausente não deixa de importar. Omitido não significa inexistente. Tabela não é automaticamente modelo. Número não torna uma seleção neutra; agregação não elimina viés. Modelo gerencial não é superior, e operacional não é “mais verdadeiro”: cada um perde aspectos.
+Dado disponível não precisa entrar; dado ausente ainda pode importar; omitido não significa inexistente. Tabela e número não tornam o modelo automaticamente adequado ou neutro. Modelos operacional e gerencial perdem aspectos diferentes.
 
-Exceção rara pode ser crítica. Fronteira não é neutra. Boa aparência não prova validade. Função matemática não significa causa ou rotina computacional; relação não significa causalidade. Modelo pode ser útil sem prever. Revisão não prova inutilidade anterior: pode responder a evidência, mudança de contexto ou novo propósito.
+Exceção rara pode ser crítica. Fronteira e agregação podem introduzir viés. Função não significa causa ou processamento; relação não significa causalidade. Modelo pode ser útil sem prever, e revisão pode responder a nova evidência ou contexto.
 
 ### Exercícios essenciais
 
 1. **Objetiva.** Qual alternativa melhor descreve abstração controlada?
-   A) Retirar detalhes até o artefato caber em uma página.
-   B) Selecionar aspectos para pergunta declarada, registrar omissões e limites.
-   C) Manter somente dados numéricos para reduzir subjetividade.
-   D) Copiar as partes da decomposição sem alterar seu nível.
+   A) Selecionar aspectos ligados ao propósito, sem registrar o que ficou de fora quando a equipe já conhece o caso.
+   B) Selecionar os aspectos disponíveis e reduzir detalhes até que o público consiga ler o resultado.
+   C) Selecionar para a pergunta de um público e reutilizar a mesma seleção sempre que o objeto de interesse for o mesmo.
+   D) Selecionar para pergunta e propósito declarados, registrando omissões, limites e condições de revisão.
 
-2. **Objetiva.** Uma tabela contém valores corretos, mas não declara população nem período. A melhor avaliação é:
-   A) é válida porque os valores foram conferidos;
-   B) é modelo completo porque possui linhas e colunas;
-   C) pode materializar dados, mas sua adequação à pergunta não pode ser julgada;
-   D) deve ser descartada porque tabelas não representam modelos.
+2. **Objetiva.** Uma tabela contém valores conferidos, mas não declara população nem período. A melhor avaliação é:
+   A) pode apoiar qualquer pergunta sobre os valores, pois a correção numérica compensa a fronteira ausente;
+   B) pode ter uso exploratório restrito, mas adequação e domínio de validade não podem ser avaliados até que população e período sejam declarados;
+   C) deve ser descartada, pois a ausência dessas declarações torna necessariamente falsos todos os valores;
+   D) é adequada para comparar períodos, desde que as colunas usem as mesmas unidades.
 
-3. **Objetiva.** Qual opção distingue desconhecido de omitido deliberadamente?
-   A) desconhecido é relevante e indisponível; omitido é conhecido e excluído com motivo.
-   B) desconhecido fica fora da fronteira; omitido nunca produz risco.
-   C) desconhecido não existe; omitido existe, mas é irrelevante.
-   D) ambos são equivalentes se o público não os solicitar.
+3. **Objetiva.** Qual opção distingue corretamente desconhecido de omitido deliberadamente?
+   A) Desconhecido é o aspecto relevante cuja informação ainda não está disponível; omitido deliberadamente é conhecido, excluído com justificativa e sujeito a revisão.
+   B) Desconhecido é todo elemento fora da fronteira; omitido deliberadamente é o detalhe agregado em um indicador.
+   C) Desconhecido é informação reservada para etapa posterior; omitido deliberadamente é aquilo que não pode ser coletado.
+   D) Desconhecido é um detalhe agregado sem identificação individual; omitido deliberadamente é todo aspecto que o público não pediu.
 
 4. **Dissertativa.** Defina abstração e modelo com palavras próprias. Explique seleção, propósito, omissão e limite sem usar “resumo” como sinônimo.
 
@@ -358,7 +349,7 @@ Exceção rara pode ser crítica. Fronteira não é neutra. Boa aparência não 
 
 7. **Análise de caso.** Um gestor pede todos os registros individuais para “não perder nada”. Explique duas perdas produzidas pelo excesso de detalhe e proponha modelo intermediário com rastreabilidade.
 
-8. **Construção guiada.** Para o caso de atendimento da prática interna, produza dois modelos: um para investigar abandonos e outro para acompanhar capacidade. Compare seleção e perda.
+8. **Comparação guiada.** Para o caso de atendimento, compare duas seleções fornecidas: `{tempo médio, resolvidos}` e `{abandono, retorno, período, população}`. Indique um propósito e um público plausíveis para cada seleção, localize uma omissão relevante e proponha uma revisão. Não construa dois modelos completos.
 
 9. **Objetos e relações.** Em concessão de benefício, identifique quatro objetos, dois atributos por objeto, três relações e uma condição relevante. Não desenhe esquema técnico e não atribua causa.
 
@@ -416,7 +407,7 @@ Modelos diferentes do mesmo caso podem ser adequados e perder informações dife
 **Nível de abstração:** grau de agregação ou detalhe adotado.
 **Modelo:** construção seletiva para descrever, analisar, comunicar ou decidir.
 **Objeto de interesse:** aquilo que se pretende observar ou analisar.
-**Entidade:** objeto cuja identidade ou condição importa ao modelo.
+**Entidade:** objeto analítico cuja identidade ou condição importa ao modelo; não é usada aqui como termo de banco de dados.
 **Atributo:** característica selecionada de um objeto.
 **Relação:** associação entre elementos, sem causalidade presumida.
 **Estado:** condição relevante de um objeto em um referencial.
@@ -432,8 +423,8 @@ Modelos diferentes do mesmo caso podem ser adequados e perder informações dife
 **Perda de informação:** aspecto que deixa de estar disponível após seleção ou agregação.
 **Falsa precisão:** aparência de exatidão maior que a sustentada.
 **Viés de seleção:** distorção ligada ao que entra ou fica fora.
-**Adequação:** capacidade de servir ao propósito no domínio declarado.
-**Validade:** sustentação do uso pelas definições, condições e evidências.
+**Adequação:** capacidade de servir à pergunta, ao público e à decisão declarados.
+**Validade:** sustentação de um uso dentro de definições, condições, domínio e evidências declarados; não significa verdade universal.
 **Rastreabilidade:** possibilidade de relacionar seleção, evidência, decisão e revisão.
 **Contraexemplo:** caso que mostra o limite de uma afirmação.
 **Função:** relação que atribui exatamente uma saída a cada entrada admissível.
@@ -456,19 +447,19 @@ Esta aula não respondeu essas perguntas. Comparou casos apenas para avaliar mod
 
 ### Referências utilizadas
 
-- WING, Jeannette M. Computational Thinking. *Communications of the ACM*, v. 49, n. 3, p. 33–35, 2006. DOI: [10.1145/1118178.1118215](https://doi.org/10.1145/1118178.1118215). Sustenta a centralidade da abstração no pensamento computacional, sem impor definição única.
-- KUMAR, Amruth N. et al. *Computer Science Curricula 2023*. ACM, IEEE Computer Society e AAAI, 2023. DOI: [10.1145/3664191](https://doi.org/10.1145/3664191). Sustenta progressão curricular, modelagem e trabalho entre níveis de abstração.
-- PÓLYA, George. *How to Solve It*. 2. ed. Princeton University Press, 1957. Apoia compreender o pretendido, o conhecido e revisar a solução; não é usado como receita universal.
-- SIMON, Herbert A. The Architecture of Complexity. *Proceedings of the American Philosophical Society*, v. 106, n. 6, p. 467–482, 1962. Apoia níveis e seleção no estudo de sistemas complexos, sem postular um modelo único.
-- ROSEN, Kenneth H. *Discrete Mathematics and Its Applications*. 8. ed. McGraw-Hill, 2019. Apoia conjuntos, produto cartesiano, relações e funções.
-- ISO; IEC; IEEE. *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*. ISO, 2017. [Registro oficial](https://www.iso.org/standard/71952.html). Apoio terminológico; a aula usa definições operacionais próprias e não reproduz texto normativo.
+- WING, Jeannette M. Computational Thinking. *Communications of the ACM*, v. 49, n. 3, p. 33–35, 2006. DOI: [10.1145/1118178.1118215](https://doi.org/10.1145/1118178.1118215). Abstração no pensamento computacional, sem definição universal.
+- KUMAR, Amruth N. et al. *Computer Science Curricula 2023*. ACM, IEEE Computer Society e AAAI, 2023. DOI: [10.1145/3664191](https://doi.org/10.1145/3664191). Progressão e níveis de abstração.
+- PÓLYA, George. *How to Solve It*. 2. ed. Princeton University Press, 1957. Seleção e revisão, não receita universal.
+- SIMON, Herbert A. The Architecture of Complexity. *Proceedings of the American Philosophical Society*, v. 106, n. 6, p. 467–482, 1962. Níveis em sistemas complexos, sem modelo único.
+- ROSEN, Kenneth H. *Discrete Mathematics and Its Applications*. 8. ed. McGraw-Hill, 2019. Conjuntos, relações e funções.
+- ISO; IEC; IEEE. *ISO/IEC/IEEE 24765:2017 — Systems and software engineering — Vocabulary*. ISO, 2017. [Registro oficial](https://www.iso.org/standard/71952.html). Apoio terminológico sem reprodução normativa.
 
 ### Métricas e carga estimada
 
-- **Extensão e estrutura:** 5.971 palavras, 474 linhas, 15 seções H2 e 42 subseções H3; conceitos matemáticos: subconjunto, produto cartesiano, relação, função, domínio e codomínio.
+- **Extensão e estrutura:** 5.971 palavras, 465 linhas, 15 seções H2 e 42 subseções H3; conceitos matemáticos: subconjunto, produto cartesiano, relação, função, domínio e codomínio.
 - **Exercícios:** 10 essenciais e 7 de aprofundamento opcional; três objetivas, sete dissertativas/construtivas, ao menos seis análises de caso, uma questão de conjuntos, uma de relação/função, um contraexemplo e atividades de revisão.
 - **Casos centrais:** estoque progressivo, atendimento guiado e transferências nos exercícios.
 - **Fontes:** seis.
-- **Prática associada:** 2.324 palavras, 253 linhas, 15 seções H2, seis subseções H3 e nove blocos de produção e revisão.
-- **Trilha essencial:** leitura, recuperação, exercícios essenciais, prática essencial, solução comentada e revisão — aproximadamente 7h30 a 10h.
-- **Carga completa opcional:** trilha essencial mais exercícios adicionais, matemática ampliada e prática aprofundada — aproximadamente 11h30 a 15h.
+- **Prática associada:** 2.399 palavras, 257 linhas, 15 seções H2, seis subseções H3 e nove blocos de produção e revisão.
+- **Trilha essencial:** leitura e anotações (2h–2h30), recuperação ativa (20–30 min), exercícios essenciais (1h30–2h), prática essencial (2h45–3h45) e consulta da solução, revisão e autoavaliação (30–45 min) — aproximadamente 7h05 a 9h30.
+- **Carga completa opcional:** trilha essencial mais exercícios adicionais, auditoria e casos completos, matemática ampliada e terceiro modelo — aproximadamente 10h30 a 14h.
